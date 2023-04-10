@@ -1,0 +1,19 @@
+index: 0
+title: Frameworks and Tools
+items:
+  - title: "AdapterHub: A Framework for Adapting Transformers"
+    paper:
+      acl_id: "2020.emnlp-demos.7"
+      arxiv_id: "2007.07779"
+      pdf: https://arxiv.org/pdf/2007.07779
+    code: https://github.com/adapter-hub/adapter-transformers
+    website: https://adapterhub.ml
+  - title: "OpenDelta"
+    code: https://github.com/thunlp/OpenDelta
+    website: https://opendelta.readthedocs.io/
+  - title: "PEFT: State-of-the-art Parameter-Efficient Fine-Tuning"
+    code: https://github.com/huggingface/peft
+  - title: "LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models"
+    paper:
+      arxiv_id: "2304.01933"
+    code: https://github.com/AGI-Edgerunners/LLM-Adapters

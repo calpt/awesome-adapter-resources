@@ -1,0 +1,182 @@
+index: 1
+title: Natural Language Processing
+sections:
+  - title: Surveys
+    items:
+      - title: "Modular Deep Learning"
+        paper:
+          arxiv_id: "2302.11529"
+  - title: Methods
+    items:
+      - title: "Parameter-Efficient Transfer Learning for NLP"
+        paper:
+          arxiv_id: "1902.00751"
+          semantic_scholar_id: 29ddc1f43f28af7c846515e32cc167bc66886d0c
+          pdf: https://arxiv.org/pdf/1902.00751.pdf
+        code: https://github.com/google-research/adapter-bert
+        tags: ["Bottleneck adapter"]
+      - title: "MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer"
+        paper:
+          acl_id: "2020.emnlp-main.617"
+        code: https://github.com/adapter-hub/adapter-transformers
+        tags: ["MAD-X", "Invertible adapter"]
+      - title: "AdapterFusion: Non-Destructive Task Composition for Transfer Learning"
+        paper:
+          acl_id: "2021.eacl-main.39"
+        code: https://github.com/adapter-hub/adapter-transformers
+        tags: ["AdapterFusion"]
+      - title: "K-Adapter: Infusing Knowledge into Pre-Trained Models with Adapters"
+        paper:
+          acl_id: "2021.findings-acl.121"
+        code: https://github.com/microsoft/K-Adapter
+        tags: ["K-Adapter"]
+      - title: "Parameter-Efficient Transfer Learning with Diff Pruning"
+        paper:
+          acl_id: "2021.acl-long.378"
+        code: https://github.com/dguo98/DiffPruning
+        tags: ["Diff pruning"]
+      - title: "Prefix-Tuning: Optimizing Continuous Prompts for Generation"
+        paper:
+          acl_id: "2021.acl-long.353"
+        code: https://github.com/XiangLi1999/PrefixTuning
+        tags: ["Prefix-Tuning"]
+      - title: "The Power of Scale for Parameter-Efficient Prompt Tuning"
+        paper:
+          acl_id: "2021.emnlp-main.243"
+        code: https://github.com/google-research/prompt-tuning
+        tags: ["Prompt Tuning"]
+      - title: "Towards a Unified View of Parameter-Efficient Transfer Learning"
+        paper:
+          arxiv_id: "2110.04366"
+          semantic_scholar_id: 43a87867fe6bf4eb920f97fc753be4b727308923
+        code: https://github.com/jxhe/unify-parameter-efficient-tuning
+        tags: ["Mix-and-Match adapters", "Parallel adapters"]
+      - title: "Compacter: Efficient Low-Rank Hypercomplex Adapter Layers"
+        paper:
+          arxiv_id: "2106.04647"
+          semantic_scholar_id: b19cba7bfe318c69d5e62f8322cb5d75228452f4
+        code: https://github.com/rabeehk/compacter
+        tags: ["Compacter", "Compacter++", "PHM-Adapter"]
+      - title: "LoRA: Low-Rank Adaptation of Large Language Models"
+        paper:
+          arxiv_id: "2106.09685"
+          semantic_scholar_id: a8ca46b171467ceb2d7652fbfb67fe701ad86092
+        code: https://github.com/microsoft/LoRA
+        tags: ["LoRA"]
+      - title: "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks"
+        paper:
+          acl_id: "2021.acl-long.47"
+        code: https://github.com/rabeehk/hyperformer
+        tags: ["HyperFormer"]
+      - title: "MAD-G: Multilingual Adapter Generation for Efficient Cross-Lingual Transfer"
+        paper:
+          acl_id: "2021.findings-emnlp.410"
+          semantic_scholar_id: 6adc9c231d874ea358554b8680a6aaba4bd6c963
+        tags: ["MAD-G"]
+      - title: "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models"
+        paper:
+          acl_id: "2022.acl-short.1"
+        code: https://github.com/benzakenelad/BitFit
+        tags: ["BitFit"]
+      - title: "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning"
+        paper:
+          arxiv_id: "2205.05638"
+          semantic_scholar_id: 7cdaa08890895e1ad92afb5fad429690ad7b1dac
+        code: https://github.com/r-three/t-few
+        tags: ["T-Few", "(IA)^3"]
+      - title: "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning"
+        paper:
+          arxiv_id: "2303.10512"
+          semantic_scholar_id: 5ef82a8c8aa50f99285f2143b57ca4e82da1af80
+        code: https://github.com/QingruZhang/AdaLoRA
+        tags: ["AdaLoRA"]
+
+  - title: "Analysis and Evaluation"
+    items:
+      - title: "Common Sense or World Knowledge? Investigating Adapter-Based Knowledge Injection into Pretrained Transformers"
+        paper:
+          acl_id: "2020.deelio-1.5"
+        code: https://github.com/wluper/retrograph
+        tags: ["ConceptNet"]
+      - title: "On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation"
+        paper:
+          acl_id: "2021.acl-long.172"
+      - title: "Robust Transfer Learning with Pretrained Language Models through Adapters"
+        paper:
+          acl_id: "2021.acl-short.108"
+      - title: "AdapterDrop: On the Efficiency of Adapters in Transformers"
+        paper:
+          acl_id: "2021.emnlp-main.626"
+          arxiv_id: "2010.11918"
+        code: https://github.com/google-research/adapter-bert
+        tags: ["AdapterDrop", "Parallel inference"]
+      - title: "What to Pre-Train on? Efficient Intermediate Task Selection"
+        paper:
+          acl_id: "2021.emnlp-main.827"
+        code: https://github.com/adapter-hub/efficient-task-transfer
+        tags: ["Intermediate task transfer"]
+      - title: "Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer"
+        paper:
+          arxiv_id: "2012.06460"
+        tags: ["Orthogonal adapters"]
+      - title: "P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks"
+        paper:
+          acl_id: "2022.acl-short.8"
+          semantic_scholar_id: ec936b808e0fab9281c050ad4010cddec92c8cbe
+        code: https://github.com/THUDM/P-tuning-v2
+        tags: ["P-Tuning v2", "Prefix-Tuning"]
+      - title: "Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models"
+        paper:
+          arxiv_id: "2203.06904"
+          semantic_scholar_id: 8c62277dada489904a63de4dd87336c27c68fb5e
+      - title: "UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning"
+        paper:
+          acl_id: "2022.acl-long.433"
+        code: https://github.com/morningmoni/unipelt
+        tags: ["UniPELT"]
+
+  - title: Applications
+    items:
+      - title: "Simple, Scalable Adaptation for Neural Machine Translation"
+        paper:
+          acl_id: "D19-1165"
+          arxiv_id: "1909.08478"
+        tags: ["Bottleneck adapter", "Machine Translation"]
+      - title: "Monolingual Adapters for Zero-Shot Neural Machine Translation"
+        paper:
+          acl_id: "2020.emnlp-main.361"
+        tags: ["Bottleneck adapter", "Machine Translation"]
+      - title: "UDapter: Language Adaptation for Truly Universal Dependency Parsing"
+        paper:
+          acl_id: "2020.emnlp-main.180"
+        code: https://github.com/ahmetustun/udapter
+        tags: ["UDapter", "Dependency Parsing"]
+      - title: "Single-dataset Experts for Multi-dataset Question Answering"
+        paper:
+          acl_id: "2021.emnlp-main.495"
+        code: https://github.com/princeton-nlp/made
+        tags: ["Bottleneck adapter", "MADE"]
+      - title: "UNKs Everywhere: Adapting Multilingual Language Models to New Scripts"
+        paper:
+          acl_id: "2021.emnlp-main.800"
+          semantic_scholar_id: 13bcfb944779165983aaef22cec8a3bbd3e98e62
+        tags: ["Bottleneck adapter", "MAD-X"]
+      - title: "Multilingual Domain Adaptation for NMT: Decoupling Language and Domain Information with Adapters"
+        paper:
+          acl_id: "2021.wmt-1.64"
+        tags: ["Bottleneck adapter", "Machine Translation"]
+      - title: "Multilingual Unsupervised Neural Machine Translation with Denoising Adapters"
+        paper:
+          acl_id: "2021.emnlp-main.533"
+        tags: ["Denoising adapter", "Machine Translation"]
+      - title: "Efficient Test Time Adapter Ensembling for Low-resource Language Varieties"
+        paper:
+          acl_id: "2021.findings-emnlp.63"
+          semantic_scholar_id: 7b5b15279e5a52439614f886b79fa33f4b88bfb2
+        code: https://github.com/cindyxinyiwang/emea
+        tags: ["EMEA"]
+      - title: "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention"
+        paper:
+            arxiv_id: "2303.16199"
+        code: https://github.com/zrrskywalker/llama-adapter
+        tags: ["Prefix-Tuning", "Instruction tuning"]

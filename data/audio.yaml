@@ -1,0 +1,16 @@
+index: 3
+title: Audio Processing
+sections:
+  - title: Applications
+    items:
+      - title: "Lightweight Adapter Tuning for Multilingual Speech Translation"
+        paper:
+          acl_id: "2021.acl-short.103"
+        code: https://github.com/formiel/fairseq/blob/master/examples/speech_to_text/docs/adapters.md
+        tags: ["Speech translation"]
+      - title: "Efficient Adapter Transfer of Self-Supervised Speech Models for Automatic Speech Recognition"
+        paper:
+          arxiv_id: "2202.03218"
+          doi: "10.1109/icassp43922.2022.9746223"
+          semantic_scholar_id: "f6919b54a4f06367947f0cf58cda54cdd08cd5f2"
+        tags: ["ASR"]

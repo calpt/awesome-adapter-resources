@@ -1,0 +1,25 @@
+index: 2
+title: Computer Vision
+sections:
+  - title: Methods
+    items:
+      - title: "Learning multiple visual domains with residual adapters"
+        paper:
+          arxiv_id: "1705.08045"
+          semantic_scholar_id: d89ee98810039d2061ed42ee8026da49c503d16b
+        code: https://github.com/srebuffi/residual_adapters
+        tags: ["Bottleneck adapter"]
+      - title: "Efficient Parametrization of Multi-domain Deep Neural Networks"
+        paper:
+          arxiv_id: "1803.10082"
+          semantic_scholar_id: 4081de7e0f94e7e0d7b645c298d7768698d05774
+        tags: ["Bottleneck adapter"]
+      - title: "Conv-Adapter: Exploring Parameter Efficient Transfer Learning for ConvNets"
+        paper:
+          arxiv_id: "2208.07463"
+        tags: ["Conv-Adapter"]
+      - title: "AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition"
+        paper:
+          arxiv_id: "2205.13535"
+        code: https://github.com/ShoufaChen/AdaptFormer
+        tags: ["Bottleneck adapter", "Image classification", "Video classification"]

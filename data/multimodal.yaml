@@ -1,0 +1,21 @@
+index: 4
+title: Multi-Modal
+sections:
+  - title: Methods
+    items:
+      - title: "VL-ADAPTER: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks"
+        paper:
+          doi: 10.1109/CVPR52688.2022.00516
+          semantic_scholar_id: 55a19318cc93714802c7ac59e07651789749b20c
+          pdf: https://openaccess.thecvf.com/content/CVPR2022/papers/Sung_VL-Adapter_Parameter-Efficient_Transfer_Learning_for_Vision-and-Language_Tasks_CVPR_2022_paper.pdf
+        code: https://github.com/ylsung/VL_adapter
+        tags: ["VL-Adapter"]
+      - title: "LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning"
+        paper:
+          arxiv_id: "2206.06522"
+        code: https://github.com/ylsung/ladder-side-tuning
+        tags: ["Ladder Side-Tuning"]
+      - title: "Conditional Adapters: Parameter-efficient Transfer Learning with Fast Inference"
+        paper:
+          arxiv_id: "2304.04947"
+        tags: ["CODA"]
