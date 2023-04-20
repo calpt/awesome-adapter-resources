@@ -1,11 +1,6 @@
-index: 1
+index: 2
 title: Natural Language Processing
 sections:
-  - title: Surveys
-    items:
-      - title: "Modular Deep Learning"
-        paper:
-          arxiv_id: "2302.11529"
   - title: Methods
     items:
       - title: "Parameter-Efficient Transfer Learning for NLP"

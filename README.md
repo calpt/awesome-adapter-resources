@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-47-blue)
+![](https://img.shields.io/badge/Resources-48-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -10,8 +10,8 @@ _Adapters_ (aka _Parameter-Efficient Transfer Learning (PETL)_ or _Parameter-Eff
 
 - [Why Adapters?](#why-adapters)
 - [Frameworks and Tools](#frameworks-and-tools)
+- [Surveys](#surveys)
 - [Natural Language Processing](#natural-language-processing)
-  - [Surveys](#surveys)
   - [Methods](#methods)
   - [Analysis and Evaluation](#analysis-and-evaluation)
   - [Applications](#applications)
@@ -68,6 +68,8 @@ Using adapters provides multiple benefits. They are ...
 
 - **LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/AGI-Edgerunners/LLM-Adapters?color=yellow&logo=github) 
 
+  arXiv.org
+
   _Zhiqiang Hu, Yihuai Lan, Lei Wang, Wanyu Xu, Ee-Peng Lim, R. Lee, Lidong Bing, Soujanya Poria_ (2023)
 
   <details>
@@ -78,9 +80,7 @@ Using adapters provides multiple benefits. They are ...
   [[Paper PDF]](https://arxiv.org/pdf/2304.01933.pdf)&nbsp; [[Code]](https://github.com/AGI-Edgerunners/LLM-Adapters)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/32d3b01a83eeb996052eb6d03a7667a30c5a9969)
 
 
-## Natural Language Processing
-
-### Surveys
+## Surveys
 
 - **Modular Deep Learning**&nbsp; 
 
@@ -94,6 +94,22 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2302.11529.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/1f346f74e8eabececa4896d734ab9b261f30830d)
+
+- **Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning**&nbsp; 
+
+  arXiv.org
+
+  _Vladislav Lialin, Vijeta Deshpande, Anna Rumshisky_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    A taxonomy that covers a broad range of methods and present a detailed method comparison with a specific focus on real-life efficiency and fine-tuning multibillion-scale language models is provided.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2303.15647.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/6007263dd3d14373be5f84fb6ccb0be3f7fce903)
+
+
+## Natural Language Processing
 
 ### Methods
 
@@ -187,19 +203,6 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://aclanthology.org/2021.emnlp-main.243.pdf)&nbsp; [[Code]](https://github.com/google-research/prompt-tuning)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/ffdbd7f0b03b85747b001b4734d5ee31b5229aa4)
-
-- **P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/THUDM/P-tuning-v2?color=yellow&logo=github) ![](https://img.shields.io/badge/-P--Tuning%20v2-blue) ![](https://img.shields.io/badge/-Prefix--Tuning-blue)
-
-  Annual Meeting of the Association for Computational Linguistics
-
-  _Xiao Liu, Kaixuan Ji, Yicheng Fu, W. Tam, Zhengxiao Du, Zhilin Yang, Jie Tang_ (2022)
-
-  <details>
-    <summary>TLDR</summary>
-    The method P-Tuning v2 is an implementation of Deep Prompt Tuning (CITATION) optimized and adapted for NLU and can serve as an alternative to finetuning and a strong baseline for future research.
-  </details>
-
-  [[Paper PDF]](https://aclanthology.org/2022.acl-short.8.pdf)&nbsp; [[Code]](https://github.com/THUDM/P-tuning-v2)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/ec936b808e0fab9281c050ad4010cddec92c8cbe)
 
 - **Towards a Unified View of Parameter-Efficient Transfer Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/jxhe/unify-parameter-efficient-tuning?color=yellow&logo=github) ![](https://img.shields.io/badge/-Mix--and--Match%20adapters-blue) ![](https://img.shields.io/badge/-Parallel%20adapters-blue)
 
@@ -384,6 +387,19 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2012.06460.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/79165e99d67d2b4f5841464ad8eaf9e30205b62a)
+
+- **P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/THUDM/P-tuning-v2?color=yellow&logo=github) ![](https://img.shields.io/badge/-P--Tuning%20v2-blue) ![](https://img.shields.io/badge/-Prefix--Tuning-blue)
+
+  Annual Meeting of the Association for Computational Linguistics
+
+  _Xiao Liu, Kaixuan Ji, Yicheng Fu, W. Tam, Zhengxiao Du, Zhilin Yang, Jie Tang_ (2022)
+
+  <details>
+    <summary>TLDR</summary>
+    The method P-Tuning v2 is an implementation of Deep Prompt Tuning (CITATION) optimized and adapted for NLU and can serve as an alternative to finetuning and a strong baseline for future research.
+  </details>
+
+  [[Paper PDF]](https://aclanthology.org/2022.acl-short.8.pdf)&nbsp; [[Code]](https://github.com/THUDM/P-tuning-v2)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/ec936b808e0fab9281c050ad4010cddec92c8cbe)
 
 - **Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models**&nbsp; 
 
@@ -647,6 +663,8 @@ Using adapters provides multiple benefits. They are ...
   [[Paper PDF]](https://arxiv.org/pdf/2206.06522.pdf)&nbsp; [[Code]](https://github.com/ylsung/ladder-side-tuning)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/960d40497717ad22a7ebb84db238fa2415fc89cc)
 
 - **Conditional Adapters: Parameter-efficient Transfer Learning with Fast Inference**&nbsp; ![](https://img.shields.io/badge/-CODA-blue)
+
+  arXiv.org
 
   _Tao Lei, Junwen Bai, Siddhartha Brahma, J. Ainslie, Kenton Lee, Yanqi Zhou, Nan Du, Vincent Zhao, Yuexin Wu, Bo Li, Yu Zhang, Ming-Wei Chang_ (2023)
 
