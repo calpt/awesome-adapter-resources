@@ -79,12 +79,21 @@ sections:
           semantic_scholar_id: 7cdaa08890895e1ad92afb5fad429690ad7b1dac
         code: https://github.com/r-three/t-few
         tags: ["T-Few", "(IA)^3"]
+      - title: "AutoPEFT: Automatic Configuration Search for Parameter-Efficient Fine-Tuning"
+        paper:
+          arxiv_id: "2301.12132"
+          semantic_scholar_id: d3fea42e76b093e78e61073fefe0cfa63b543d60
+          pdf: https://arxiv.org/pdf/2301.12132.pdf
+        code: https://github.com/cambridgeltl/autopeft
+        tags: [ "AutoPEFT" ]
       - title: "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning"
         paper:
           arxiv_id: "2303.10512"
           semantic_scholar_id: 5ef82a8c8aa50f99285f2143b57ca4e82da1af80
         code: https://github.com/QingruZhang/AdaLoRA
         tags: ["AdaLoRA"]
+
+
 
   - title: "Analysis and Evaluation"
     items:

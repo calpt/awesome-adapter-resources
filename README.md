@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-48-blue)
+![](https://img.shields.io/badge/Resources-49-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -294,6 +294,19 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2205.05638.pdf)&nbsp; [[Code]](https://github.com/r-three/t-few)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/7cdaa08890895e1ad92afb5fad429690ad7b1dac)
+
+- **AutoPEFT: Automatic Configuration Search for Parameter-Efficient Fine-Tuning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/cambridgeltl/autopeft?color=yellow&logo=github) ![](https://img.shields.io/badge/-AutoPEFT-blue)
+
+  arXiv.org
+
+  _Han Zhou, Xingchen Wan, Ivan Vulic, A. Korhonen_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    AutoPEFT, a novel framework to traverse this configuration space: it automatically configures multiple PEFT modules via high-dimensional Bayesian optimisation, and shows the resource scalability and task transferability of AutoPEFT-found configurations, outperforming existing PEFT methods on average on the standard GLUE benchmark.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2301.12132.pdf)&nbsp; [[Code]](https://github.com/cambridgeltl/autopeft)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/d3fea42e76b093e78e61073fefe0cfa63b543d60)
 
 - **Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/QingruZhang/AdaLoRA?color=yellow&logo=github) ![](https://img.shields.io/badge/-AdaLoRA-blue)
 
