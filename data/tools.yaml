@@ -17,3 +17,5 @@ items:
     paper:
       arxiv_id: "2304.01933"
     code: https://github.com/AGI-Edgerunners/LLM-Adapters
+  - title: "Alpaca-LoRA"
+    code: https://github.com/tloen/alpaca-lora

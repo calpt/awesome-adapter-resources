@@ -7,3 +7,6 @@ items:
   - title: "Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning"
     paper:
       arxiv_id: "2303.15647"
+  - title: "PEFT-Ref: A Modular Reference Architecture and Typology for Parameter-Efficient Finetuning Techniques"
+    paper:
+      arxiv_id: "2304.12410"

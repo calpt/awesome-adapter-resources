@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-49-blue)
+![](https://img.shields.io/badge/Resources-51-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -77,7 +77,15 @@ Using adapters provides multiple benefits. They are ...
     LLM-Adapters is presented, an easy-to-use framework that integrates various adapters into LLMs and can execute these adapter-based PEFT methods of LLMs for different tasks, and provides a promising framework for fine-tuning large LLMs on downstream tasks.
   </details>
 
-  [[Paper PDF]](https://arxiv.org/pdf/2304.01933.pdf)&nbsp; [[Code]](https://github.com/AGI-Edgerunners/LLM-Adapters)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/32d3b01a83eeb996052eb6d03a7667a30c5a9969)
+  [[Paper PDF]](https://arxiv.org/pdf/2304.01933.pdf)&nbsp; [[Code]](https://github.com/AGI-Edgerunners/LLM-Adapters)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/c2cd18f9d1f73ae516ee264bffcbb34d10eba8b6)
+
+- **Alpaca-LoRA**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/tloen/alpaca-lora?color=yellow&logo=github) 
+
+   
+
+  
+
+  [[Code]](https://github.com/tloen/alpaca-lora)
 
 
 ## Surveys
@@ -107,6 +115,19 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2303.15647.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/6007263dd3d14373be5f84fb6ccb0be3f7fce903)
+
+- **PEFT-Ref: A Modular Reference Architecture and Typology for Parameter-Efficient Finetuning Techniques**&nbsp; 
+
+  arXiv.org
+
+  _Mohammed Sabry, Anya Belz_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    A reference framework is presented which standardises aspects shared by different PEFT techniques, while isolating differences to specific locations and interactions with the standard components, supporting not only direct comparison of different techniques and their efficiency and task performance, but also systematic exploration of reusability and composability of the different types of finetuned modules.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2304.12410.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/b29660776a2c2bc9f4d9ea66646553354e20f017)
 
 
 ## Natural Language Processing
@@ -234,7 +255,7 @@ Using adapters provides multiple benefits. They are ...
 
   International Conference on Learning Representations
 
-  _Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Weizhu Chen_ (2021)
+  _J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Weizhu Chen_ (2021)
 
   <details>
     <summary>TLDR</summary>
@@ -284,7 +305,7 @@ Using adapters provides multiple benefits. They are ...
 
 - **Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/r-three/t-few?color=yellow&logo=github) ![](https://img.shields.io/badge/-T--Few-blue) ![](https://img.shields.io/badge/-(IA)^3-blue)
 
-  arXiv.org
+  Neural Information Processing Systems
 
   _Haokun Liu, Derek Tam, Mohammed Muqeeth, Jay Mohta, Tenghao Huang, Mohit Bansal, Colin Raffel_ (2022)
 
@@ -602,7 +623,7 @@ Using adapters provides multiple benefits. They are ...
 
 - **AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/ShoufaChen/AdaptFormer?color=yellow&logo=github) ![](https://img.shields.io/badge/-Bottleneck%20adapter-blue) ![](https://img.shields.io/badge/-Image%20classification-blue) ![](https://img.shields.io/badge/-Video%20classification-blue)
 
-  arXiv.org
+  Neural Information Processing Systems
 
   _Shoufa Chen, Chongjian Ge, Zhan Tong, Jiangliu Wang, Yibing Song, Jue Wang, Ping Luo_ (2022)
 
@@ -664,7 +685,7 @@ Using adapters provides multiple benefits. They are ...
 
 - **LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/ylsung/ladder-side-tuning?color=yellow&logo=github) ![](https://img.shields.io/badge/-Ladder%20Side--Tuning-blue)
 
-  arXiv.org
+  Neural Information Processing Systems
 
   _Yi-Lin Sung, Jaemin Cho, Mohit Bansal_ (2022)
 
