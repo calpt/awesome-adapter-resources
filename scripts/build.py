@@ -2,6 +2,7 @@ import os
 from dataclasses import dataclass
 import re
 from typing import List, Union
+from collections import defaultdict
 
 import requests
 import slugify
@@ -147,13 +148,20 @@ def _enc_link(link: str) -> str:
 
 def generate_toc(sections: List[Section]) -> str:
     toc = []
+    title_counts = defaultdict(int)
     for section in sections:
+        section_title = _enc_link(section.title)
+        if title_counts[section_title] > 0:
+            section_title += f"-{title_counts[section_title]}"
+        toc.append(f"- [{section.title}](#{section_title})")
+        title_counts[_enc_link(section.title)] += 1
         if section.has_subsections:
-            toc.append(f"- [{section.title}](#{_enc_link(section.title)})")
             for subsection in section.items:
-                toc.append(f"  - [{subsection.title}](#{_enc_link(subsection.title)})")
-        else:
-            toc.append(f"- [{section.title}](#{_enc_link(section.title)})")
+                subsection_title = _enc_link(subsection.title)
+                if title_counts[subsection_title] > 0:
+                    subsection_title += f"-{title_counts[subsection_title]}"
+                toc.append(f"  - [{subsection.title}](#{subsection_title})")
+                title_counts[_enc_link(subsection.title)] += 1
 
     return "\n".join(toc)
 

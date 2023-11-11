@@ -17,11 +17,11 @@ _Adapters_ (aka _Parameter-Efficient Transfer Learning (PETL)_ or _Parameter-Eff
   - [Applications](#applications)
   - [Serving](#serving)
 - [Computer Vision](#computer-vision)
-  - [Methods](#methods)
+  - [Methods](#methods-1)
 - [Audio Processing](#audio-processing)
-  - [Applications](#applications)
+  - [Applications](#applications-1)
 - [Multi-Modal](#multi-modal)
-  - [Methods](#methods)
+  - [Methods](#methods-2)
 - [Contributing](#contributing)
 
 ## Why Adapters?
