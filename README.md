@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-51-blue)
+![](https://img.shields.io/badge/Resources-55-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -15,6 +15,7 @@ _Adapters_ (aka _Parameter-Efficient Transfer Learning (PETL)_ or _Parameter-Eff
   - [Methods](#methods)
   - [Analysis and Evaluation](#analysis-and-evaluation)
   - [Applications](#applications)
+  - [Serving](#serving)
 - [Computer Vision](#computer-vision)
   - [Methods](#methods)
 - [Audio Processing](#audio-processing)
@@ -74,10 +75,10 @@ Using adapters provides multiple benefits. They are ...
 
   <details>
     <summary>TLDR</summary>
-    LLM-Adapters is presented, an easy-to-use framework that integrates various adapters into LLMs and can execute these adapter-based PEFT methods of LLMs for different tasks, and provides a promising framework for fine-tuning large LLMs on downstream tasks.
+    LLM-Adapters is presented, an easy-to-use framework that integrates various adapters into LLMs and can execute these adapter-based PEFT methods of LLMs for different tasks, demonstrating that using adapter- based PEFT in smaller-scale LLMs with few extra trainable parameters yields comparable, and in some cases superior, performance to powerful LLMs in zero-shot inference on both reasoning tasks.
   </details>
 
-  [[Paper PDF]](https://arxiv.org/pdf/2304.01933.pdf)&nbsp; [[Code]](https://github.com/AGI-Edgerunners/LLM-Adapters)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/c2cd18f9d1f73ae516ee264bffcbb34d10eba8b6)
+  [[Paper PDF]](https://arxiv.org/pdf/2304.01933.pdf)&nbsp; [[Code]](https://github.com/AGI-Edgerunners/LLM-Adapters)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/bdb68c5e2369633b20e733774ac66eb4600c34d1)
 
 - **Alpaca-LoRA**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/tloen/alpaca-lora?color=yellow&logo=github) 
 
@@ -124,10 +125,10 @@ Using adapters provides multiple benefits. They are ...
 
   <details>
     <summary>TLDR</summary>
-    A reference framework is presented which standardises aspects shared by different PEFT techniques, while isolating differences to specific locations and interactions with the standard components, supporting not only direct comparison of different techniques and their efficiency and task performance, but also systematic exploration of reusability and composability of the different types of finetuned modules.
+    A reference architecture is presented which standardises aspects shared by different PEFT techniques, while isolating differences to specific locations and interactions with the standard components, supporting not only direct comparison of different techniques and their efficiency and task performance, but also systematic exploration of reusability and composability of the different types of finetuned modules.
   </details>
 
-  [[Paper PDF]](https://arxiv.org/pdf/2304.12410.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/b29660776a2c2bc9f4d9ea66646553354e20f017)
+  [[Paper PDF]](https://arxiv.org/pdf/2304.12410.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/2afd51e83e87acf02c0044b34c6d4984e814900e)
 
 
 ## Natural Language Processing
@@ -242,20 +243,20 @@ Using adapters provides multiple benefits. They are ...
 
   Neural Information Processing Systems
 
-  _Rabeeh Karimi Mahabadi, James Henderson, Sebastian Ruder_ (2021)
+  _Joe Davison_ (2021)
 
   <details>
     <summary>TLDR</summary>
     Compacter is proposed, a method for fine-tuning large-scale language models with a better trade-off between task performance and the number of trainable parameters than prior work, and accomplishes this by building on top of ideas from adapters, low-rank optimization, and parameterized hypercomplex multiplication layers.
   </details>
 
-  [[Paper PDF]](https://arxiv.org/pdf/2106.04647.pdf)&nbsp; [[Code]](https://github.com/rabeehk/compacter)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/b19cba7bfe318c69d5e62f8322cb5d75228452f4)
+  [[Paper PDF]](https://arxiv.org/pdf/2106.04647.pdf)&nbsp; [[Code]](https://github.com/rabeehk/compacter)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/656ed155c2d345c19d9bff4b50f2ae00db8407cc)
 
 - **LoRA: Low-Rank Adaptation of Large Language Models**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/LoRA?color=yellow&logo=github) ![](https://img.shields.io/badge/-LoRA-blue)
 
   International Conference on Learning Representations
 
-  _J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Weizhu Chen_ (2021)
+  _J. E. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Weizhu Chen_ (2021)
 
   <details>
     <summary>TLDR</summary>
@@ -268,7 +269,7 @@ Using adapters provides multiple benefits. They are ...
 
   Annual Meeting of the Association for Computational Linguistics
 
-  _Rabeeh Karimi Mahabadi, Sebastian Ruder, M. Dehghani, J. Henderson_ (2021)
+  _Rabeeh Karimi Mahabadi, Sebastian Ruder, Mostafa Dehghani, J. Henderson_ (2021)
 
   <details>
     <summary>TLDR</summary>
@@ -285,7 +286,7 @@ Using adapters provides multiple benefits. They are ...
 
   <details>
     <summary>TLDR</summary>
-    MAD-G is proposed, which contextually generates language adapters from language representations based on typological features and remains competitive with more expensive methods for language-speciﬁc adapter training across the board, particularly on the NER task in low-resource African languages.
+    MAD-G is proposed, which contextually generates language adapters from language representations based on typological features and remains competitive with more expensive methods for language-speciﬁc adapter training across the board.
   </details>
 
   [[Paper PDF]](https://aclanthology.org/2021.findings-emnlp.410.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/6adc9c231d874ea358554b8680a6aaba4bd6c963)
@@ -324,14 +325,14 @@ Using adapters provides multiple benefits. They are ...
 
   <details>
     <summary>TLDR</summary>
-    AutoPEFT, a novel framework to traverse this configuration space: it automatically configures multiple PEFT modules via high-dimensional Bayesian optimisation, and shows the resource scalability and task transferability of AutoPEFT-found configurations, outperforming existing PEFT methods on average on the standard GLUE benchmark.
+    Inspired by advances in neural architecture search, AutoPEFT is proposed for automatic PEFT configuration selection and found a Pareto-optimal set of configurations with strong performance-cost trade-offs across different numbers of parameters that are also highly transferable across different tasks.
   </details>
 
-  [[Paper PDF]](https://arxiv.org/pdf/2301.12132.pdf)&nbsp; [[Code]](https://github.com/cambridgeltl/autopeft)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/d3fea42e76b093e78e61073fefe0cfa63b543d60)
+  [[Paper PDF]](https://arxiv.org/pdf/2301.12132.pdf)&nbsp; [[Code]](https://github.com/cambridgeltl/autopeft)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/b9d77cd9be54a228f811b1ac6212a7041792f217)
 
 - **Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/QingruZhang/AdaLoRA?color=yellow&logo=github) ![](https://img.shields.io/badge/-AdaLoRA-blue)
 
-  arXiv.org
+  International Conference on Learning Representations
 
   _Qingru Zhang, Minshuo Chen, Alexander W. Bukharin, Pengcheng He, Yu Cheng, Weizhu Chen, Tuo Zhao_ (2023)
 
@@ -341,6 +342,19 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2303.10512.pdf)&nbsp; [[Code]](https://github.com/QingruZhang/AdaLoRA)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/5ef82a8c8aa50f99285f2143b57ca4e82da1af80)
+
+- **QLoRA: Efficient Finetuning of Quantized LLMs**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/artidoro/qlora?color=yellow&logo=github) ![](https://img.shields.io/badge/-QLoRA-blue)
+
+  arXiv.org
+
+  _Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, Luke Zettlemoyer_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    QLoRA finetuning on a small high-quality dataset leads to state-of-the-art results, even when using smaller models than the previous SoTA, and current chatbot benchmarks are not trustworthy to accurately evaluate the performance levels of chatbots.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2305.14314.pdf)&nbsp; [[Code]](https://github.com/artidoro/qlora)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/32ac52069e562d4f900afee70bdca63f53461481)
 
 ### Analysis and Evaluation
 
@@ -443,7 +457,7 @@ Using adapters provides multiple benefits. They are ...
 
   <details>
     <summary>TLDR</summary>
-    Though initially proposed as an efficient method to steer large models, some of the fascinating evidence discovered along with delta tuning could help further reveal the mechanisms of PLMs and even deep neural networks.
+    The theoretical principles underlying the effectiveness of delta tuning are discussed and frameworks to interpret delta tuning from the perspective of optimization and optimal control are proposed, where results on over 100 NLP tasks demonstrate a comprehensive performance comparison of different approaches.
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2203.06904.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/8c62277dada489904a63de4dd87336c27c68fb5e)
@@ -480,9 +494,12 @@ Using adapters provides multiple benefits. They are ...
 
   Conference on Empirical Methods in Natural Language Processing
 
-  _Jerin Philip, Alexandre Bérard, Matthias Gallé, L. Besacier_ (2020)
+  _Jerin Philip, Alexandre Berard, Matthias Gallé, L. Besacier_ (2020)
 
-  
+  <details>
+    <summary>TLDR</summary>
+    A novel adapter layer formalism for adapting multilingual models is proposed, which is more parameter-efficient than existing adapter layers while obtaining as good or better performance.
+  </details>
 
   [[Paper PDF]](https://aclanthology.org/2020.emnlp-main.361.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/8b31fef217004560b8c2517c0f6fdc1c3cf55112)
 
@@ -572,10 +589,38 @@ Using adapters provides multiple benefits. They are ...
 
   <details>
     <summary>TLDR</summary>
-    A zero-init attention mechanism with zero gating is proposed, which adaptively injects the new instructional cues into LLaMA, while effectively preserves its pre-trained knowledge.
+    A zero-initialized attention mechanism with zero gating is proposed, which adaptively injects the new instructional cues into LLaMA, while effectively preserves its pre-trained knowledge on traditional vision and language tasks, demonstrating the superior generalization capacity of the approach.
   </details>
 
-  [[Paper PDF]](https://arxiv.org/pdf/2303.16199.pdf)&nbsp; [[Code]](https://github.com/zrrskywalker/llama-adapter)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/b259d853b71a2d03cefa844bb9343b8e3ed816b1)
+  [[Paper PDF]](https://arxiv.org/pdf/2303.16199.pdf)&nbsp; [[Code]](https://github.com/zrrskywalker/llama-adapter)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/a757999ed260d7bc45484dc6b4456bf33fe6f679)
+
+### Serving
+
+- **Punica: Multi-Tenant LoRA Serving**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/punica-ai/punica?color=yellow&logo=github) ![](https://img.shields.io/badge/-Punica-blue) ![](https://img.shields.io/badge/-LoRA-blue)
+
+  arXiv.org
+
+  _Lequn Chen, Zihao Ye, Yongji Wu, Danyang Zhuo, Luis Ceze, Arvind Krishnamurthy University of Washington, Duke University_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    Punica is a system to serve multiple LoRA models in a shared GPU cluster that contains a new CUDA kernel design that allows batching of GPU operations for differentLoRA models, significantly enhancing GPU efficiency in terms of both memory and computation.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2310.18547.pdf)&nbsp; [[Code]](https://github.com/punica-ai/punica)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/c2314751d367b34239a537fe27e2bd51a8b84528)
+
+- **S-LoRA: Serving Thousands of Concurrent LoRA Adapters**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/S-LoRA/S-LoRA?color=yellow&logo=github) ![](https://img.shields.io/badge/-S--LoRA-blue) ![](https://img.shields.io/badge/-LoRA-blue)
+
+  arXiv.org
+
+  _Ying Sheng, Shiyi Cao, Dacheng Li, Coleman Hooper, Nicholas Lee, Shuo Yang, Christopher Chou, Banghua Zhu, Lianmin Zheng, Kurt Keutzer, Joseph E. Gonzalez, I. Stoica_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    S-LoRA enables scalable serving of many task-specific fine-tuned models and offers the potential for large-scale customized fine- Tuning services.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2311.03285.pdf)&nbsp; [[Code]](https://github.com/S-LoRA/S-LoRA)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/9bb8c4325c609caeade9c3ed7036d2b9953e278c)
 
 
 ## Computer Vision
@@ -584,7 +629,7 @@ Using adapters provides multiple benefits. They are ...
 
 - **Learning multiple visual domains with residual adapters**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/srebuffi/residual_adapters?color=yellow&logo=github) ![](https://img.shields.io/badge/-Bottleneck%20adapter-blue)
 
-  NIPS
+  Neural Information Processing Systems
 
   _Sylvestre-Alvise Rebuffi, Hakan Bilen, A. Vedaldi_ (2017)
 
@@ -708,6 +753,19 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2304.04947.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/148644bf4ccef7e022b965304e8b3178be8af0fa)
+
+- **VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/HenryHZY/VL-PET?color=yellow&logo=github) ![](https://img.shields.io/badge/-VL--PET-blue)
+
+  arXiv.org
+
+  _Zi-Yuan Hu, Yanyang Li, M. Lyu, Liwei Wang_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    A Vision-and-Language Parameter-Efficient Tuning (VL-PET) framework to impose effective control over modular modifications via a novel granularity-controlled mechanism and a variety of model-agnostic VL-PET modules can be instantiated from this framework for better efficiency and effectiveness trade-offs.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2308.09804.pdf)&nbsp; [[Code]](https://github.com/HenryHZY/VL-PET)&nbsp; [[Website]](https://henryhzy.github.io/VL-PET)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/80a791f644defb54f4eb24f99df31e6f995be3aa)
 
 
 

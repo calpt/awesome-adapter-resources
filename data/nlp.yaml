@@ -92,7 +92,12 @@ sections:
           semantic_scholar_id: 5ef82a8c8aa50f99285f2143b57ca4e82da1af80
         code: https://github.com/QingruZhang/AdaLoRA
         tags: ["AdaLoRA"]
-
+      - title: "QLoRA: Efficient Finetuning of Quantized LLMs"
+        paper:
+          arxiv_id: "2305.14314"
+          semantic_scholar_id: 32ac52069e562d4f900afee70bdca63f53461481
+        code: https://github.com/artidoro/qlora
+        tags: ["QLoRA"]
 
 
   - title: "Analysis and Evaluation"
@@ -184,3 +189,18 @@ sections:
             arxiv_id: "2303.16199"
         code: https://github.com/zrrskywalker/llama-adapter
         tags: ["Prefix-Tuning", "Instruction tuning"]
+
+  - title: Serving
+    items:
+      - title: "Punica: Multi-Tenant LoRA Serving"
+        paper:
+          arxiv_id: "2310.18547"
+          semantic_scholar_id: c2314751d367b34239a537fe27e2bd51a8b84528
+        code: https://github.com/punica-ai/punica
+        tags: ["Punica", "LoRA"]
+      - title: "S-LoRA: Serving Thousands of Concurrent LoRA Adapters"
+        paper:
+          arxiv_id: "2311.03285"
+          semantic_scholar_id: "9bb8c4325c609caeade9c3ed7036d2b9953e278c"
+        code: https://github.com/S-LoRA/S-LoRA
+        tags: ["S-LoRA", "LoRA"]

@@ -19,3 +19,11 @@ sections:
         paper:
           arxiv_id: "2304.04947"
         tags: ["CODA"]
+      - title: "VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control"
+        paper:
+          arxiv_id: "2308.09804"
+          semantic_scholar_id: 80a791f644defb54f4eb24f99df31e6f995be3aa
+          pdf: https://arxiv.org/pdf/2308.09804.pdf
+        code: https://github.com/HenryHZY/VL-PET
+        website: https://henryhzy.github.io/VL-PET
+        tags: ["VL-PET"]
