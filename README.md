@@ -397,7 +397,7 @@ Using adapters provides multiple benefits. They are ...
 
   [[Paper PDF]](https://aclanthology.org/2021.acl-short.108.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/cdcffb2f1678d7252bfd9b902d3cd676a5217005)
 
-- **AdapterDrop: On the Efficiency of Adapters in Transformers**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/google-research/adapter-bert?color=yellow&logo=github) ![](https://img.shields.io/badge/-AdapterDrop-blue) ![](https://img.shields.io/badge/-Parallel%20inference-blue)
+- **AdapterDrop: On the Efficiency of Adapters in Transformers**&nbsp; ![](https://img.shields.io/badge/-AdapterDrop-blue) ![](https://img.shields.io/badge/-Parallel%20inference-blue)
 
   Conference on Empirical Methods in Natural Language Processing
 
@@ -408,7 +408,7 @@ Using adapters provides multiple benefits. They are ...
     This paper proposes AdapterDrop, removing adapters from lower transformer layers during training and inference, which incorporates concepts from all three directions and can dynamically reduce the computational overhead when performing inference over multiple tasks simultaneously, with minimal decrease in task performances.
   </details>
 
-  [[Paper PDF]](https://aclanthology.org/2021.emnlp-main.626.pdf)&nbsp; [[Code]](https://github.com/google-research/adapter-bert)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/bdeec55f95fd6b73e3e4635459b14c7248543efb)
+  [[Paper PDF]](https://aclanthology.org/2021.emnlp-main.626.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/bdeec55f95fd6b73e3e4635459b14c7248543efb)
 
 - **What to Pre-Train on? Efficient Intermediate Task Selection**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/adapter-hub/efficient-task-transfer?color=yellow&logo=github) ![](https://img.shields.io/badge/-Intermediate%20task%20transfer-blue)
 

@@ -117,7 +117,6 @@ sections:
         paper:
           acl_id: "2021.emnlp-main.626"
           arxiv_id: "2010.11918"
-        code: https://github.com/google-research/adapter-bert
         tags: ["AdapterDrop", "Parallel inference"]
       - title: "What to Pre-Train on? Efficient Intermediate Task Selection"
         paper:
