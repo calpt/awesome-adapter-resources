@@ -90,7 +90,17 @@ Using adapters provides multiple benefits. They are ...
 
 
 ## Surveys
+- **Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey**&nbsp;
+  
+  _Yi Xin1, Siqi Luo1,2, Haodi Zhou1, Junlong Du3, Xiaohong Liu2,Yue Fan4, Qing Li4, Yuntao Du_ (2024)
 
+   <details>
+    <summary>TLDR</summary>
+    This survey provides a comprehensive overview and future directions for visual PEFT, offering a systematic review of the latest advancements, and categorizes existing methods into three categories: addition-based, partial-based, and unified-based.
+  </details>
+  
+  [[Paper PDF]](https://arxiv.org/pdf/2402.02242.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/Parameter-Efficient-Fine-Tuning-for-Pre-Trained-A-Xin-Luo/0f2fbed561e37da842c98633faf8fe1de9e2e174)
+  
 - **Modular Deep Learning**&nbsp; 
 
   arXiv.org
