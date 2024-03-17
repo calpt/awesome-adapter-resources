@@ -10,16 +10,6 @@ sections:
           pdf: https://arxiv.org/pdf/1902.00751.pdf
         code: https://github.com/google-research/adapter-bert
         tags: ["Bottleneck adapter"]
-      - title: "MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer"
-        paper:
-          acl_id: "2020.emnlp-main.617"
-        code: https://github.com/adapter-hub/adapter-transformers
-        tags: ["MAD-X", "Invertible adapter"]
-      - title: "AdapterFusion: Non-Destructive Task Composition for Transfer Learning"
-        paper:
-          acl_id: "2021.eacl-main.39"
-        code: https://github.com/adapter-hub/adapter-transformers
-        tags: ["AdapterFusion"]
       - title: "K-Adapter: Infusing Knowledge into Pre-Trained Models with Adapters"
         paper:
           acl_id: "2021.findings-acl.121"
@@ -40,12 +30,6 @@ sections:
           acl_id: "2021.emnlp-main.243"
         code: https://github.com/google-research/prompt-tuning
         tags: ["Prompt Tuning"]
-      - title: "Towards a Unified View of Parameter-Efficient Transfer Learning"
-        paper:
-          arxiv_id: "2110.04366"
-          semantic_scholar_id: 43a87867fe6bf4eb920f97fc753be4b727308923
-        code: https://github.com/jxhe/unify-parameter-efficient-tuning
-        tags: ["Mix-and-Match adapters", "Parallel adapters"]
       - title: "Compacter: Efficient Low-Rank Hypercomplex Adapter Layers"
         paper:
           arxiv_id: "2106.04647"
@@ -89,7 +73,6 @@ sections:
       - title: "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning"
         paper:
           arxiv_id: "2303.10512"
-          semantic_scholar_id: 5ef82a8c8aa50f99285f2143b57ca4e82da1af80
         code: https://github.com/QingruZhang/AdaLoRA
         tags: ["AdaLoRA"]
       - title: "QLoRA: Efficient Finetuning of Quantized LLMs"
@@ -98,6 +81,40 @@ sections:
           semantic_scholar_id: 32ac52069e562d4f900afee70bdca63f53461481
         code: https://github.com/artidoro/qlora
         tags: ["QLoRA"]
+
+  - title: "Composition Methods"
+    items:
+      - title: "MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer"
+        paper:
+          acl_id: "2020.emnlp-main.617"
+        code: https://github.com/adapter-hub/adapter-transformers
+        tags: ["MAD-X", "Invertible adapter"]
+      - title: "AdapterFusion: Non-Destructive Task Composition for Transfer Learning"
+        paper:
+          acl_id: "2021.eacl-main.39"
+        code: https://github.com/adapter-hub/adapter-transformers
+        tags: ["AdapterFusion"]
+      - title: "Towards a Unified View of Parameter-Efficient Transfer Learning"
+        paper:
+          arxiv_id: "2110.04366"
+          semantic_scholar_id: 43a87867fe6bf4eb920f97fc753be4b727308923
+        code: https://github.com/jxhe/unify-parameter-efficient-tuning
+        tags: ["Mix-and-Match adapters", "Parallel adapters"]
+      - title: "AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning"
+        paper:
+          acl_id: "2022.emnlp-main.388"
+        code: https://github.com/microsoft/AdaMix
+        tags: ["AdaMix", "MoE", "Model merging"]
+      - title: "Composing Parameter-Efficient Modules with Arithmetic Operations"
+        paper:
+          arxiv_id: "2306.14870"
+          semantic_scholar_id: 7f1a473834eea608980e4e04cce21be18d65b9b6
+        code: https://github.com/hkust-nlp/PEM_composition
+        tags: ["Model merging"]
+      - title: "AdapterSoup: Weight Averaging to Improve Generalization of Pretrained Language Models"
+        paper:
+          acl_id: "2023.findings-eacl.153"
+        tags: ["Model merging"]
 
 
   - title: "Analysis and Evaluation"

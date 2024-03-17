@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-55-blue)
+![](https://img.shields.io/badge/Resources-58-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -13,6 +13,7 @@ _Adapters_ (aka _Parameter-Efficient Transfer Learning (PETL)_ or _Parameter-Eff
 - [Surveys](#surveys)
 - [Natural Language Processing](#natural-language-processing)
   - [Methods](#methods)
+  - [Composition Methods](#composition-methods)
   - [Analysis and Evaluation](#analysis-and-evaluation)
   - [Applications](#applications)
   - [Serving](#serving)
@@ -69,7 +70,7 @@ Using adapters provides multiple benefits. They are ...
 
 - **LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/AGI-Edgerunners/LLM-Adapters?color=yellow&logo=github) 
 
-  arXiv.org
+  Conference on Empirical Methods in Natural Language Processing
 
   _Zhiqiang Hu, Yihuai Lan, Lei Wang, Wanyu Xu, Ee-Peng Lim, R. Lee, Lidong Bing, Soujanya Poria_ (2023)
 
@@ -148,32 +149,6 @@ Using adapters provides multiple benefits. They are ...
 
   [[Paper PDF]](https://arxiv.org/pdf/1902.00751.pdf)&nbsp; [[Code]](https://github.com/google-research/adapter-bert)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/29ddc1f43f28af7c846515e32cc167bc66886d0c)
 
-- **MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers?color=yellow&logo=github) ![](https://img.shields.io/badge/-MAD--X-blue) ![](https://img.shields.io/badge/-Invertible%20adapter-blue)
-
-  Conference on Empirical Methods in Natural Language Processing
-
-  _Jonas Pfeiffer, Ivan Vulic, Iryna Gurevych, Sebastian Ruder_ (2020)
-
-  <details>
-    <summary>TLDR</summary>
-    MAD-X is proposed, an adapter-based framework that enables high portability and parameter-efficient transfer to arbitrary tasks and languages by learning modular language and task representations and introduces a novel invertible adapter architecture and a strong baseline method for adapting a pretrained multilingual model to a new language.
-  </details>
-
-  [[Paper PDF]](https://aclanthology.org/2020.emnlp-main.617.pdf)&nbsp; [[Code]](https://github.com/adapter-hub/adapter-transformers)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/26299d5fdc5137291dc6a091573b3d18aba1d1c2)
-
-- **AdapterFusion: Non-Destructive Task Composition for Transfer Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers?color=yellow&logo=github) ![](https://img.shields.io/badge/-AdapterFusion-blue)
-
-  Conference of the European Chapter of the Association for Computational Linguistics
-
-  _Jonas Pfeiffer, Aishwarya Kamath, Andreas Rücklé, Kyunghyun Cho, Iryna Gurevych_ (2020)
-
-  <details>
-    <summary>TLDR</summary>
-    This work proposes AdapterFusion, a new two stage learning algorithm that leverages knowledge from multiple tasks by separating the two stages, i.e., knowledge extraction and knowledge composition, so that the classifier can effectively exploit the representations learned frommultiple tasks in a non-destructive manner.
-  </details>
-
-  [[Paper PDF]](https://aclanthology.org/2021.eacl-main.39.pdf)&nbsp; [[Code]](https://github.com/adapter-hub/adapter-transformers)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/98ef0db84e62aef969629264c9de1f4d0013f3b9)
-
 - **K-Adapter: Infusing Knowledge into Pre-Trained Models with Adapters**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/K-Adapter?color=yellow&logo=github) ![](https://img.shields.io/badge/-K--Adapter-blue)
 
   Findings
@@ -225,19 +200,6 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://aclanthology.org/2021.emnlp-main.243.pdf)&nbsp; [[Code]](https://github.com/google-research/prompt-tuning)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/ffdbd7f0b03b85747b001b4734d5ee31b5229aa4)
-
-- **Towards a Unified View of Parameter-Efficient Transfer Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/jxhe/unify-parameter-efficient-tuning?color=yellow&logo=github) ![](https://img.shields.io/badge/-Mix--and--Match%20adapters-blue) ![](https://img.shields.io/badge/-Parallel%20adapters-blue)
-
-  International Conference on Learning Representations
-
-  _Junxian He, Chunting Zhou, Xuezhe Ma, Taylor Berg-Kirkpatrick, Graham Neubig_ (2021)
-
-  <details>
-    <summary>TLDR</summary>
-    This paper re-frame state-of-the-art parameter-efficient transfer learning methods as modifications to specific hidden states in pre-trained models, and defines a set of design dimensions along which different methods vary, achieving comparable results to fine-tuning all parameters on all four tasks.
-  </details>
-
-  [[Paper PDF]](https://arxiv.org/pdf/2110.04366.pdf)&nbsp; [[Code]](https://github.com/jxhe/unify-parameter-efficient-tuning)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/43a87867fe6bf4eb920f97fc753be4b727308923)
 
 - **Compacter: Efficient Low-Rank Hypercomplex Adapter Layers**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/rabeehk/compacter?color=yellow&logo=github) ![](https://img.shields.io/badge/-Compacter-blue) ![](https://img.shields.io/badge/-Compacter++-blue) ![](https://img.shields.io/badge/-PHM--Adapter-blue)
 
@@ -325,27 +287,25 @@ Using adapters provides multiple benefits. They are ...
 
   <details>
     <summary>TLDR</summary>
-    Inspired by advances in neural architecture search, AutoPEFT is proposed for automatic PEFT configuration selection and found a Pareto-optimal set of configurations with strong performance-cost trade-offs across different numbers of parameters that are also highly transferable across different tasks.
+    Inspired by advances in neural architecture search, AutoPEFT is proposed for automatic PEFT configuration selection and it is shown that AutoPEFT-discovered configurations significantly outperform existing PEFT methods and are on par or better than FFT without incurring substantial training efficiency costs.
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2301.12132.pdf)&nbsp; [[Code]](https://github.com/cambridgeltl/autopeft)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/b9d77cd9be54a228f811b1ac6212a7041792f217)
 
 - **Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/QingruZhang/AdaLoRA?color=yellow&logo=github) ![](https://img.shields.io/badge/-AdaLoRA-blue)
 
-  International Conference on Learning Representations
-
-  _Qingru Zhang, Minshuo Chen, Alexander W. Bukharin, Pengcheng He, Yu Cheng, Weizhu Chen, Tuo Zhao_ (2023)
+  _Qingru Zhang, Minshuo Chen, Alexander W. Bukharin, Nikos Karampatziakis, Pengcheng He, Yu Cheng, Weizhu Chen, Tuo Zhao_ (2023)
 
   <details>
     <summary>TLDR</summary>
     The proposed AdaLoRA adaptively allocates the parameter budget among weight matrices according to their importance score, which allows us to effectively prune the singular values of unimportant updates, which is essentially to reduce their parameter budget but circumvent intensive exact SVD computations.
   </details>
 
-  [[Paper PDF]](https://arxiv.org/pdf/2303.10512.pdf)&nbsp; [[Code]](https://github.com/QingruZhang/AdaLoRA)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/5ef82a8c8aa50f99285f2143b57ca4e82da1af80)
+  [[Paper PDF]](https://arxiv.org/pdf/2303.10512.pdf)&nbsp; [[Code]](https://github.com/QingruZhang/AdaLoRA)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/b612fc6af23cccf2133c2ea40597453ab40dc2c3)
 
 - **QLoRA: Efficient Finetuning of Quantized LLMs**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/artidoro/qlora?color=yellow&logo=github) ![](https://img.shields.io/badge/-QLoRA-blue)
 
-  arXiv.org
+  Neural Information Processing Systems
 
   _Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, Luke Zettlemoyer_ (2023)
 
@@ -355,6 +315,86 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2305.14314.pdf)&nbsp; [[Code]](https://github.com/artidoro/qlora)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/32ac52069e562d4f900afee70bdca63f53461481)
+
+### Composition Methods
+
+- **MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers?color=yellow&logo=github) ![](https://img.shields.io/badge/-MAD--X-blue) ![](https://img.shields.io/badge/-Invertible%20adapter-blue)
+
+  Conference on Empirical Methods in Natural Language Processing
+
+  _Jonas Pfeiffer, Ivan Vulic, Iryna Gurevych, Sebastian Ruder_ (2020)
+
+  <details>
+    <summary>TLDR</summary>
+    MAD-X is proposed, an adapter-based framework that enables high portability and parameter-efficient transfer to arbitrary tasks and languages by learning modular language and task representations and introduces a novel invertible adapter architecture and a strong baseline method for adapting a pretrained multilingual model to a new language.
+  </details>
+
+  [[Paper PDF]](https://aclanthology.org/2020.emnlp-main.617.pdf)&nbsp; [[Code]](https://github.com/adapter-hub/adapter-transformers)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/26299d5fdc5137291dc6a091573b3d18aba1d1c2)
+
+- **AdapterFusion: Non-Destructive Task Composition for Transfer Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers?color=yellow&logo=github) ![](https://img.shields.io/badge/-AdapterFusion-blue)
+
+  Conference of the European Chapter of the Association for Computational Linguistics
+
+  _Jonas Pfeiffer, Aishwarya Kamath, Andreas Rücklé, Kyunghyun Cho, Iryna Gurevych_ (2020)
+
+  <details>
+    <summary>TLDR</summary>
+    This work proposes AdapterFusion, a new two stage learning algorithm that leverages knowledge from multiple tasks by separating the two stages, i.e., knowledge extraction and knowledge composition, so that the classifier can effectively exploit the representations learned frommultiple tasks in a non-destructive manner.
+  </details>
+
+  [[Paper PDF]](https://aclanthology.org/2021.eacl-main.39.pdf)&nbsp; [[Code]](https://github.com/adapter-hub/adapter-transformers)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/98ef0db84e62aef969629264c9de1f4d0013f3b9)
+
+- **Towards a Unified View of Parameter-Efficient Transfer Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/jxhe/unify-parameter-efficient-tuning?color=yellow&logo=github) ![](https://img.shields.io/badge/-Mix--and--Match%20adapters-blue) ![](https://img.shields.io/badge/-Parallel%20adapters-blue)
+
+  International Conference on Learning Representations
+
+  _Junxian He, Chunting Zhou, Xuezhe Ma, Taylor Berg-Kirkpatrick, Graham Neubig_ (2021)
+
+  <details>
+    <summary>TLDR</summary>
+    This paper re-frame state-of-the-art parameter-efficient transfer learning methods as modifications to specific hidden states in pre-trained models, and defines a set of design dimensions along which different methods vary, achieving comparable results to fine-tuning all parameters on all four tasks.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2110.04366.pdf)&nbsp; [[Code]](https://github.com/jxhe/unify-parameter-efficient-tuning)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/43a87867fe6bf4eb920f97fc753be4b727308923)
+
+- **AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/AdaMix?color=yellow&logo=github) ![](https://img.shields.io/badge/-AdaMix-blue) ![](https://img.shields.io/badge/-MoE-blue) ![](https://img.shields.io/badge/-Model%20merging-blue)
+
+  Conference on Empirical Methods in Natural Language Processing
+
+  _Yaqing Wang, Subhabrata Mukherjee, Xiaodong Liu, Jing Gao, Jianfeng Gao_ (2022)
+
+  <details>
+    <summary>TLDR</summary>
+    AdaMix is proposed as a general PEFT method that tunes a mixture of adaptation modules – given the underlyingPEFT method of choice – introduced in each Transformer layer while keeping most of the PLM weights frozen, and outperforms SOTA parameter-efficient fine-tuning and full model fine- Tuning for both NLU and NLG tasks.
+  </details>
+
+  [[Paper PDF]](https://aclanthology.org/2022.emnlp-main.388.pdf)&nbsp; [[Code]](https://github.com/microsoft/AdaMix)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/eb4d54651c4f610749caf2bf401af3ce28ddc439)
+
+- **Composing Parameter-Efficient Modules with Arithmetic Operations**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/hkust-nlp/PEM_composition?color=yellow&logo=github) ![](https://img.shields.io/badge/-Model%20merging-blue)
+
+  Neural Information Processing Systems
+
+  _Jinghan Zhang, Shiqi Chen, Junteng Liu, Junxian He_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    This paper proposes to compose parameter-efficient modules through linear arithmetic operations in the weight space, thereby integrating different module capabilities and extends this approach to detoxify Alpaca-LoRA, the latest instruction-tuned large language model based on LLaMA.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2306.14870.pdf)&nbsp; [[Code]](https://github.com/hkust-nlp/PEM_composition)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/7f1a473834eea608980e4e04cce21be18d65b9b6)
+
+- **AdapterSoup: Weight Averaging to Improve Generalization of Pretrained Language Models**&nbsp; ![](https://img.shields.io/badge/-Model%20merging-blue)
+
+  Findings
+
+  _Alexandra Chronopoulou, Matthew E. Peters, Alexander M. Fraser, Jesse Dodge_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    This paper introduces AdapterSoup, an approach that performs weight-space averaging of adapters trained on different domains, and explores various approaches for choosing which adapters to combine, such as text clustering and semantic similarity.
+  </details>
+
+  [[Paper PDF]](https://aclanthology.org/2023.findings-eacl.153.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/629bc57782bb4326a3eb5f89314e350729c5f417)
 
 ### Analysis and Evaluation
 
@@ -473,7 +513,7 @@ Using adapters provides multiple benefits. They are ...
     A unified framework, UniPELT, is proposed, which incorporates different PELT methods as submodules and learns to activate the ones that best suit the current data or task setup via gating mechanism, indicating that a mixture of multiple P ELT methods may be inherently more effective than single methods.
   </details>
 
-  [[Paper PDF]](https://aclanthology.org/2022.acl-long.433.pdf)&nbsp; [[Code]](https://github.com/morningmoni/unipelt)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/34027ecbb3fa651c4ea3980911cb813317769dc0)
+  [[Paper PDF]](https://aclanthology.org/2022.acl-long.433.pdf)&nbsp; [[Code]](https://github.com/morningmoni/unipelt)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/ad471be93216ddbf8544721d50ee5aed14f07cae)
 
 ### Applications
 
@@ -613,7 +653,7 @@ Using adapters provides multiple benefits. They are ...
 
   arXiv.org
 
-  _Ying Sheng, Shiyi Cao, Dacheng Li, Coleman Hooper, Nicholas Lee, Shuo Yang, Christopher Chou, Banghua Zhu, Lianmin Zheng, Kurt Keutzer, Joseph E. Gonzalez, I. Stoica_ (2023)
+  _Ying Sheng, Shiyi Cao, Dacheng Li, Coleman Hooper, Nicholas Lee, Shuo Yang, Christopher Chou, Banghua Zhu, Lianmin Zheng, Kurt Keutzer, Joseph E. Gonzalez, Ion Stoica_ (2023)
 
   <details>
     <summary>TLDR</summary>
@@ -743,26 +783,26 @@ Using adapters provides multiple benefits. They are ...
 
 - **Conditional Adapters: Parameter-efficient Transfer Learning with Fast Inference**&nbsp; ![](https://img.shields.io/badge/-CODA-blue)
 
-  arXiv.org
+  Neural Information Processing Systems
 
   _Tao Lei, Junwen Bai, Siddhartha Brahma, J. Ainslie, Kenton Lee, Yanqi Zhou, Nan Du, Vincent Zhao, Yuexin Wu, Bo Li, Yu Zhang, Ming-Wei Chang_ (2023)
 
   <details>
     <summary>TLDR</summary>
-    This work proposes Conditional Adapter (CoDA), a parameter-efficient transfer learning method that also improves inference efficiency and achieves a 2x to 8x inference speed-up compared to the state-of-the-art Adapter approach with moderate to no accuracy loss and the same parameter efficiency.
+    This work proposes Conditional Adapter (CoDA), a parameter-efficient transfer learning method that also improves inference efficiency and achieves a 2x to 8x inference speed-up compared to the state-of-the-art Adapter approaches with moderate to no accuracy loss and the same parameter efficiency.
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2304.04947.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/148644bf4ccef7e022b965304e8b3178be8af0fa)
 
 - **VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/HenryHZY/VL-PET?color=yellow&logo=github) ![](https://img.shields.io/badge/-VL--PET-blue)
 
-  arXiv.org
+  IEEE International Conference on Computer Vision
 
   _Zi-Yuan Hu, Yanyang Li, M. Lyu, Liwei Wang_ (2023)
 
   <details>
     <summary>TLDR</summary>
-    A Vision-and-Language Parameter-Efficient Tuning (VL-PET) framework to impose effective control over modular modifications via a novel granularity-controlled mechanism and a variety of model-agnostic VL-PET modules can be instantiated from this framework for better efficiency and effectiveness trade-offs.
+    A Vision-and-Language Parameter-Efficient Tuning (VL-PET) framework to impose effective control over modular modifications via a novel granularity-controlled mechanism and a variety of model-agnostic VL-PET modules can be instantiated from this framework for better efficiency and effective-ness trade-offs is proposed.
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2308.09804.pdf)&nbsp; [[Code]](https://github.com/HenryHZY/VL-PET)&nbsp; [[Website]](https://henryhzy.github.io/VL-PET)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/80a791f644defb54f4eb24f99df31e6f995be3aa)

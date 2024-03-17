@@ -1,3 +1,4 @@
+import json
 import os
 from dataclasses import dataclass
 import re
@@ -9,6 +10,7 @@ import slugify
 from ruamel.yaml import YAML
 
 
+CACHE_FILE = ".cache.json"
 TEMPLATE = os.path.join(os.path.dirname(__file__), "TEMPLATE.md")
 
 
@@ -30,7 +32,6 @@ class Item:
     authors: List[str]
     venue: str
     year: str
-    citations: int
     pdf_url: str
     code_url: str
     website_url: str
@@ -38,7 +39,23 @@ class Item:
     tags: List[str]
 
 
+def read_cache() -> dict:
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE) as f:
+            cache = json.load(f)
+    else:
+        cache = {}
+
+    return cache
+
+
+def write_cache(cache: dict) -> None:
+    with open(CACHE_FILE, "w") as f:
+        json.dump(cache, f, indent=2)
+
+
 def get_semanticscholar_data(items_data: List[dict]) -> List[dict]:
+    cache = read_cache()
     idxs, paper_ids = [], []
     for idx, item_data in enumerate(items_data):
         if paper_data := item_data.get("paper", None):
@@ -51,17 +68,27 @@ def get_semanticscholar_data(items_data: List[dict]) -> List[dict]:
                 paper_ids.append(f"ARXIV:{arxiv_id}")
             else:
                 raise ValueError(f"Invalid paper data: {paper_data}")
-    if len(paper_ids) > 0:
+    idxs_to_fetch, paper_ids_to_fetch = [], []
+    for idx, paper_id in zip(idxs, paper_ids):
+        if paper_id in cache:
+            items_data[idx] = cache[paper_id]
+        else:
+            idxs_to_fetch.append(idx)
+            paper_ids_to_fetch.append(paper_id)
+    if len(paper_ids_to_fetch) > 0:
         r = requests.post(
             "https://api.semanticscholar.org/graph/v1/paper/batch",
-            params={"fields": "title,abstract,tldr,authors,venue,year,citationCount,url"},
-            json={"ids": paper_ids},
+            params={"fields": "title,abstract,tldr,authors,venue,year,url"},
+            json={"ids": paper_ids_to_fetch},
         )
         r.raise_for_status()
         ss_data = r.json()
-        for idx, ss_item_data in zip(idxs, ss_data):
+        for idx, paper_id, ss_item_data in zip(idxs_to_fetch, paper_ids_to_fetch, ss_data):
             ss_item_data["authors"] = [author["name"] for author in ss_item_data["authors"]]
             items_data[idx]["paper"].update(ss_item_data)
+            cache[paper_id] = items_data[idx]
+
+    write_cache(cache)
 
     return items_data
 
@@ -85,7 +112,6 @@ def load_item(item_data: dict) -> Item:
         authors=paper_data.get("authors", []),
         venue=paper_data.get("venue", None),
         year=paper_data.get("year", None),
-        citations=int(paper_data.get("citationCount", -1)),
         pdf_url=build_pdf_url(paper_data) if paper_data else None,
         code_url=item_data.get("code", None),
         website_url=item_data.get("website", None),
