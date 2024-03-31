@@ -1,0 +1,1601 @@
+{
+  "d89ee98810039d2061ed42ee8026da49c503d16b": {
+    "title": "Learning multiple visual domains with residual adapters",
+    "paper": {
+      "arxiv_id": "1705.08045",
+      "semantic_scholar_id": "d89ee98810039d2061ed42ee8026da49c503d16b",
+      "paperId": "d89ee98810039d2061ed42ee8026da49c503d16b",
+      "url": "https://www.semanticscholar.org/paper/d89ee98810039d2061ed42ee8026da49c503d16b",
+      "title": "Learning multiple visual domains with residual adapters",
+      "abstract": "There is a growing interest in learning data representations that work well for many different types of problems and data. In this paper, we look in particular at the task of learning a single visual representation that can be successfully utilized in the analysis of very different types of images, from dog breeds to stop signs and digits. Inspired by recent work on learning networks that predict the parameters of another, we develop a tunable deep network architecture that, by means of adapter residual modules, can be steered on the fly to diverse visual domains. Our method achieves a high degree of parameter sharing while maintaining or even improving the accuracy of domain-specific representations. We also introduce the Visual Decathlon Challenge, a benchmark that evaluates the ability of representations to capture simultaneously ten very different visual domains and measures their ability to recognize well uniformly.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2017,
+      "citationCount": 728,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper develops a tunable deep network architecture that, by means of adapter residual modules, can be steered on the fly to diverse visual domains and introduces the Visual Decathlon Challenge, a benchmark that evaluates the ability of representations to capture simultaneously ten very differentVisual domains and measures their ability to recognize well uniformly."
+      },
+      "authors": [
+        "Sylvestre-Alvise Rebuffi",
+        "Hakan Bilen",
+        "A. Vedaldi"
+      ]
+    },
+    "code": "https://github.com/srebuffi/residual_adapters",
+    "tags": [
+      "Bottleneck adapter"
+    ]
+  },
+  "4081de7e0f94e7e0d7b645c298d7768698d05774": {
+    "title": "Efficient Parametrization of Multi-domain Deep Neural Networks",
+    "paper": {
+      "arxiv_id": "1803.10082",
+      "semantic_scholar_id": "4081de7e0f94e7e0d7b645c298d7768698d05774",
+      "paperId": "4081de7e0f94e7e0d7b645c298d7768698d05774",
+      "url": "https://www.semanticscholar.org/paper/4081de7e0f94e7e0d7b645c298d7768698d05774",
+      "title": "Efficient Parametrization of Multi-domain Deep Neural Networks",
+      "abstract": "A practical limitation of deep neural networks is their high degree of specialization to a single task and visual domain. Recently, inspired by the successes of transfer learning, several authors have proposed to learn instead universal feature extractors that, used as the first stage of any deep network, work well for several tasks and domains simultaneously. Nevertheless, such universal features are still somewhat inferior to specialized networks. To overcome this limitation, in this paper we propose to consider instead universal parametric families of neural networks, which still contain specialized problem-specific models, but differing only by a small number of parameters. We study different designs for such parametrizations, including series and parallel residual adapters, joint adapter compression, and parameter allocations, and empirically identify the ones that yield the highest compression. We show that, in order to maximize performance, it is necessary to adapt both shallow and deep layers of a deep network, but the required changes are very small. We also show that these universal parametrization are very effective for transfer learning, where they outperform traditional fine-tuning techniques.",
+      "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "year": 2018,
+      "citationCount": 304,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper proposes to consider universal parametric families of neural networks, which still contain specialized problem-specific models, but differing only by a small number of parameters, and shows that these universal parametrization are very effective for transfer learning, where they outperform traditional fine-tuning techniques."
+      },
+      "authors": [
+        "Sylvestre-Alvise Rebuffi",
+        "Hakan Bilen",
+        "A. Vedaldi"
+      ]
+    },
+    "tags": [
+      "Bottleneck adapter"
+    ]
+  },
+  "ARXIV:2208.07463": {
+    "title": "Conv-Adapter: Exploring Parameter Efficient Transfer Learning for ConvNets",
+    "paper": {
+      "arxiv_id": "2208.07463",
+      "paperId": "3049c05e77a5761aa051b812a91d445ac3b31256",
+      "url": "https://www.semanticscholar.org/paper/3049c05e77a5761aa051b812a91d445ac3b31256",
+      "title": "Conv-Adapter: Exploring Parameter Efficient Transfer Learning for ConvNets",
+      "abstract": "While parameter efficient tuning (PET) methods have shown great potential with transformer architecture on Natural Language Processing (NLP) tasks, their effectiveness is still under-studied with large-scale ConvNets on Computer Vision (CV) tasks. This paper proposes Conv-Adapter, a PET module designed for ConvNets. Conv-Adapter is light-weight, domain-transferable, and architecture-agnostic with generalized performance on different tasks. When transferring on downstream tasks, Conv-Adapter learns tasks-specific feature modulation to the intermediate representations of backbone while keeping the pre-trained parameters frozen. By introducing only a tiny amount of learnable parameters, e.g., only 3.5% full fine-tuning parameters of ResNet50, Conv-Adapter outperforms previous PET baseline methods and achieves comparable or surpasses the performance of full fine-tuning on 23 classification tasks of various domains. It also presents superior performance on few-shot classifications, with an average margin of 3.39%. Beyond classification, Conv-Adapter can generalize to detection and segmentation tasks with more than 50% reduction of parameters but comparable performance to the traditional full fine-tuning.",
+      "venue": "arXiv.org",
+      "year": 2022,
+      "citationCount": 29,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Conv-Adapter, a PET module designed for ConvNets, is light-weight, domain-transferable, and architecture-agnostic with generalized performance on different tasks with comparable or surpasses the performance of full fine-tuning on 23 classification tasks of various domains."
+      },
+      "authors": [
+        "Hao Chen",
+        "R. Tao",
+        "Han Zhang",
+        "Yidong Wang",
+        "Weirong Ye",
+        "Jindong Wang",
+        "Guosheng Hu",
+        "M. Savvides"
+      ]
+    },
+    "tags": [
+      "Conv-Adapter"
+    ]
+  },
+  "ARXIV:2205.13535": {
+    "title": "AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition",
+    "paper": {
+      "arxiv_id": "2205.13535",
+      "paperId": "2fe2f849b94cf08b559226bc9d78adcaef5ef186",
+      "url": "https://www.semanticscholar.org/paper/2fe2f849b94cf08b559226bc9d78adcaef5ef186",
+      "title": "AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition",
+      "abstract": "Pretraining Vision Transformers (ViTs) has achieved great success in visual recognition. A following scenario is to adapt a ViT to various image and video recognition tasks. The adaptation is challenging because of heavy computation and memory storage. Each model needs an independent and complete finetuning process to adapt to different tasks, which limits its transferability to different visual domains. To address this challenge, we propose an effective adaptation approach for Transformer, namely AdaptFormer, which can adapt the pre-trained ViTs into many different image and video tasks efficiently. It possesses several benefits more appealing than prior arts. Firstly, AdaptFormer introduces lightweight modules that only add less than 2% extra parameters to a ViT, while it is able to increase the ViT's transferability without updating its original pre-trained parameters, significantly outperforming the existing 100\\% fully fine-tuned models on action recognition benchmarks. Secondly, it can be plug-and-play in different Transformers and scalable to many visual tasks. Thirdly, extensive experiments on five image and video datasets show that AdaptFormer largely improves ViTs in the target domains. For example, when updating just 1.5% extra parameters, it achieves about 10% and 19% relative improvement compared to the fully fine-tuned models on Something-Something~v2 and HMDB51, respectively. Code is available at https://github.com/ShoufaChen/AdaptFormer.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2022,
+      "citationCount": 211,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "AdaptFormer introduces lightweight modules that only add less than 2% extra parameters to a ViT, while it is able to increase the ViT's transferability without updating its original pre-trained parameters, significantly outperforming the existing 100\\% fully fine-tuned models on action recognition benchmarks."
+      },
+      "authors": [
+        "Shoufa Chen",
+        "Chongjian Ge",
+        "Zhan Tong",
+        "Jiangliu Wang",
+        "Yibing Song",
+        "Jue Wang",
+        "Ping Luo"
+      ]
+    },
+    "code": "https://github.com/ShoufaChen/AdaptFormer",
+    "tags": [
+      "Bottleneck adapter",
+      "Image classification",
+      "Video classification"
+    ]
+  },
+  "55a19318cc93714802c7ac59e07651789749b20c": {
+    "title": "VL-ADAPTER: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks",
+    "paper": {
+      "doi": "10.1109/CVPR52688.2022.00516",
+      "semantic_scholar_id": "55a19318cc93714802c7ac59e07651789749b20c",
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2022/papers/Sung_VL-Adapter_Parameter-Efficient_Transfer_Learning_for_Vision-and-Language_Tasks_CVPR_2022_paper.pdf",
+      "paperId": "55a19318cc93714802c7ac59e07651789749b20c",
+      "url": "https://www.semanticscholar.org/paper/55a19318cc93714802c7ac59e07651789749b20c",
+      "title": "VL-ADAPTER: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks",
+      "abstract": "Recently, fine-tuning language models pre-trained on large text corpora have provided huge improvements on vision-and-language (V&L) tasks as well as on pure language tasks. However, fine-tuning the entire parameter set of pre-trained models becomes impractical since the model size is growing rapidly. Hence, in this paper, we introduce adapter-based parameter-efficient transfer learning techniques to V&L models such as VL-BART and VL-T5. We evaluate our methods in a unified multi-task setup on both image-text and video-text benchmarks. For the image-text tasks, we use four diverse V&L datasets: VQAv2, GQA, NLVR2, and MSCOCO image captioning. For video-text tasks, we use TVQA, How2QA, TVC, and YC2C. With careful training and thorough experiments, we benchmark three popular adapter-based methods (Adapter, Hyperformer, Compacter) against the standard full fine-tuning and the recently proposed prompt-tuning approach. We also enhance the efficiency and performance of adapters by sharing their weights to attain knowledge across tasks. Our results demonstrate that training the adapter with the weight-sharing technique (4.18% of total parameters for image-text tasks and 3.39% for video-text tasks) can match the performance of fine-tuning the entire model. Lastly, we present a comprehensive analysis including the combination of adapter and task-specific prompts and the impact of V&L pre-training on adapters. 11The code for our CVPR 2022 paper is available at: https://github.com/ylsung/VL_adapter.",
+      "venue": "Computer Vision and Pattern Recognition",
+      "year": 2021,
+      "citationCount": 193,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "The results demonstrate that training the adapter with the weight-sharing technique can match the performance of fine-tuning the entire model, and enhance the efficiency and performance of adapters by sharing their weights to attain knowledge across tasks."
+      },
+      "authors": [
+        "Yi-Lin Sung",
+        "Jaemin Cho",
+        "Mohit Bansal"
+      ]
+    },
+    "code": "https://github.com/ylsung/VL_adapter",
+    "tags": [
+      "VL-Adapter"
+    ]
+  },
+  "ARXIV:2206.06522": {
+    "title": "LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning",
+    "paper": {
+      "arxiv_id": "2206.06522",
+      "paperId": "960d40497717ad22a7ebb84db238fa2415fc89cc",
+      "url": "https://www.semanticscholar.org/paper/960d40497717ad22a7ebb84db238fa2415fc89cc",
+      "title": "LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning",
+      "abstract": "Fine-tuning large pre-trained models on downstream tasks has been adopted in a variety of domains recently. However, it is costly to update the entire parameter set of large pre-trained models. Although recently proposed parameter-efficient transfer learning (PETL) techniques allow updating a small subset of parameters (e.g. only using 2% of parameters) inside a pre-trained backbone network for a new task, they only reduce the training memory requirement by up to 30%. This is because the gradient computation for the trainable parameters still requires backpropagation through the large pre-trained backbone model. To address this, we propose Ladder Side-Tuning (LST), a new PETL technique that can reduce training memory requirements by more substantial amounts. Unlike existing parameter-efficient methods that insert additional parameters inside backbone networks, we train a ladder side network, a small and separate network that takes intermediate activations as input via shortcut connections (called ladders) from backbone networks and makes predictions. LST has significantly lower memory requirements than previous methods, because it does not require backpropagation through the backbone network, but instead only through the side network and ladder connections. We evaluate our method with various models (T5 and CLIP-T5) on both NLP (GLUE) and vision-and-language (VQA, GQA, NLVR2 , MSCOCO) tasks. LST saves 69% of the memory costs to fine-tune the whole network, while other methods only save 26% of that in similar parameter usages (hence, 2.7x more memory savings). Moreover, LST achieves higher accuracy than Adapter and LoRA in a low-memory regime. To further show the advantage of this better memory efficiency, we also apply LST to larger T5 models, attaining better GLUE performance than full fine-tuning and other PETL methods. The accuracy-efficiency trade-off also holds on VL tasks.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2022,
+      "citationCount": 108,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "LST has significantly lower memory requirements than previous methods, because it does not require backpropagation through the backbone network, but instead only through the side network and ladder connections, and achieves higher accuracy than Adapter and LoRA in a low-memory regime."
+      },
+      "authors": [
+        "Yi-Lin Sung",
+        "Jaemin Cho",
+        "Mohit Bansal"
+      ]
+    },
+    "code": "https://github.com/ylsung/ladder-side-tuning",
+    "tags": [
+      "Ladder Side-Tuning"
+    ]
+  },
+  "ARXIV:2304.04947": {
+    "title": "Conditional Adapters: Parameter-efficient Transfer Learning with Fast Inference",
+    "paper": {
+      "arxiv_id": "2304.04947",
+      "paperId": "148644bf4ccef7e022b965304e8b3178be8af0fa",
+      "url": "https://www.semanticscholar.org/paper/148644bf4ccef7e022b965304e8b3178be8af0fa",
+      "title": "Conditional Adapters: Parameter-efficient Transfer Learning with Fast Inference",
+      "abstract": "We propose Conditional Adapter (CoDA), a parameter-efficient transfer learning method that also improves inference efficiency. CoDA generalizes beyond standard adapter approaches to enable a new way of balancing speed and accuracy using conditional computation. Starting with an existing dense pretrained model, CoDA adds sparse activation together with a small number of new parameters and a light-weight training phase. Our experiments demonstrate that the CoDA approach provides an unexpectedly efficient way to transfer knowledge. Across a variety of language, vision, and speech tasks, CoDA achieves a 2x to 8x inference speed-up compared to the state-of-the-art Adapter approaches with moderate to no accuracy loss and the same parameter efficiency.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2023,
+      "citationCount": 9,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work proposes Conditional Adapter (CoDA), a parameter-efficient transfer learning method that also improves inference efficiency and achieves a 2x to 8x inference speed-up compared to the state-of-the-art Adapter approaches with moderate to no accuracy loss and the same parameter efficiency."
+      },
+      "authors": [
+        "Tao Lei",
+        "Junwen Bai",
+        "Siddhartha Brahma",
+        "J. Ainslie",
+        "Kenton Lee",
+        "Yanqi Zhou",
+        "Nan Du",
+        "Vincent Zhao",
+        "Yuexin Wu",
+        "Bo Li",
+        "Yu Zhang",
+        "Ming-Wei Chang"
+      ]
+    },
+    "tags": [
+      "CODA"
+    ]
+  },
+  "80a791f644defb54f4eb24f99df31e6f995be3aa": {
+    "title": "VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control",
+    "paper": {
+      "arxiv_id": "2308.09804",
+      "semantic_scholar_id": "80a791f644defb54f4eb24f99df31e6f995be3aa",
+      "pdf": "https://arxiv.org/pdf/2308.09804.pdf",
+      "paperId": "80a791f644defb54f4eb24f99df31e6f995be3aa",
+      "url": "https://www.semanticscholar.org/paper/80a791f644defb54f4eb24f99df31e6f995be3aa",
+      "title": "VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control",
+      "abstract": "As the model size of pre-trained language models (PLMs) grows rapidly, full fine-tuning becomes prohibitively expensive for model training and storage. In vision-and-language (VL), parameter-efficient tuning (PET) techniques are proposed to integrate modular modifications (e.g., Adapter and LoRA) into encoder-decoder PLMs. By tuning a small set of trainable parameters, these techniques perform on par with full fine-tuning. However, excessive modular modifications and neglecting the functionality gap between the encoders and decoders can lead to performance degradation, while existing PET techniques (e.g., VL-Adapter) overlook these critical issues. In this paper, we propose a Vision-and-Language Parameter-Efficient Tuning (VL-PET) framework to impose effective control over modular modifications via a novel granularity-controlled mechanism. Considering different granularity-controlled matrices generated by this mechanism, a variety of model-agnostic VL-PET modules can be instantiated from our framework for better efficiency and effective-ness trade-offs. We further propose lightweight PET module designs to enhance VL alignment and modeling for the encoders and maintain text generation for the decoders. Extensive experiments conducted on four image-text tasks and four video-text tasks demonstrate the efficiency, effectiveness and transferability of our VL-PET framework. In particular, our VL-PETlarge with lightweight PET module designs significantly outperforms VL-Adapter by 2.92% (3.41%) and LoRA by 3.37% (7.03%) with BART-base (T5-base) on image-text tasks. Furthermore, we validate the enhanced effect of employing our VL-PET designs on existing PET techniques, enabling them to achieve significant performance improvements. Our code is available at https://github.com/HenryHZY/VL-PET.",
+      "venue": "IEEE International Conference on Computer Vision",
+      "year": 2023,
+      "citationCount": 2,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A Vision-and-Language Parameter-Efficient Tuning (VL-PET) framework to impose effective control over modular modifications via a novel granularity-controlled mechanism and a variety of model-agnostic VL-PET modules can be instantiated from this framework for better efficiency and effective-ness trade-offs is proposed."
+      },
+      "authors": [
+        "Zi-Yuan Hu",
+        "Yanyang Li",
+        "M. Lyu",
+        "Liwei Wang"
+      ]
+    },
+    "code": "https://github.com/HenryHZY/VL-PET",
+    "website": "https://henryhzy.github.io/VL-PET",
+    "tags": [
+      "VL-PET"
+    ]
+  },
+  "ARXIV:2302.11529": {
+    "title": "Modular Deep Learning",
+    "paper": {
+      "arxiv_id": "2302.11529",
+      "paperId": "1f346f74e8eabececa4896d734ab9b261f30830d",
+      "url": "https://www.semanticscholar.org/paper/1f346f74e8eabececa4896d734ab9b261f30830d",
+      "title": "Modular Deep Learning",
+      "abstract": "Transfer learning has recently become the dominant paradigm of machine learning. Pre-trained models fine-tuned for downstream tasks achieve better performance with fewer labelled examples. Nonetheless, it remains unclear how to develop models that specialise towards multiple tasks without incurring negative interference and that generalise systematically to non-identically distributed tasks. Modular deep learning has emerged as a promising solution to these challenges. In this framework, units of computation are often implemented as autonomous parameter-efficient modules. Information is conditionally routed to a subset of modules and subsequently aggregated. These properties enable positive transfer and systematic generalisation by separating computation from routing and updating modules locally. We offer a survey of modular architectures, providing a unified view over several threads of research that evolved independently in the scientific literature. Moreover, we explore various additional purposes of modularity, including scaling language models, causal inference, programme induction, and planning in reinforcement learning. Finally, we report various concrete applications where modularity has been successfully deployed such as cross-lingual and cross-modal knowledge transfer. Related talks and projects to this survey, are available at https://www.modulardeeplearning.com/.",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 35,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A survey of modular architectures is offered, providing a unified view over several threads of research that evolved independently in the scientific literature, and various additional purposes of modularity are explored, including scaling language models, causal inference, programme induction, and planning in reinforcement learning."
+      },
+      "authors": [
+        "Jonas Pfeiffer",
+        "Sebastian Ruder",
+        "Ivan Vulic",
+        "E. Ponti"
+      ]
+    }
+  },
+  "ARXIV:2303.15647": {
+    "title": "Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning",
+    "paper": {
+      "arxiv_id": "2303.15647",
+      "paperId": "6007263dd3d14373be5f84fb6ccb0be3f7fce903",
+      "url": "https://www.semanticscholar.org/paper/6007263dd3d14373be5f84fb6ccb0be3f7fce903",
+      "title": "Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning",
+      "abstract": "This paper presents a systematic overview and comparison of parameter-efficient fine-tuning methods covering over 40 papers published between February 2019 and February 2023. These methods aim to resolve the infeasibility and impracticality of fine-tuning large language models by only training a small set of parameters. We provide a taxonomy that covers a broad range of methods and present a detailed method comparison with a specific focus on real-life efficiency and fine-tuning multibillion-scale language models.",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 62,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A taxonomy that covers a broad range of methods and present a detailed method comparison with a specific focus on real-life efficiency and fine-tuning multibillion-scale language models is provided."
+      },
+      "authors": [
+        "Vladislav Lialin",
+        "Vijeta Deshpande",
+        "Anna Rumshisky"
+      ]
+    }
+  },
+  "ARXIV:2304.12410": {
+    "title": "PEFT-Ref: A Modular Reference Architecture and Typology for Parameter-Efficient Finetuning Techniques",
+    "paper": {
+      "arxiv_id": "2304.12410",
+      "paperId": "2afd51e83e87acf02c0044b34c6d4984e814900e",
+      "url": "https://www.semanticscholar.org/paper/2afd51e83e87acf02c0044b34c6d4984e814900e",
+      "title": "PEFT-Ref: A Modular Reference Architecture and Typology for Parameter-Efficient Finetuning Techniques",
+      "abstract": "Recent parameter-efficient finetuning (PEFT) techniques aim to improve over the considerable cost of fully finetuning large pretrained language models (PLM). As different PEFT techniques proliferate, it is becoming difficult to compare them, in particular in terms of (i) the structure and functionality they add to the PLM, (ii) the different types and degrees of efficiency improvements achieved, (iii) performance at different downstream tasks, and (iv) how differences in structure and functionality relate to efficiency and task performance. To facilitate such comparisons, this paper presents a reference architecture which standardises aspects shared by different PEFT techniques, while isolating differences to specific locations and interactions with the standard components. Through this process of standardising and isolating differences, a modular view of PEFT techniques emerges, supporting not only direct comparison of different techniques and their efficiency and task performance, but also systematic exploration of reusability and composability of the different types of finetuned modules. We demonstrate how the reference architecture can be applied to understand properties and relative advantages of PEFT techniques, hence to inform selection of techniques for specific tasks, and design choices for new PEFT techniques.",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 4,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A reference architecture is presented which standardises aspects shared by different PEFT techniques, while isolating differences to specific locations and interactions with the standard components, supporting not only direct comparison of different techniques and their efficiency and task performance, but also systematic exploration of reusability and composability of the different types of finetuned modules."
+      },
+      "authors": [
+        "Mohammed Sabry",
+        "Anya Belz"
+      ]
+    }
+  },
+  "ACL:2020.emnlp-demos.7": {
+    "title": "AdapterHub: A Framework for Adapting Transformers",
+    "paper": {
+      "acl_id": "2020.emnlp-demos.7",
+      "arxiv_id": "2007.07779",
+      "pdf": "https://arxiv.org/pdf/2007.07779",
+      "paperId": "063f8b1ecf2394ca776ac61869734de9c1953808",
+      "url": "https://www.semanticscholar.org/paper/063f8b1ecf2394ca776ac61869734de9c1953808",
+      "title": "AdapterHub: A Framework for Adapting Transformers",
+      "abstract": "The current modus operandi in NLP involves downloading and fine-tuning pre-trained models consisting of millions or billions of parameters. Storing and sharing such large trained models is expensive, slow, and time-consuming, which impedes progress towards more general and versatile NLP methods that learn from and for many tasks. Adapters\u2014small learnt bottleneck layers inserted within each layer of a pre-trained model\u2014 ameliorate this issue by avoiding full fine-tuning of the entire model. However, sharing and integrating adapter layers is not straightforward. We propose AdapterHub, a framework that allows dynamic \u201cstiching-in\u201d of pre-trained adapters for different tasks and languages. The framework, built on top of the popular HuggingFace Transformers library, enables extremely easy and quick adaptations of state-of-the-art pre-trained models (e.g., BERT, RoBERTa, XLM-R) across tasks and languages. Downloading, sharing, and training adapters is as seamless as possible using minimal changes to the training scripts and a specialized infrastructure. Our framework enables scalable and easy access to sharing of task-specific models, particularly in low-resource scenarios. AdapterHub includes all recent adapter architectures and can be found at AdapterHub.ml",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2020,
+      "citationCount": 442,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "AdaptersHub is proposed, a framework that allows dynamic \u201cstiching-in\u201d of pre-trained adapters for different tasks and languages that enables scalable and easy access to sharing of task-specific models, particularly in low-resource scenarios."
+      },
+      "authors": [
+        "Jonas Pfeiffer",
+        "Andreas R\u00fcckl\u00e9",
+        "Clifton A. Poth",
+        "Aishwarya Kamath",
+        "Ivan Vulic",
+        "Sebastian Ruder",
+        "Kyunghyun Cho",
+        "Iryna Gurevych"
+      ]
+    },
+    "code": "https://github.com/adapter-hub/adapter-transformers",
+    "website": "https://adapterhub.ml"
+  },
+  "ARXIV:2304.01933": {
+    "title": "LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models",
+    "paper": {
+      "arxiv_id": "2304.01933",
+      "paperId": "bdb68c5e2369633b20e733774ac66eb4600c34d1",
+      "url": "https://www.semanticscholar.org/paper/bdb68c5e2369633b20e733774ac66eb4600c34d1",
+      "title": "LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models",
+      "abstract": "The success of large language models (LLMs), like GPT-4 and ChatGPT, has led to the development of numerous cost-effective and accessible alternatives that are created by finetuning open-access LLMs with task-specific data (e.g., ChatDoctor) or instruction data (e.g., Alpaca). Among the various fine-tuning methods, adapter-based parameter-efficient fine-tuning (PEFT) is undoubtedly one of the most attractive topics, as it only requires fine-tuning a few external parameters instead of the entire LLMs while achieving comparable or even better performance. To enable further research on PEFT methods of LLMs, this paper presents LLM-Adapters, an easy-to-use framework that integrates various adapters into LLMs and can execute these adapter-based PEFT methods of LLMs for different tasks. The framework includes state-of-the-art open-access LLMs such as LLaMA, BLOOM, and GPT-J, as well as widely used adapters such as Series adapters, Parallel adapter, Prompt-based learning and Reparametrization-based methods. Moreover, we conduct extensive empirical studies on the impact of adapter types, placement locations, and hyper-parameters to the best design for each adapter-based methods. We evaluate the effectiveness of the adapters on fourteen datasets from two different reasoning tasks, Arithmetic Reasoning and Commonsense Reasoning. The results demonstrate that using adapter-based PEFT in smaller-scale LLMs (7B) with few extra trainable parameters yields comparable, and in some cases superior, performance to powerful LLMs (175B) in zero-shot inference on both reasoning tasks.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2023,
+      "citationCount": 50,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "LLM-Adapters is presented, an easy-to-use framework that integrates various adapters into LLMs and can execute these adapter-based PEFT methods of LLMs for different tasks, demonstrating that using adapter- based PEFT in smaller-scale LLMs with few extra trainable parameters yields comparable, and in some cases superior, performance to powerful LLMs in zero-shot inference on both reasoning tasks."
+      },
+      "authors": [
+        "Zhiqiang Hu",
+        "Yihuai Lan",
+        "Lei Wang",
+        "Wanyu Xu",
+        "Ee-Peng Lim",
+        "R. Lee",
+        "Lidong Bing",
+        "Soujanya Poria"
+      ]
+    },
+    "code": "https://github.com/AGI-Edgerunners/LLM-Adapters"
+  },
+  "ACL:2021.findings-acl.121": {
+    "title": "K-Adapter: Infusing Knowledge into Pre-Trained Models with Adapters",
+    "paper": {
+      "acl_id": "2021.findings-acl.121",
+      "paperId": "4f03e69963b9649950ba29ae864a0de8c14f1f86",
+      "url": "https://www.semanticscholar.org/paper/4f03e69963b9649950ba29ae864a0de8c14f1f86",
+      "title": "K-Adapter: Infusing Knowledge into Pre-Trained Models with Adapters",
+      "abstract": "We study the problem of injecting knowledge into large pre-trained models like BERT and RoBERTa. Existing methods typically update the original parameters of pre-trained models when injecting knowledge. However, when multiple kinds of knowledge are injected, they may suffer from catastrophic forgetting. To address this, we propose K-Adapter, which remains the original parameters of the pre-trained model fixed and supports continual knowledge infusion. Taking RoBERTa as the pre-trained model, K-Adapter has a neural adapter for each kind of infused knowledge, like a plug-in connected to RoBERTa. There is no information flow between different adapters, thus different adapters are efficiently trained in a distributed way. We inject two kinds of knowledge, including factual knowledge obtained from automatically aligned text-triplets on Wikipedia and Wikidata, and linguistic knowledge obtained from dependency parsing. Results on three knowledge-driven tasks (total six datasets) including relation classification, entity typing and question answering demonstrate that each adapter improves the performance, and the combination of both adapters brings further improvements. Probing experiments further indicate that K-Adapter captures richer factual and commonsense knowledge than RoBERTa.",
+      "venue": "Findings",
+      "year": 2020,
+      "citationCount": 423,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "K-Adapter is proposed, which remains the original parameters of the pre-trained model fixed and supports continual knowledge infusion and captures richer factual and commonsense knowledge than RoBERTa."
+      },
+      "authors": [
+        "Ruize Wang",
+        "Duyu Tang",
+        "Nan Duan",
+        "Zhongyu Wei",
+        "Xuanjing Huang",
+        "Jianshu Ji",
+        "Guihong Cao",
+        "Daxin Jiang",
+        "Ming Zhou"
+      ]
+    },
+    "code": "https://github.com/microsoft/K-Adapter",
+    "tags": [
+      "K-Adapter"
+    ]
+  },
+  "ACL:2021.acl-long.378": {
+    "title": "Parameter-Efficient Transfer Learning with Diff Pruning",
+    "paper": {
+      "acl_id": "2021.acl-long.378",
+      "paperId": "d22e4cc3a501c17881b9478621f29760e429e76e",
+      "url": "https://www.semanticscholar.org/paper/d22e4cc3a501c17881b9478621f29760e429e76e",
+      "title": "Parameter-Efficient Transfer Learning with Diff Pruning",
+      "abstract": "The large size of pretrained networks makes them difficult to deploy for multiple tasks in storage-constrained settings. Diff pruning enables parameter-efficient transfer learning that scales well with new tasks. The approach learns a task-specific \u201cdiff\u201d vector that extends the original pretrained parameters. This diff vector is adaptively pruned during training with a differentiable approximation to the L0-norm penalty to encourage sparsity. As the number of tasks increases, diff pruning remains parameter-efficient, as it requires storing only a small diff vector for each task. Since it does not require access to all tasks during training, it is attractive in on-device deployment settings where tasks arrive in stream or even from different providers. Diff pruning can match the performance of finetuned baselines on the GLUE benchmark while only modifying 0.5% of the pretrained model\u2019s parameters per task and scales favorably in comparison to popular pruning approaches.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2020,
+      "citationCount": 223,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Diff pruning can match the performance of finetuned baselines on the GLUE benchmark while only modifying 0.5% of the pretrained model\u2019s parameters per task and scales favorably in comparison to popular pruning approaches."
+      },
+      "authors": [
+        "Demi Guo",
+        "Alexander M. Rush",
+        "Yoon Kim"
+      ]
+    },
+    "code": "https://github.com/dguo98/DiffPruning",
+    "tags": [
+      "Diff pruning"
+    ]
+  },
+  "ACL:2021.acl-long.353": {
+    "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+    "paper": {
+      "acl_id": "2021.acl-long.353",
+      "paperId": "53d8b356551a2361020a948f64454a6d599af69f",
+      "url": "https://www.semanticscholar.org/paper/53d8b356551a2361020a948f64454a6d599af69f",
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "abstract": "Fine-tuning is the de facto way of leveraging large pretrained language models for downstream tasks. However, fine-tuning modifies all the language model parameters and therefore necessitates storing a full copy for each task. In this paper, we propose prefix-tuning, a lightweight alternative to fine-tuning for natural language generation tasks, which keeps language model parameters frozen and instead optimizes a sequence of continuous task-specific vectors, which we call the prefix. Prefix-tuning draws inspiration from prompting for language models, allowing subsequent tokens to attend to this prefix as if it were \u201cvirtual tokens\u201d. We apply prefix-tuning to GPT-2 for table-to-text generation and to BART for summarization. We show that by learning only 0.1% of the parameters, prefix-tuning obtains comparable performance in the full data setting, outperforms fine-tuning in low-data settings, and extrapolates better to examples with topics that are unseen during training.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 2321,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Prefix-tuning is proposed, a lightweight alternative to fine- Tuning for natural language generation tasks, which keeps language model parameters frozen and instead optimizes a sequence of continuous task-specific vectors, which is called the prefix."
+      },
+      "authors": [
+        "Xiang Lisa Li",
+        "Percy Liang"
+      ]
+    },
+    "code": "https://github.com/XiangLi1999/PrefixTuning",
+    "tags": [
+      "Prefix-Tuning"
+    ]
+  },
+  "ACL:2021.emnlp-main.243": {
+    "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+    "paper": {
+      "acl_id": "2021.emnlp-main.243",
+      "paperId": "ffdbd7f0b03b85747b001b4734d5ee31b5229aa4",
+      "url": "https://www.semanticscholar.org/paper/ffdbd7f0b03b85747b001b4734d5ee31b5229aa4",
+      "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+      "abstract": "In this work, we explore \u201cprompt tuning,\u201d a simple yet effective mechanism for learning \u201csoft prompts\u201d to condition frozen language models to perform specific downstream tasks. Unlike the discrete text prompts used by GPT-3, soft prompts are learned through backpropagation and can be tuned to incorporate signals from any number of labeled examples. Our end-to-end learned approach outperforms GPT-3\u2019s few-shot learning by a large margin. More remarkably, through ablations on model size using T5, we show that prompt tuning becomes more competitive with scale: as models exceed billions of parameters, our method \u201ccloses the gap\u201d and matches the strong performance of model tuning (where all model weights are tuned). This finding is especially relevant because large models are costly to share and serve and the ability to reuse one frozen model for multiple downstream tasks can ease this burden. Our method can be seen as a simplification of the recently proposed \u201cprefix tuning\u201d of Li and Liang (2021) and we provide a comparison to this and other similar approaches. Finally, we show that conditioning a frozen model with soft prompts confers benefits in robustness to domain transfer and enables efficient \u201cprompt ensembling.\u201d We release code and model checkpoints to reproduce our experiments.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 2143,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work explores \u201cprompt tuning,\u201d a simple yet effective mechanism for learning \u201csoft prompts\u201d to condition frozen language models to perform specific downstream tasks and shows that conditioning a frozen model with soft prompts confers benefits in robustness to domain transfer and enables efficient \u201cPrompt ensembling.\u201d"
+      },
+      "authors": [
+        "Brian Lester",
+        "Rami Al-Rfou",
+        "Noah Constant"
+      ]
+    },
+    "code": "https://github.com/google-research/prompt-tuning",
+    "tags": [
+      "Prompt Tuning"
+    ]
+  },
+  "b19cba7bfe318c69d5e62f8322cb5d75228452f4": {
+    "title": "Compacter: Efficient Low-Rank Hypercomplex Adapter Layers",
+    "paper": {
+      "arxiv_id": "2106.04647",
+      "semantic_scholar_id": "b19cba7bfe318c69d5e62f8322cb5d75228452f4",
+      "paperId": "656ed155c2d345c19d9bff4b50f2ae00db8407cc",
+      "url": "https://www.semanticscholar.org/paper/656ed155c2d345c19d9bff4b50f2ae00db8407cc",
+      "title": "Compacter: Efficient Low-Rank Hypercomplex Adapter Layers",
+      "abstract": "Adapting large-scale pretrained language models to downstream tasks via fine-tuning is the standard method for achieving state-of-the-art performance on NLP benchmarks. However, fine-tuning all weights of models with millions or billions of parameters is sample-inefficient, unstable in low-resource settings, and wasteful as it requires storing a separate copy of the model for each task. Recent work has developed parameter-efficient fine-tuning methods, but these approaches either still require a relatively large number of parameters or underperform standard fine-tuning. In this work, we propose Compacter, a method for fine-tuning large-scale language models with a better trade-off between task performance and the number of trainable parameters than prior work. Compacter accomplishes this by building on top of ideas from adapters, low-rank optimization, and parameterized hypercomplex multiplication layers. Specifically, Compacter inserts task-specific weight matrices into a pretrained model's weights, which are computed efficiently as a sum of Kronecker products between shared\"slow\"weights and\"fast\"rank-one matrices defined per Compacter layer. By only training 0.047% of a pretrained model's parameters, Compacter performs on par with standard fine-tuning on GLUE and outperforms standard fine-tuning on SuperGLUE and low-resource settings. Our code is publicly available at~\\url{https://github.com/rabeehk/compacter}.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2021,
+      "citationCount": 285,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Compacter is proposed, a method for fine-tuning large-scale language models with a better trade-off between task performance and the number of trainable parameters than prior work, and accomplishes this by building on top of ideas from adapters, low-rank optimization, and parameterized hypercomplex multiplication layers."
+      },
+      "authors": [
+        "Joe Davison"
+      ]
+    },
+    "code": "https://github.com/rabeehk/compacter",
+    "tags": [
+      "Compacter",
+      "Compacter++",
+      "PHM-Adapter"
+    ]
+  },
+  "a8ca46b171467ceb2d7652fbfb67fe701ad86092": {
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "paper": {
+      "arxiv_id": "2106.09685",
+      "semantic_scholar_id": "a8ca46b171467ceb2d7652fbfb67fe701ad86092",
+      "paperId": "a8ca46b171467ceb2d7652fbfb67fe701ad86092",
+      "url": "https://www.semanticscholar.org/paper/a8ca46b171467ceb2d7652fbfb67fe701ad86092",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "abstract": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA.",
+      "venue": "International Conference on Learning Representations",
+      "year": 2021,
+      "citationCount": 2644,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Low-Rank Adaptation, or LoRA, is proposed, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks."
+      },
+      "authors": [
+        "J. E. Hu",
+        "Yelong Shen",
+        "Phillip Wallis",
+        "Zeyuan Allen-Zhu",
+        "Yuanzhi Li",
+        "Shean Wang",
+        "Weizhu Chen"
+      ]
+    },
+    "code": "https://github.com/microsoft/LoRA",
+    "tags": [
+      "LoRA"
+    ]
+  },
+  "ACL:2021.acl-long.47": {
+    "title": "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks",
+    "paper": {
+      "acl_id": "2021.acl-long.47",
+      "paperId": "bb3425318de7eed5641cda147d61c9a057b9d054",
+      "url": "https://www.semanticscholar.org/paper/bb3425318de7eed5641cda147d61c9a057b9d054",
+      "title": "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks",
+      "abstract": "State-of-the-art parameter-efficient fine-tuning methods rely on introducing adapter modules between the layers of a pretrained language model. However, such modules are trained separately for each task and thus do not enable sharing information across tasks. In this paper, we show that we can learn adapter parameters for all layers and tasks by generating them using shared hypernetworks, which condition on task, adapter position, and layer id in a transformer model. This parameter-efficient multi-task learning framework allows us to achieve the best of both worlds by sharing knowledge across tasks via hypernetworks while enabling the model to adapt to each individual task through task-specific adapters. Experiments on the well-known GLUE benchmark show improved performance in multi-task learning while adding only 0.29% parameters per task. We additionally demonstrate substantial performance improvements in few-shot domain generalization across a variety of tasks. Our code is publicly available in https://github.com/rabeehk/hyperformer.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 180,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper shows that one can learn adapter parameters for all layers and tasks by generating them using shared hypernetworks, which condition on task, adapter position, and layer id in a transformer model."
+      },
+      "authors": [
+        "Rabeeh Karimi Mahabadi",
+        "Sebastian Ruder",
+        "Mostafa Dehghani",
+        "J. Henderson"
+      ]
+    },
+    "code": "https://github.com/rabeehk/hyperformer",
+    "tags": [
+      "HyperFormer"
+    ]
+  },
+  "6adc9c231d874ea358554b8680a6aaba4bd6c963": {
+    "title": "MAD-G: Multilingual Adapter Generation for Efficient Cross-Lingual Transfer",
+    "paper": {
+      "acl_id": "2021.findings-emnlp.410",
+      "semantic_scholar_id": "6adc9c231d874ea358554b8680a6aaba4bd6c963",
+      "paperId": "6adc9c231d874ea358554b8680a6aaba4bd6c963",
+      "url": "https://www.semanticscholar.org/paper/6adc9c231d874ea358554b8680a6aaba4bd6c963",
+      "title": "MAD-G: Multilingual Adapter Generation for Efficient Cross-Lingual Transfer",
+      "abstract": "Adapter modules have emerged as a general parameter-ef\ufb01cient means to specialize a pre-trained encoder to new domains. Massively multilingual transformers (MMTs) have particularly bene\ufb01ted from additional training of language-speci\ufb01c adapters. However, this approach is not viable for the vast majority of languages, due to limitations in their corpus size or compute budgets. In this work, we propose MAD-G ( M ultilingual AD apter G eneration), which contextually generates language adapters from language representations based on typological features. In contrast to prior work, our time-and space-ef\ufb01cient MAD-G approach enables (1) sharing of linguistic knowledge across languages and (2) zero-shot inference by generating language adapters for unseen languages. We thoroughly evaluate MAD-G in zero-shot cross-lingual transfer on part-of-speech tagging, dependency parsing, and named entity recognition. While offering (1) improved \ufb01ne-tuning ef\ufb01ciency (by a factor of around 50 in our experiments), (2) a smaller parameter budget, and (3) increased language coverage, MAD-G remains competitive with more expensive methods for language-speci\ufb01c adapter training across the board. Moreover, it offers substantial bene\ufb01ts for low-resource languages, particularly on the NER task in low-resource African languages. Finally, we demonstrate that MAD-G\u2019s transfer performance can be further improved via: (i) multi-source training , i.e., by generating and combining adapters of multiple languages with available task-speci\ufb01c training data; and (ii) by further \ufb01ne-tuning generated MAD-G adapters for languages with monolingual data.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 67,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "MAD-G is proposed, which contextually generates language adapters from language representations based on typological features and remains competitive with more expensive methods for language-speci\ufb01c adapter training across the board."
+      },
+      "authors": [
+        "Alan Ansell",
+        "E. Ponti",
+        "Jonas Pfeiffer",
+        "Sebastian Ruder",
+        "Goran Glavas",
+        "Ivan Vulic",
+        "A. Korhonen"
+      ]
+    },
+    "tags": [
+      "MAD-G"
+    ]
+  },
+  "ACL:2022.acl-short.1": {
+    "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+    "paper": {
+      "acl_id": "2022.acl-short.1",
+      "paperId": "339b2b711fb5b228d097b03ebc3e62a521779235",
+      "url": "https://www.semanticscholar.org/paper/339b2b711fb5b228d097b03ebc3e62a521779235",
+      "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+      "abstract": "We introduce BitFit, a sparse-finetuning method where only the bias-terms of the model (or a subset of them) are being modified. We show that with small-to-medium training data, applying BitFit on pre-trained BERT models is competitive with (and sometimes better than) fine-tuning the entire model. For larger data, the method is competitive with other sparse fine-tuning methods.Besides their practical utility, these findings are relevant for the question of understanding the commonly-used process of finetuning: they support the hypothesis that finetuning is mainly about exposing knowledge induced by language-modeling training, rather than learning new task-specific linguistic knowledge.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 602,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "BitFit is introduced, a sparse-finetuning method where only the bias-terms of the model (or a subset of them) are being modified, which shows that with small-to-medium training data, applying BitFit on pre-trained BERT models is competitive with (and sometimes better than) fine-tuning the entire model."
+      },
+      "authors": [
+        "Elad Ben-Zaken",
+        "Shauli Ravfogel",
+        "Yoav Goldberg"
+      ]
+    },
+    "code": "https://github.com/benzakenelad/BitFit",
+    "tags": [
+      "BitFit"
+    ]
+  },
+  "7cdaa08890895e1ad92afb5fad429690ad7b1dac": {
+    "title": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+    "paper": {
+      "arxiv_id": "2205.05638",
+      "semantic_scholar_id": "7cdaa08890895e1ad92afb5fad429690ad7b1dac",
+      "paperId": "7cdaa08890895e1ad92afb5fad429690ad7b1dac",
+      "url": "https://www.semanticscholar.org/paper/7cdaa08890895e1ad92afb5fad429690ad7b1dac",
+      "title": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+      "abstract": "Few-shot in-context learning (ICL) enables pre-trained language models to perform a previously-unseen task without any gradient-based training by feeding a small number of training examples as part of the input. ICL incurs substantial computational, memory, and storage costs because it involves processing all of the training examples every time a prediction is made. Parameter-efficient fine-tuning (PEFT) (e.g. adapter modules, prompt tuning, sparse update methods, etc.) offers an alternative paradigm where a small set of parameters are trained to enable a model to perform the new task. In this paper, we rigorously compare few-shot ICL and PEFT and demonstrate that the latter offers better accuracy as well as dramatically lower computational costs. Along the way, we introduce a new PEFT method called (IA)$^3$ that scales activations by learned vectors, attaining stronger performance while only introducing a relatively tiny amount of new parameters. We also propose a simple recipe based on the T0 model called T-Few that can be applied to new tasks without task-specific tuning or modifications. We validate the effectiveness of T-Few on completely unseen tasks by applying it to the RAFT benchmark, attaining super-human performance for the first time and outperforming the state-of-the-art by 6% absolute. All of the code used in our experiments is publicly available.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2022,
+      "citationCount": 358,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper rigorously compares few-shot ICL and PEFT and demonstrates that the latter offers better accuracy as well as dramatically lower computational costs, and introduces a new PEFT method called (IA)$^3$ that scales activations by learned vectors, attaining stronger performance while only introducing a relatively tiny amount of new parameters."
+      },
+      "authors": [
+        "Haokun Liu",
+        "Derek Tam",
+        "Mohammed Muqeeth",
+        "Jay Mohta",
+        "Tenghao Huang",
+        "Mohit Bansal",
+        "Colin Raffel"
+      ]
+    },
+    "code": "https://github.com/r-three/t-few",
+    "tags": [
+      "T-Few",
+      "(IA)^3"
+    ]
+  },
+  "d3fea42e76b093e78e61073fefe0cfa63b543d60": {
+    "title": "AutoPEFT: Automatic Configuration Search for Parameter-Efficient Fine-Tuning",
+    "paper": {
+      "arxiv_id": "2301.12132",
+      "semantic_scholar_id": "d3fea42e76b093e78e61073fefe0cfa63b543d60",
+      "pdf": "https://arxiv.org/pdf/2301.12132.pdf",
+      "paperId": "b9d77cd9be54a228f811b1ac6212a7041792f217",
+      "url": "https://www.semanticscholar.org/paper/b9d77cd9be54a228f811b1ac6212a7041792f217",
+      "title": "AutoPEFT: Automatic Configuration Search for Parameter-Efficient Fine-Tuning",
+      "abstract": "Large pretrained language models are widely used in downstream NLP tasks via task-specific fine-tuning, but such procedures can be costly. Recently, Parameter-Efficient Fine-Tuning (PEFT) methods have achieved strong task performance while updating much fewer parameters than full model fine-tuning (FFT). However, it is non-trivial to make informed design choices on the PEFT configurations, such as their architecture, the number of tunable parameters, and even the layers in which the PEFT modules are inserted. Consequently, it is highly likely that the current, manually designed configurations are suboptimal in terms of their performance-efficiency trade-off. Inspired by advances in neural architecture search, we propose AutoPEFT for automatic PEFT configuration selection: we first design an expressive configuration search space with multiple representative PEFT modules as building blocks. Using multi-objective Bayesian optimisation in a low-cost setup, we then discover a Pareto-optimal set of configurations with strong performance-cost trade-offs across different numbers of parameters that are also highly transferable across different tasks. Empirically, on GLUE and SuperGLUE tasks, we show that AutoPEFT-discovered configurations significantly outperform existing PEFT methods and are on par or better than FFT without incurring substantial training efficiency costs.",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 15,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Inspired by advances in neural architecture search, AutoPEFT is proposed for automatic PEFT configuration selection and it is shown that AutoPEFT-discovered configurations significantly outperform existing PEFT methods and are on par or better than FFT without incurring substantial training efficiency costs."
+      },
+      "authors": [
+        "Han Zhou",
+        "Xingchen Wan",
+        "Ivan Vulic",
+        "A. Korhonen"
+      ]
+    },
+    "code": "https://github.com/cambridgeltl/autopeft",
+    "tags": [
+      "AutoPEFT"
+    ]
+  },
+  "5ef82a8c8aa50f99285f2143b57ca4e82da1af80": {
+    "title": "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+    "paper": {
+      "arxiv_id": "2303.10512",
+      "semantic_scholar_id": "5ef82a8c8aa50f99285f2143b57ca4e82da1af80",
+      "paperId": "5ef82a8c8aa50f99285f2143b57ca4e82da1af80",
+      "url": "https://www.semanticscholar.org/paper/5ef82a8c8aa50f99285f2143b57ca4e82da1af80",
+      "title": "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+      "abstract": ", question answering and natural language generation tasks. Results show that AdaLoRA outperforms existing approaches.",
+      "venue": "International Conference on Learning Representations",
+      "year": 2023,
+      "citationCount": 114,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": null
+      },
+      "authors": [
+        "Qingru Zhang",
+        "Minshuo Chen",
+        "Alexander W. Bukharin",
+        "Pengcheng He",
+        "Yu Cheng",
+        "Weizhu Chen",
+        "Tuo Zhao"
+      ]
+    },
+    "code": "https://github.com/QingruZhang/AdaLoRA",
+    "tags": [
+      "AdaLoRA"
+    ]
+  },
+  "32ac52069e562d4f900afee70bdca63f53461481": {
+    "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+    "paper": {
+      "arxiv_id": "2305.14314",
+      "semantic_scholar_id": "32ac52069e562d4f900afee70bdca63f53461481",
+      "paperId": "32ac52069e562d4f900afee70bdca63f53461481",
+      "url": "https://www.semanticscholar.org/paper/32ac52069e562d4f900afee70bdca63f53461481",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "abstract": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly released models on the Vicuna benchmark, reaching 99.3% of the performance level of ChatGPT while only requiring 24 hours of finetuning on a single GPU. QLoRA introduces a number of innovations to save memory without sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is information theoretically optimal for normally distributed weights (b) double quantization to reduce the average memory footprint by quantizing the quantization constants, and (c) paged optimziers to manage memory spikes. We use QLoRA to finetune more than 1,000 models, providing a detailed analysis of instruction following and chatbot performance across 8 instruction datasets, multiple model types (LLaMA, T5), and model scales that would be infeasible to run with regular finetuning (e.g. 33B and 65B parameter models). Our results show that QLoRA finetuning on a small high-quality dataset leads to state-of-the-art results, even when using smaller models than the previous SoTA. We provide a detailed analysis of chatbot performance based on both human and GPT-4 evaluations showing that GPT-4 evaluations are a cheap and reasonable alternative to human evaluation. Furthermore, we find that current chatbot benchmarks are not trustworthy to accurately evaluate the performance levels of chatbots. A lemon-picked analysis demonstrates where Guanaco fails compared to ChatGPT. We release all of our models and code, including CUDA kernels for 4-bit training.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2023,
+      "citationCount": 556,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "QLoRA finetuning on a small high-quality dataset leads to state-of-the-art results, even when using smaller models than the previous SoTA, and current chatbot benchmarks are not trustworthy to accurately evaluate the performance levels of chatbots."
+      },
+      "authors": [
+        "Tim Dettmers",
+        "Artidoro Pagnoni",
+        "Ari Holtzman",
+        "Luke Zettlemoyer"
+      ]
+    },
+    "code": "https://github.com/artidoro/qlora",
+    "tags": [
+      "QLoRA"
+    ]
+  },
+  "ACL:2020.emnlp-main.617": {
+    "title": "MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer",
+    "paper": {
+      "acl_id": "2020.emnlp-main.617",
+      "paperId": "26299d5fdc5137291dc6a091573b3d18aba1d1c2",
+      "url": "https://www.semanticscholar.org/paper/26299d5fdc5137291dc6a091573b3d18aba1d1c2",
+      "title": "MAD-X: An Adapter-based Framework for Multi-task Cross-lingual Transfer",
+      "abstract": "The main goal behind state-of-the-art pretrained multilingual models such as multilingual BERT and XLM-R is enabling and bootstrapping NLP applications in low-resource languages through zero-shot or few-shot cross-lingual transfer. However, due to limited model capacity, their transfer performance is the weakest exactly on such low-resource languages and languages unseen during pretraining. We propose MAD-X, an adapter-based framework that enables high portability and parameter-efficient transfer to arbitrary tasks and languages by learning modular language and task representations. In addition, we introduce a novel invertible adapter architecture and a strong baseline method for adapting a pretrained multilingual model to a new language. MAD-X outperforms the state of the art in cross-lingual transfer across a representative set of typologically diverse languages on named entity recognition and achieves competitive results on question answering.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2020,
+      "citationCount": 455,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "MAD-X is proposed, an adapter-based framework that enables high portability and parameter-efficient transfer to arbitrary tasks and languages by learning modular language and task representations and introduces a novel invertible adapter architecture and a strong baseline method for adapting a pretrained multilingual model to a new language."
+      },
+      "authors": [
+        "Jonas Pfeiffer",
+        "Ivan Vulic",
+        "Iryna Gurevych",
+        "Sebastian Ruder"
+      ]
+    },
+    "code": "https://github.com/adapter-hub/adapter-transformers",
+    "tags": [
+      "MAD-X",
+      "Invertible adapter"
+    ]
+  },
+  "ACL:2021.eacl-main.39": {
+    "title": "AdapterFusion: Non-Destructive Task Composition for Transfer Learning",
+    "paper": {
+      "acl_id": "2021.eacl-main.39",
+      "paperId": "98ef0db84e62aef969629264c9de1f4d0013f3b9",
+      "url": "https://www.semanticscholar.org/paper/98ef0db84e62aef969629264c9de1f4d0013f3b9",
+      "title": "AdapterFusion: Non-Destructive Task Composition for Transfer Learning",
+      "abstract": "Sequential fine-tuning and multi-task learning are methods aiming to incorporate knowledge from multiple tasks; however, they suffer from catastrophic forgetting and difficulties in dataset balancing. To address these shortcomings, we propose AdapterFusion, a new two stage learning algorithm that leverages knowledge from multiple tasks. First, in the knowledge extraction stage we learn task specific parameters called adapters, that encapsulate the task-specific information. We then combine the adapters in a separate knowledge composition step. We show that by separating the two stages, i.e., knowledge extraction and knowledge composition, the classifier can effectively exploit the representations learned from multiple tasks in a non-destructive manner. We empirically evaluate AdapterFusion on 16 diverse NLU tasks, and find that it effectively combines various types of knowledge at different layers of the model. We show that our approach outperforms traditional strategies such as full fine-tuning as well as multi-task learning. Our code and adapters are available at AdapterHub.ml.",
+      "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+      "year": 2020,
+      "citationCount": 500,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work proposes AdapterFusion, a new two stage learning algorithm that leverages knowledge from multiple tasks by separating the two stages, i.e., knowledge extraction and knowledge composition, so that the classifier can effectively exploit the representations learned frommultiple tasks in a non-destructive manner."
+      },
+      "authors": [
+        "Jonas Pfeiffer",
+        "Aishwarya Kamath",
+        "Andreas R\u00fcckl\u00e9",
+        "Kyunghyun Cho",
+        "Iryna Gurevych"
+      ]
+    },
+    "code": "https://github.com/adapter-hub/adapter-transformers",
+    "tags": [
+      "AdapterFusion"
+    ]
+  },
+  "43a87867fe6bf4eb920f97fc753be4b727308923": {
+    "title": "Towards a Unified View of Parameter-Efficient Transfer Learning",
+    "paper": {
+      "arxiv_id": "2110.04366",
+      "semantic_scholar_id": "43a87867fe6bf4eb920f97fc753be4b727308923",
+      "paperId": "43a87867fe6bf4eb920f97fc753be4b727308923",
+      "url": "https://www.semanticscholar.org/paper/43a87867fe6bf4eb920f97fc753be4b727308923",
+      "title": "Towards a Unified View of Parameter-Efficient Transfer Learning",
+      "abstract": "Fine-tuning large pre-trained language models on downstream tasks has become the de-facto learning paradigm in NLP. However, conventional approaches fine-tune all the parameters of the pre-trained model, which becomes prohibitive as the model size and the number of tasks grow. Recent work has proposed a variety of parameter-efficient transfer learning methods that only fine-tune a small number of (extra) parameters to attain strong performance. While effective, the critical ingredients for success and the connections among the various methods are poorly understood. In this paper, we break down the design of state-of-the-art parameter-efficient transfer learning methods and present a unified framework that establishes connections between them. Specifically, we re-frame them as modifications to specific hidden states in pre-trained models, and define a set of design dimensions along which different methods vary, such as the function to compute the modification and the position to apply the modification. Through comprehensive empirical studies across machine translation, text summarization, language understanding, and text classification benchmarks, we utilize the unified view to identify important design choices in previous methods. Furthermore, our unified framework enables the transfer of design elements across different approaches, and as a result we are able to instantiate new parameter-efficient fine-tuning methods that tune less parameters than previous methods while being more effective, achieving comparable results to fine-tuning all parameters on all four tasks.",
+      "venue": "International Conference on Learning Representations",
+      "year": 2021,
+      "citationCount": 498,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper re-frame state-of-the-art parameter-efficient transfer learning methods as modifications to specific hidden states in pre-trained models, and defines a set of design dimensions along which different methods vary, achieving comparable results to fine-tuning all parameters on all four tasks."
+      },
+      "authors": [
+        "Junxian He",
+        "Chunting Zhou",
+        "Xuezhe Ma",
+        "Taylor Berg-Kirkpatrick",
+        "Graham Neubig"
+      ]
+    },
+    "code": "https://github.com/jxhe/unify-parameter-efficient-tuning",
+    "tags": [
+      "Mix-and-Match adapters",
+      "Parallel adapters"
+    ]
+  },
+  "ACL:2022.emnlp-main.388": {
+    "title": "AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning",
+    "paper": {
+      "acl_id": "2022.emnlp-main.388",
+      "paperId": "eb4d54651c4f610749caf2bf401af3ce28ddc439",
+      "url": "https://www.semanticscholar.org/paper/eb4d54651c4f610749caf2bf401af3ce28ddc439",
+      "title": "AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning",
+      "abstract": "Standard fine-tuning of large pre-trained language models (PLMs) for downstream tasks requires updating hundreds of millions to billions of parameters, and storing a large copy of the PLM weights for every task resulting in increased cost for storing, sharing and serving the models. To address this, parameter-efficient fine-tuning (PEFT) techniques were introduced where small trainable components are injected in the PLM and updated during fine-tuning. We propose AdaMix as a general PEFT method that tunes a mixture of adaptation modules \u2013 given the underlying PEFT method of choice \u2013 introduced in each Transformer layer while keeping most of the PLM weights frozen. For instance, AdaMix can leverage a mixture of adapters like Houlsby or a mixture of low rank decomposition matrices like LoRA to improve downstream task performance over the corresponding PEFT methods for fully supervised and few-shot NLU and NLG tasks. Further, we design AdaMix such that it matches the same computational cost and the number of tunable parameters as the underlying PEFT method. By only tuning 0.1-0.2% of PLM parameters, we show that AdaMix outperforms SOTA parameter-efficient fine-tuning and full model fine-tuning for both NLU and NLG tasks.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2022,
+      "citationCount": 40,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "AdaMix is proposed as a general PEFT method that tunes a mixture of adaptation modules \u2013 given the underlyingPEFT method of choice \u2013 introduced in each Transformer layer while keeping most of the PLM weights frozen, and outperforms SOTA parameter-efficient fine-tuning and full model fine- Tuning for both NLU and NLG tasks."
+      },
+      "authors": [
+        "Yaqing Wang",
+        "Subhabrata Mukherjee",
+        "Xiaodong Liu",
+        "Jing Gao",
+        "Jianfeng Gao"
+      ]
+    },
+    "code": "https://github.com/microsoft/AdaMix",
+    "tags": [
+      "AdaMix",
+      "MoE",
+      "Model merging"
+    ]
+  },
+  "7f1a473834eea608980e4e04cce21be18d65b9b6": {
+    "title": "Composing Parameter-Efficient Modules with Arithmetic Operations",
+    "paper": {
+      "arxiv_id": "2306.14870",
+      "semantic_scholar_id": "7f1a473834eea608980e4e04cce21be18d65b9b6",
+      "paperId": "7f1a473834eea608980e4e04cce21be18d65b9b6",
+      "url": "https://www.semanticscholar.org/paper/7f1a473834eea608980e4e04cce21be18d65b9b6",
+      "title": "Composing Parameter-Efficient Modules with Arithmetic Operations",
+      "abstract": "As an efficient alternative to conventional full finetuning, parameter-efficient finetuning (PEFT) is becoming the prevailing method to adapt pretrained language models. In PEFT, a lightweight module is learned on each dataset while the underlying pretrained language model remains unchanged, resulting in multiple compact modules representing diverse skills when applied to various domains and tasks. In this paper, we propose to compose these parameter-efficient modules through linear arithmetic operations in the weight space, thereby integrating different module capabilities. Specifically, we first define addition and negation operators for the module, and then further compose these two basic operators to perform flexible arithmetic. Our approach requires \\emph{no additional training} and enables highly flexible module composition. We apply different arithmetic operations to compose the parameter-efficient modules for (1) distribution generalization, (2) multi-tasking, (3) unlearning, and (4) domain transfer. Additionally, we extend our approach to detoxify Alpaca-LoRA, the latest instruction-tuned large language model based on LLaMA. Empirical results demonstrate that our approach produces new and effective parameter-efficient modules that significantly outperform existing ones across all settings.",
+      "venue": "Neural Information Processing Systems",
+      "year": 2023,
+      "citationCount": 30,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper proposes to compose parameter-efficient modules through linear arithmetic operations in the weight space, thereby integrating different module capabilities and extends this approach to detoxify Alpaca-LoRA, the latest instruction-tuned large language model based on LLaMA."
+      },
+      "authors": [
+        "Jinghan Zhang",
+        "Shiqi Chen",
+        "Junteng Liu",
+        "Junxian He"
+      ]
+    },
+    "code": "https://github.com/hkust-nlp/PEM_composition",
+    "tags": [
+      "Model merging"
+    ]
+  },
+  "ACL:2023.findings-eacl.153": {
+    "title": "AdapterSoup: Weight Averaging to Improve Generalization of Pretrained Language Models",
+    "paper": {
+      "acl_id": "2023.findings-eacl.153",
+      "paperId": "629bc57782bb4326a3eb5f89314e350729c5f417",
+      "url": "https://www.semanticscholar.org/paper/629bc57782bb4326a3eb5f89314e350729c5f417",
+      "title": "AdapterSoup: Weight Averaging to Improve Generalization of Pretrained Language Models",
+      "abstract": "Pretrained language models (PLMs) are trained on massive corpora, but often need to specialize to specific domains. A parameter-efficient adaptation method suggests training an adapter for each domain on the task of language modeling. This leads to good in-domain scores but can be impractical for domain- or resource-restricted settings. A solution is to use a related-domain adapter for the novel domain at test time. In this paper, we introduce AdapterSoup, an approach that performs weight-space averaging of adapters trained on different domains. Our approach is embarrassingly parallel: first, we train a set of domain-specific adapters; then, for each novel domain, we determine which adapters should be averaged at test time. We present extensive experiments showing that AdapterSoup consistently improves performance to new domains without extra training. We also explore weight averaging of adapters trained on the same domain with different hyper-parameters, and show that it preserves the performance of a PLM on new domains while obtaining strong in-domain results. We explore various approaches for choosing which adapters to combine, such as text clustering and semantic similarity. We find that using clustering leads to the most competitive results on novel domains.",
+      "venue": "Findings",
+      "year": 2023,
+      "citationCount": 21,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper introduces AdapterSoup, an approach that performs weight-space averaging of adapters trained on different domains, and explores various approaches for choosing which adapters to combine, such as text clustering and semantic similarity."
+      },
+      "authors": [
+        "Alexandra Chronopoulou",
+        "Matthew E. Peters",
+        "Alexander M. Fraser",
+        "Jesse Dodge"
+      ]
+    },
+    "tags": [
+      "Model merging"
+    ]
+  },
+  "ACL:2020.deelio-1.5": {
+    "title": "Common Sense or World Knowledge? Investigating Adapter-Based Knowledge Injection into Pretrained Transformers",
+    "paper": {
+      "acl_id": "2020.deelio-1.5",
+      "paperId": "8b8c29c0cbb6cbae26b930840396596dd5806f33",
+      "url": "https://www.semanticscholar.org/paper/8b8c29c0cbb6cbae26b930840396596dd5806f33",
+      "title": "Common Sense or World Knowledge? Investigating Adapter-Based Knowledge Injection into Pretrained Transformers",
+      "abstract": "Following the major success of neural language models (LMs) such as BERT or GPT-2 on a variety of language understanding tasks, recent work focused on injecting (structured) knowledge from external resources into these models. While on the one hand, joint pre-training (i.e., training from scratch, adding objectives based on external knowledge to the primary LM objective) may be prohibitively computationally expensive, post-hoc fine-tuning on external knowledge, on the other hand, may lead to the catastrophic forgetting of distributional knowledge. In this work, we investigate models for complementing the distributional knowledge of BERT with conceptual knowledge from ConceptNet and its corresponding Open Mind Common Sense (OMCS) corpus, respectively, using adapter training. While overall results on the GLUE benchmark paint an inconclusive picture, a deeper analysis reveals that our adapter-based models substantially outperform BERT (up to 15-20 performance points) on inference tasks that require the type of conceptual knowledge explicitly present in ConceptNet and OMCS. We also open source all our experiments and relevant code under: https://github.com/wluper/retrograph.",
+      "venue": "Workshop on Knowledge Extraction and Integration for Deep Learning Architectures; Deep Learning Inside Out",
+      "year": 2020,
+      "citationCount": 62,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A deeper analysis reveals that the adapter-based models substantially outperform BERT on inference tasks that require the type of conceptual knowledge explicitly present in ConceptNet and its corresponding Open Mind Common Sense corpus."
+      },
+      "authors": [
+        "Anne Lauscher",
+        "Olga Majewska",
+        "Leonardo F. R. Ribeiro",
+        "Iryna Gurevych",
+        "N. Rozanov",
+        "Goran Glavavs"
+      ]
+    },
+    "code": "https://github.com/wluper/retrograph",
+    "tags": [
+      "ConceptNet"
+    ]
+  },
+  "ACL:2021.acl-long.172": {
+    "title": "On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation",
+    "paper": {
+      "acl_id": "2021.acl-long.172",
+      "paperId": "448af0627240e46df757e7b9c640ee30507c18e9",
+      "url": "https://www.semanticscholar.org/paper/448af0627240e46df757e7b9c640ee30507c18e9",
+      "title": "On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation",
+      "abstract": "Adapter-based tuning has recently arisen as an alternative to fine-tuning. It works by adding light-weight adapter modules to a pretrained language model (PrLM) and only updating the parameters of adapter modules when learning on a downstream task. As such, it adds only a few trainable parameters per new task, allowing a high degree of parameter sharing. Prior studies have shown that adapter-based tuning often achieves comparable results to fine-tuning. However, existing work only focuses on the parameter-efficient aspect of adapter-based tuning while lacking further investigation on its effectiveness. In this paper, we study the latter. We first show that adapter-based tuning better mitigates forgetting issues than fine-tuning since it yields representations with less deviation from those generated by the initial PrLM. We then empirically compare the two tuning methods on several downstream NLP tasks and settings. We demonstrate that 1) adapter-based tuning outperforms fine-tuning on low-resource and cross-lingual tasks; 2) it is more robust to overfitting and less sensitive to changes in learning rates.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 117,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "It is demonstrated that 1) adapter-based tuning outperforms fine-tuning on low-resource and cross-lingual tasks; 2) it is more robust to overfitting and less sensitive to changes in learning rates."
+      },
+      "authors": [
+        "Ruidan He",
+        "Linlin Liu",
+        "Hai Ye",
+        "Qingyu Tan",
+        "Bosheng Ding",
+        "Liying Cheng",
+        "Jia-Wei Low",
+        "Lidong Bing",
+        "Luo Si"
+      ]
+    }
+  },
+  "ACL:2021.acl-short.108": {
+    "title": "Robust Transfer Learning with Pretrained Language Models through Adapters",
+    "paper": {
+      "acl_id": "2021.acl-short.108",
+      "paperId": "cdcffb2f1678d7252bfd9b902d3cd676a5217005",
+      "url": "https://www.semanticscholar.org/paper/cdcffb2f1678d7252bfd9b902d3cd676a5217005",
+      "title": "Robust Transfer Learning with Pretrained Language Models through Adapters",
+      "abstract": "Transfer learning with large pretrained transformer-based language models like BERT has become a dominating approach for most NLP tasks. Simply fine-tuning those large language models on downstream tasks or combining it with task-specific pretraining is often not robust. In particular, the performance considerably varies as the random seed changes or the number of pretraining and/or fine-tuning iterations varies, and the fine-tuned model is vulnerable to adversarial attack. We propose a simple yet effective adapter-based approach to mitigate these issues. Specifically, we insert small bottleneck layers (i.e., adapter) within each layer of a pretrained model, then fix the pretrained layers and train the adapter layers on the downstream task data, with (1) task-specific unsupervised pretraining and then (2) task-specific supervised training (e.g., classification, sequence labeling). Our experiments demonstrate that such a training scheme leads to improved stability and adversarial robustness in transfer learning to various downstream tasks.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 38,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work inserts small bottleneck layers (i.e., adapter) within each layer of a pretrained model, then fix the pretrained layers and train the adapter layers on the downstream task data, leading to improved stability and adversarial robustness in transfer learning to various downstream tasks."
+      },
+      "authors": [
+        "Wenjuan Han",
+        "Bo Pang",
+        "Y. Wu"
+      ]
+    }
+  },
+  "ACL:2021.emnlp-main.626": {
+    "title": "AdapterDrop: On the Efficiency of Adapters in Transformers",
+    "paper": {
+      "acl_id": "2021.emnlp-main.626",
+      "arxiv_id": "2010.11918",
+      "paperId": "bdeec55f95fd6b73e3e4635459b14c7248543efb",
+      "url": "https://www.semanticscholar.org/paper/bdeec55f95fd6b73e3e4635459b14c7248543efb",
+      "title": "AdapterDrop: On the Efficiency of Adapters in Transformers",
+      "abstract": "Transformer models are expensive to fine-tune, slow for inference, and have large storage requirements. Recent approaches tackle these shortcomings by training smaller models, dynamically reducing the model size, and by training light-weight adapters. In this paper, we propose AdapterDrop, removing adapters from lower transformer layers during training and inference, which incorporates concepts from all three directions. We show that AdapterDrop can dynamically reduce the computational overhead when performing inference over multiple tasks simultaneously, with minimal decrease in task performances. We further prune adapters from AdapterFusion, which improves the inference efficiency while maintaining the task performances entirely.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2020,
+      "citationCount": 155,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper proposes AdapterDrop, removing adapters from lower transformer layers during training and inference, which incorporates concepts from all three directions and can dynamically reduce the computational overhead when performing inference over multiple tasks simultaneously, with minimal decrease in task performances."
+      },
+      "authors": [
+        "Andreas R\u00fcckl\u00e9",
+        "Gregor Geigle",
+        "Max Glockner",
+        "Tilman Beck",
+        "Jonas Pfeiffer",
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ]
+    },
+    "tags": [
+      "AdapterDrop",
+      "Parallel inference"
+    ]
+  },
+  "ACL:2021.emnlp-main.827": {
+    "title": "What to Pre-Train on? Efficient Intermediate Task Selection",
+    "paper": {
+      "acl_id": "2021.emnlp-main.827",
+      "paperId": "7b99c51d562e33309a46601c846abbe72a65c6a4",
+      "url": "https://www.semanticscholar.org/paper/7b99c51d562e33309a46601c846abbe72a65c6a4",
+      "title": "What to Pre-Train on? Efficient Intermediate Task Selection",
+      "abstract": "Intermediate task fine-tuning has been shown to culminate in large transfer gains across many NLP tasks. With an abundance of candidate datasets as well as pre-trained language models, it has become infeasible to experiment with all combinations to find the best transfer setting. In this work, we provide a comprehensive comparison of different methods for efficiently identifying beneficial tasks for intermediate transfer learning. We focus on parameter and computationally efficient adapter settings, highlight different data-availability scenarios, and provide expense estimates for each method. We experiment with a diverse set of 42 intermediate and 11 target English classification, multiple choice, question answering, and sequence tagging tasks. Our results demonstrate that efficient embedding based methods, which rely solely on the respective datasets, outperform computational expensive few-shot fine-tuning approaches. Our best methods achieve an average Regret@3 of 1% across all target tasks, demonstrating that we are able to efficiently identify the best datasets for intermediate training.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 73,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work provides a comprehensive comparison of different methods for efficiently identifying beneficial tasks for intermediate transfer learning, focusing on parameter and computationally efficient adapter settings, highlight different data-availability scenarios, and provide expense estimates for each method."
+      },
+      "authors": [
+        "Clifton A. Poth",
+        "Jonas Pfeiffer",
+        "Andreas Ruckl'e",
+        "Iryna Gurevych"
+      ]
+    },
+    "code": "https://github.com/adapter-hub/efficient-task-transfer",
+    "tags": [
+      "Intermediate task transfer"
+    ]
+  },
+  "ARXIV:2012.06460": {
+    "title": "Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer",
+    "paper": {
+      "arxiv_id": "2012.06460",
+      "paperId": "79165e99d67d2b4f5841464ad8eaf9e30205b62a",
+      "url": "https://www.semanticscholar.org/paper/79165e99d67d2b4f5841464ad8eaf9e30205b62a",
+      "title": "Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer",
+      "abstract": "Adapter modules, additional trainable parameters that enable efficient fine-tuning of pretrained transformers, have recently been used for language specialization of multilingual transformers, improving downstream zero-shot cross-lingual transfer. In this work, we propose orthogonal language and task adapters (dubbed orthoadapters) for cross-lingual transfer. They are trained to encode language- and task-specific information that is complementary (i.e., orthogonal) to the knowledge already stored in the pretrained transformer's parameters. Our zero-shot cross-lingual transfer experiments, involving three tasks (POS-tagging, NER, NLI) and a set of 10 diverse languages, 1) point to the usefulness of orthoadapters in cross-lingual transfer, especially for the most complex NLI task, but also 2) indicate that the optimal adapter configuration highly depends on the task and the target language. We hope that our work will motivate a wider investigation of usefulness of orthogonality constraints in language- and task-specific fine-tuning of pretrained transformers.",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 27,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work proposes orthogonal language and task adapters (dubbed orthoadapters) for cross-lingual transfer that are trained to encode language- and task-specific information that is complementary to the knowledge already stored in the pretrained transformer's parameters."
+      },
+      "authors": [
+        "M. Vidoni",
+        "Ivan Vulic",
+        "Goran Glavas"
+      ]
+    },
+    "tags": [
+      "Orthogonal adapters"
+    ]
+  },
+  "ec936b808e0fab9281c050ad4010cddec92c8cbe": {
+    "title": "P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks",
+    "paper": {
+      "acl_id": "2022.acl-short.8",
+      "semantic_scholar_id": "ec936b808e0fab9281c050ad4010cddec92c8cbe",
+      "paperId": "ec936b808e0fab9281c050ad4010cddec92c8cbe",
+      "url": "https://www.semanticscholar.org/paper/ec936b808e0fab9281c050ad4010cddec92c8cbe",
+      "title": "P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks",
+      "abstract": "Prompt tuning, which only tunes continuous prompts with a frozen language model, substantially reduces per-task storage and memory usage at training. However, in the context of NLU, prior work reveals that prompt tuning does not perform well for normal-sized pretrained models. We also find that existing methods of prompt tuning cannot handle hard sequence labeling tasks, indicating a lack of universality. We present a novel empirical finding that properly optimized prompt tuning can be universally effective across a wide range of model scales and NLU tasks. It matches the performance of finetuning while having only 0.1%-3% tuned parameters. Our method P-Tuning v2 is an implementation of Deep Prompt Tuning (CITATION) optimized and adapted for NLU. Given the universality and simplicity of P-Tuning v2, we believe it can serve as an alternative to finetuning and a strong baseline for future research.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2022,
+      "citationCount": 308,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "The method P-Tuning v2 is an implementation of Deep Prompt Tuning (CITATION) optimized and adapted for NLU and can serve as an alternative to finetuning and a strong baseline for future research."
+      },
+      "authors": [
+        "Xiao Liu",
+        "Kaixuan Ji",
+        "Yicheng Fu",
+        "W. Tam",
+        "Zhengxiao Du",
+        "Zhilin Yang",
+        "Jie Tang"
+      ]
+    },
+    "code": "https://github.com/THUDM/P-tuning-v2",
+    "tags": [
+      "P-Tuning v2",
+      "Prefix-Tuning"
+    ]
+  },
+  "8c62277dada489904a63de4dd87336c27c68fb5e": {
+    "title": "Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models",
+    "paper": {
+      "arxiv_id": "2203.06904",
+      "semantic_scholar_id": "8c62277dada489904a63de4dd87336c27c68fb5e",
+      "paperId": "8c62277dada489904a63de4dd87336c27c68fb5e",
+      "url": "https://www.semanticscholar.org/paper/8c62277dada489904a63de4dd87336c27c68fb5e",
+      "title": "Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models",
+      "abstract": "Despite the success, the process of fine-tuning large-scale PLMs brings prohibitive adaptation costs. In fact, fine-tuning all the parameters of a colossal model and retaining separate instances for different tasks are practically infeasible. This necessitates a new branch of research focusing on the parameter-efficient adaptation of PLMs, dubbed as delta tuning in this paper. In contrast with the standard fine-tuning, delta tuning only fine-tunes a small portion of the model parameters while keeping the rest untouched, largely reducing both the computation and storage costs. Recent studies have demonstrated that a series of delta tuning methods with distinct tuned parameter selection could achieve performance on a par with full-parameter fine-tuning, suggesting a new promising way of stimulating large-scale PLMs. In this paper, we first formally describe the problem of delta tuning and then comprehensively review recent delta tuning approaches. We also propose a unified categorization criterion that divide existing delta tuning methods into three groups: addition-based, specification-based, and reparameterization-based methods. Though initially proposed as an efficient method to steer large models, we believe that some of the fascinating evidence discovered along with delta tuning could help further reveal the mechanisms of PLMs and even deep neural networks. To this end, we discuss the theoretical principles underlying the effectiveness of delta tuning and propose frameworks to interpret delta tuning from the perspective of optimization and optimal control, respectively. Furthermore, we provide a holistic empirical study of representative methods, where results on over 100 NLP tasks demonstrate a comprehensive performance comparison of different approaches. The experimental results also cover the analysis of combinatorial, scaling and transferable properties of delta tuning.",
+      "venue": "arXiv.org",
+      "year": 2022,
+      "citationCount": 136,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "The theoretical principles underlying the effectiveness of delta tuning are discussed and frameworks to interpret delta tuning from the perspective of optimization and optimal control are proposed, where results on over 100 NLP tasks demonstrate a comprehensive performance comparison of different approaches."
+      },
+      "authors": [
+        "Ning Ding",
+        "Yujia Qin",
+        "Guang Yang",
+        "Fu Wei",
+        "Zonghan Yang",
+        "Yusheng Su",
+        "Shengding Hu",
+        "Yulin Chen",
+        "Chi-Min Chan",
+        "Weize Chen",
+        "Jing Yi",
+        "Weilin Zhao",
+        "Xiaozhi Wang",
+        "Zhiyuan Liu",
+        "Haitao Zheng",
+        "Jianfei Chen",
+        "Yang Liu",
+        "Jie Tang",
+        "Juan Li",
+        "Maosong Sun"
+      ]
+    }
+  },
+  "ACL:2022.acl-long.433": {
+    "title": "UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning",
+    "paper": {
+      "acl_id": "2022.acl-long.433",
+      "paperId": "ad471be93216ddbf8544721d50ee5aed14f07cae",
+      "url": "https://www.semanticscholar.org/paper/ad471be93216ddbf8544721d50ee5aed14f07cae",
+      "title": "UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning",
+      "abstract": "Recent parameter-efficient language model tuning (PELT) methods manage to match the performance of fine-tuning with much fewer trainable parameters and perform especially well when training data is limited. However, different PELT methods may perform rather differently on the same task, making it nontrivial to select the most appropriate method for a specific task, especially considering the fast-growing number of new PELT methods and tasks. In light of model diversity and the difficulty of model selection, we propose a unified framework, UniPELT, which incorporates different PELT methods as submodules and learns to activate the ones that best suit the current data or task setup via gating mechanism. On the GLUE benchmark, UniPELT consistently achieves 1 4% gains compared to the best individual PELT method that it incorporates and even outperforms fine-tuning under different setups. Moreover, UniPELT generally surpasses the upper bound that takes the best performance of all its submodules used individually on each task, indicating that a mixture of multiple PELT methods may be inherently more effective than single methods.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 111,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A unified framework, UniPELT, is proposed, which incorporates different PELT methods as submodules and learns to activate the ones that best suit the current data or task setup via gating mechanism, indicating that a mixture of multiple P ELT methods may be inherently more effective than single methods."
+      },
+      "authors": [
+        "Yuning Mao",
+        "Lambert Mathias",
+        "Rui Hou",
+        "Amjad Almahairi",
+        "Hao Ma",
+        "Jiawei Han",
+        "Wen-tau Yih",
+        "Madian Khabsa"
+      ]
+    },
+    "code": "https://github.com/morningmoni/unipelt",
+    "tags": [
+      "UniPELT"
+    ]
+  },
+  "ACL:D19-1165": {
+    "title": "Simple, Scalable Adaptation for Neural Machine Translation",
+    "paper": {
+      "acl_id": "D19-1165",
+      "arxiv_id": "1909.08478",
+      "paperId": "48530f3d6425f2f150f07ccdd61ba951951a0a7d",
+      "url": "https://www.semanticscholar.org/paper/48530f3d6425f2f150f07ccdd61ba951951a0a7d",
+      "title": "Simple, Scalable Adaptation for Neural Machine Translation",
+      "abstract": "Fine-tuning pre-trained Neural Machine Translation (NMT) models is the dominant approach for adapting to new languages and domains. However, fine-tuning requires adapting and maintaining a separate model for each target task. We propose a simple yet efficient approach for adaptation in NMT. Our proposed approach consists of injecting tiny task specific adapter layers into a pre-trained model. These lightweight adapters, with just a small fraction of the original model size, adapt the model to multiple individual tasks simultaneously. We evaluate our approach on two tasks: (i) Domain Adaptation and (ii) Massively Multilingual NMT. Experiments on domain adaptation demonstrate that our proposed approach is on par with full fine-tuning on various domains, dataset sizes and model capacities. On a massively multilingual dataset of 103 languages, our adaptation approach bridges the gap between individual bilingual models and one massively multilingual model for most language pairs, paving the way towards universal machine translation.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2019,
+      "citationCount": 333,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "The proposed approach consists of injecting tiny task specific adapter layers into a pre-trained model, which adapt the model to multiple individual tasks simultaneously, paving the way towards universal machine translation."
+      },
+      "authors": [
+        "Ankur Bapna",
+        "N. Arivazhagan",
+        "Orhan Firat"
+      ]
+    },
+    "tags": [
+      "Bottleneck adapter",
+      "Machine Translation"
+    ]
+  },
+  "ACL:2020.emnlp-main.361": {
+    "title": "Monolingual Adapters for Zero-Shot Neural Machine Translation",
+    "paper": {
+      "acl_id": "2020.emnlp-main.361",
+      "paperId": "8b31fef217004560b8c2517c0f6fdc1c3cf55112",
+      "url": "https://www.semanticscholar.org/paper/8b31fef217004560b8c2517c0f6fdc1c3cf55112",
+      "title": "Language Adapters for Zero Shot Neural Machine Translation",
+      "abstract": "We propose a novel adapter layer formalism for adapting multilingual models. They are more parameter-efficient than existing adapter layers while obtaining as good or better performance. The layers are specific to one language (as opposed to bilingual adapters) allowing to compose them and generalize to unseen language-pairs. In this zero-shot setting, they obtain a median improvement of +2.77 BLEU points over a strong 20-language multilingual Transformer baseline trained on TED talks.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2020,
+      "citationCount": 24,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A novel adapter layer formalism for adapting multilingual models is proposed, which is more parameter-efficient than existing adapter layers while obtaining as good or better performance."
+      },
+      "authors": [
+        "Jerin Philip",
+        "Alexandre Berard",
+        "Matthias Gall\u00e9",
+        "L. Besacier"
+      ]
+    },
+    "tags": [
+      "Bottleneck adapter",
+      "Machine Translation"
+    ]
+  },
+  "ACL:2020.emnlp-main.180": {
+    "title": "UDapter: Language Adaptation for Truly Universal Dependency Parsing",
+    "paper": {
+      "acl_id": "2020.emnlp-main.180",
+      "paperId": "3b233bdb697cc43effa1eb6d2868ff14efbbab7a",
+      "url": "https://www.semanticscholar.org/paper/3b233bdb697cc43effa1eb6d2868ff14efbbab7a",
+      "title": "UDapter: Language Adaptation for Truly Universal Dependency Parsing",
+      "abstract": "Recent advances in the field of multilingual dependency parsing have brought the idea of a truly universal parser closer to reality. However, cross-language interference and restrained model capacity remain a major obstacle to this pursuit. To address these issues, we propose a novel multilingual task adaptation approach based on recent work in parameter-efficient transfer learning, which allows for an easy but effective integration of existing linguistic typology features into the parsing network. The resulting parser, UDapter, consistently outperforms strong monolingual and multilingual baselines on both high-resource and low-resource (zero-shot) languages, setting a new state of the art in multilingual UD parsing. Our in-depth analyses show that soft parameter sharing via typological features is key to this success.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2020,
+      "citationCount": 94,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A novel multilingual task adaptation approach based on recent work in parameter-efficient transfer learning, which allows for an easy but effective integration of existing linguistic typology features into the parsing network, and consistently outperforms strong monolingual and multilingual baselines on both high-resource and low-resource languages."
+      },
+      "authors": [
+        "A. Ustun",
+        "Arianna Bisazza",
+        "G. Bouma",
+        "Gertjan van Noord"
+      ]
+    },
+    "code": "https://github.com/ahmetustun/udapter",
+    "tags": [
+      "UDapter",
+      "Dependency Parsing"
+    ]
+  },
+  "ACL:2021.emnlp-main.495": {
+    "title": "Single-dataset Experts for Multi-dataset Question Answering",
+    "paper": {
+      "acl_id": "2021.emnlp-main.495",
+      "paperId": "67dc4ba4542d5895862c8b5af5023f659c14542c",
+      "url": "https://www.semanticscholar.org/paper/67dc4ba4542d5895862c8b5af5023f659c14542c",
+      "title": "Single-dataset Experts for Multi-dataset Question Answering",
+      "abstract": "Many datasets have been created for training reading comprehension models, and a natural question is whether we can combine them to build models that (1) perform better on all of the training datasets and (2) generalize and transfer better to new datasets. Prior work has addressed this goal by training one network simultaneously on multiple datasets, which works well on average but is prone to over- or under-fitting different sub- distributions and might transfer worse compared to source models with more overlap with the target dataset. Our approach is to model multi-dataset question answering with an ensemble of single-dataset experts, by training a collection of lightweight, dataset-specific adapter modules (Houlsby et al., 2019) that share an underlying Transformer model. We find that these Multi-Adapter Dataset Experts (MADE) outperform all our baselines in terms of in-distribution accuracy, and simple methods based on parameter-averaging lead to better zero-shot generalization and few-shot transfer performance, offering a strong and versatile starting point for building new reading comprehension systems.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 25,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work trains a collection of lightweight, dataset-specific adapter modules that share an underlying Transformer model, and finds that these Multi-Adapter Dataset Experts (MADE) outperform all the authors' baselines in terms of in-distribution accuracy, and simple methods based on parameter-averaging lead to better zero-shot generalization and few-shot transfer performance."
+      },
+      "authors": [
+        "Dan Friedman",
+        "Ben Dodge",
+        "Danqi Chen"
+      ]
+    },
+    "code": "https://github.com/princeton-nlp/made",
+    "tags": [
+      "Bottleneck adapter",
+      "MADE"
+    ]
+  },
+  "13bcfb944779165983aaef22cec8a3bbd3e98e62": {
+    "title": "UNKs Everywhere: Adapting Multilingual Language Models to New Scripts",
+    "paper": {
+      "acl_id": "2021.emnlp-main.800",
+      "semantic_scholar_id": "13bcfb944779165983aaef22cec8a3bbd3e98e62",
+      "paperId": "13bcfb944779165983aaef22cec8a3bbd3e98e62",
+      "url": "https://www.semanticscholar.org/paper/13bcfb944779165983aaef22cec8a3bbd3e98e62",
+      "title": "UNKs Everywhere: Adapting Multilingual Language Models to New Scripts",
+      "abstract": "Massively multilingual language models such as multilingual BERT offer state-of-the-art cross-lingual transfer performance on a range of NLP tasks. However, due to limited capacity and large differences in pretraining data sizes, there is a profound performance gap between resource-rich and resource-poor target languages. The ultimate challenge is dealing with under-resourced languages not covered at all by the models and written in scripts unseen during pretraining. In this work, we propose a series of novel data-efficient methods that enable quick and effective adaptation of pretrained multilingual models to such low-resource languages and unseen scripts. Relying on matrix factorization, our methods capitalize on the existing latent knowledge about multiple languages already available in the pretrained model\u2019s embedding matrix. Furthermore, we show that learning of the new dedicated embedding matrix in the target language can be improved by leveraging a small number of vocabulary items (i.e., the so-called lexically overlapping tokens) shared between mBERT\u2019s and target language vocabulary. Our adaptation techniques offer substantial performance gains for languages with unseen scripts. We also demonstrate that they can yield improvements for low-resource languages written in scripts covered by the pretrained model.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2020,
+      "citationCount": 98,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work proposes a series of novel data-efficient methods that enable quick and effective adaptation of pretrained multilingual models to such low-resource languages and unseen scripts and demonstrates that they can yield improvements for low- resource languages written in scripts covered by the pretrained model."
+      },
+      "authors": [
+        "Jonas Pfeiffer",
+        "Ivan Vulic",
+        "Iryna Gurevych",
+        "Sebastian Ruder"
+      ]
+    },
+    "tags": [
+      "Bottleneck adapter",
+      "MAD-X"
+    ]
+  },
+  "ACL:2021.wmt-1.64": {
+    "title": "Multilingual Domain Adaptation for NMT: Decoupling Language and Domain Information with Adapters",
+    "paper": {
+      "acl_id": "2021.wmt-1.64",
+      "paperId": "51d62830c1112ea7443398990b850a988ed7c86c",
+      "url": "https://www.semanticscholar.org/paper/51d62830c1112ea7443398990b850a988ed7c86c",
+      "title": "Multilingual Domain Adaptation for NMT: Decoupling Language and Domain Information with Adapters",
+      "abstract": "Adapter layers are lightweight, learnable units inserted between transformer layers. Recent work explores using such layers for neural machine translation (NMT), to adapt pre-trained models to new domains or language pairs, training only a small set of parameters for each new setting (language pair or domain). In this work we study the compositionality of language and domain adapters in the context of Machine Translation. We aim to study, 1) parameter-efficient adaptation to multiple domains and languages simultaneously (full-resource scenario) and 2) cross-lingual transfer in domains where parallel data is unavailable for certain language pairs (partial-resource scenario). We find that in the partial resource scenario a naive combination of domain-specific and language-specific adapters often results in \u2018catastrophic forgetting\u2019 of the missing languages. We study other ways to combine the adapters to alleviate this issue and maximize cross-lingual transfer. With our best adapter combinations, we obtain improvements of 3-4 BLEU on average for source languages that do not have in-domain data. For target languages without in-domain data, we achieve a similar improvement by combining adapters with back-translation. Supplementary material is available at https://tinyurl.com/r66stbxj.",
+      "venue": "Conference on Machine Translation",
+      "year": 2021,
+      "citationCount": 23,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work study the compositionality of language and domain adapters in the context of Machine Translation, and aims to study parameter-efficient adaptation to multiple domains and languages simultaneously and cross-lingual transfer in domains where parallel data is unavailable for certain language pairs."
+      },
+      "authors": [
+        "Asa Cooper Stickland",
+        "Alexandre Berard",
+        "Vassilina Nikoulina"
+      ]
+    },
+    "tags": [
+      "Bottleneck adapter",
+      "Machine Translation"
+    ]
+  },
+  "ACL:2021.emnlp-main.533": {
+    "title": "Multilingual Unsupervised Neural Machine Translation with Denoising Adapters",
+    "paper": {
+      "acl_id": "2021.emnlp-main.533",
+      "paperId": "99b12d0df2b93e800207a5e4618a353912f3dff8",
+      "url": "https://www.semanticscholar.org/paper/99b12d0df2b93e800207a5e4618a353912f3dff8",
+      "title": "Multilingual Unsupervised Neural Machine Translation with Denoising Adapters",
+      "abstract": "We consider the problem of multilingual unsupervised machine translation, translating to and from languages that only have monolingual data by using auxiliary parallel language pairs. For this problem the standard procedure so far to leverage the monolingual data is _back-translation_, which is computationally costly and hard to tune. In this paper we propose instead to use _denoising adapters_, adapter layers with a denoising objective, on top of pre-trained mBART-50. In addition to the modularity and flexibility of such an approach we show that the resulting translations are on-par with back-translating as measured by BLEU, and furthermore it allows adding unseen languages incrementally.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 35,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper proposes to use _denoising adapters_, adapter layers with a denoising objective, on top of pre-trained mBART-50, and shows that the resulting translations are on-par with back-translating as measured by BLEU, and furthermore it allows adding unseen languages incrementally."
+      },
+      "authors": [
+        "A. Ustun",
+        "Alexandre Berard",
+        "L. Besacier",
+        "Matthias Gall\u00e9"
+      ]
+    },
+    "tags": [
+      "Denoising adapter",
+      "Machine Translation"
+    ]
+  },
+  "7b5b15279e5a52439614f886b79fa33f4b88bfb2": {
+    "title": "Efficient Test Time Adapter Ensembling for Low-resource Language Varieties",
+    "paper": {
+      "acl_id": "2021.findings-emnlp.63",
+      "semantic_scholar_id": "7b5b15279e5a52439614f886b79fa33f4b88bfb2",
+      "paperId": "7b5b15279e5a52439614f886b79fa33f4b88bfb2",
+      "url": "https://www.semanticscholar.org/paper/7b5b15279e5a52439614f886b79fa33f4b88bfb2",
+      "title": "Efficient Test Time Adapter Ensembling for Low-resource Language Varieties",
+      "abstract": "Adapters are light-weight modules that allow parameter-efficient fine-tuning of pretrained models. Specialized language and task adapters have recently been proposed to facilitate cross-lingual transfer of multilingual pretrained models (Pfeiffer et al., 2020b). However, this approach requires training a separate language adapter for every language one wishes to support, which can be impractical for languages with limited data. An intuitive solution is to use a related language adapter for the new language variety, but we observe that this solution can lead to sub-optimal performance. In this paper, we aim to improve the robustness of language adapters to uncovered languages without training new adapters. We find that ensembling multiple existing language adapters makes the fine-tuned model significantly more robust to other language varieties not included in these adapters. Building upon this observation, we propose Entropy Minimized Ensemble of Adapters (EMEA), a method that optimizes the ensemble weights of the pretrained language adapters for each test sentence by minimizing the entropy of its predictions. Experiments on three diverse groups of language varieties show that our method leads to significant improvements on both named entity recognition and part-of-speech tagging across all languages.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 27,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper finds that ensembling multiple existing language adapters makes the fine-tuned model significantly more robust to other language varieties not included in these adapters, and proposes EMA, a method that optimizes the ensemble weights of the pretrained language adapters for each test sentence by minimizing the entropy of its predictions."
+      },
+      "authors": [
+        "Xinyi Wang",
+        "Yulia Tsvetkov",
+        "Sebastian Ruder",
+        "Graham Neubig"
+      ]
+    },
+    "code": "https://github.com/cindyxinyiwang/emea",
+    "tags": [
+      "EMEA"
+    ]
+  },
+  "ARXIV:2303.16199": {
+    "title": "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention",
+    "paper": {
+      "arxiv_id": "2303.16199",
+      "paperId": "a757999ed260d7bc45484dc6b4456bf33fe6f679",
+      "url": "https://www.semanticscholar.org/paper/a757999ed260d7bc45484dc6b4456bf33fe6f679",
+      "title": "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention",
+      "abstract": "We present LLaMA-Adapter, a lightweight adaption method to efficiently fine-tune LLaMA into an instruction-following model. Using 52K self-instruct demonstrations, LLaMA-Adapter only introduces 1.2M learnable parameters upon the frozen LLaMA 7B model, and costs less than one hour for fine-tuning on 8 A100 GPUs. Specifically, we adopt a set of learnable adaption prompts, and prepend them to the word tokens at higher transformer layers. Then, a zero-initialized attention mechanism with zero gating is proposed, which adaptively injects the new instructional cues into LLaMA, while effectively preserves its pre-trained knowledge. With our efficient training, LLaMA-Adapter can generate high-quality responses, comparable to Alpaca with fully fine-tuned 7B parameters. Besides language commands, our approach can be simply extended to multi-modal instructions for learning image-conditioned LLaMA model, which achieves superior reasoning performance on ScienceQA and COCO Caption benchmarks. Furthermore, we also evaluate the zero-initialized attention mechanism for fine-tuning other pre-trained models (ViT, RoBERTa) on traditional vision and language tasks, demonstrating the superior generalization capacity of our approach. Code is released at https://github.com/OpenGVLab/LLaMA-Adapter.",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 295,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A zero-initialized attention mechanism with zero gating is proposed, which adaptively injects the new instructional cues into LLaMA, while effectively preserves its pre-trained knowledge on traditional vision and language tasks, demonstrating the superior generalization capacity of the approach."
+      },
+      "authors": [
+        "Renrui Zhang",
+        "Jiaming Han",
+        "Aojun Zhou",
+        "Xiangfei Hu",
+        "Shilin Yan",
+        "Pan Lu",
+        "Hongsheng Li",
+        "Peng Gao",
+        "Y. Qiao"
+      ]
+    },
+    "code": "https://github.com/zrrskywalker/llama-adapter",
+    "tags": [
+      "Prefix-Tuning",
+      "Instruction tuning"
+    ]
+  },
+  "c2314751d367b34239a537fe27e2bd51a8b84528": {
+    "title": "Punica: Multi-Tenant LoRA Serving",
+    "paper": {
+      "arxiv_id": "2310.18547",
+      "semantic_scholar_id": "c2314751d367b34239a537fe27e2bd51a8b84528",
+      "paperId": "c2314751d367b34239a537fe27e2bd51a8b84528",
+      "url": "https://www.semanticscholar.org/paper/c2314751d367b34239a537fe27e2bd51a8b84528",
+      "title": "Punica: Multi-Tenant LoRA Serving",
+      "abstract": "Low-rank adaptation (LoRA) has become an important and popular method to adapt pre-trained models to specific domains. We present Punica, a system to serve multiple LoRA models in a shared GPU cluster. Punica contains a new CUDA kernel design that allows batching of GPU operations for different LoRA models. This allows a GPU to hold only a single copy of the underlying pre-trained model when serving multiple, different LoRA models, significantly enhancing GPU efficiency in terms of both memory and computation. Our scheduler consolidates multi-tenant LoRA serving workloads in a shared GPU cluster. With a fixed-sized GPU cluster, our evaluations show that Punica achieves 12x higher throughput in serving multiple LoRA models compared to state-of-the-art LLM serving systems while only adding 2ms latency per token. Punica is open source at https://github.com/punica-ai/punica .",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 3,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Punica is a system to serve multiple LoRA models in a shared GPU cluster that contains a new CUDA kernel design that allows batching of GPU operations for differentLoRA models, significantly enhancing GPU efficiency in terms of both memory and computation."
+      },
+      "authors": [
+        "Lequn Chen",
+        "Zihao Ye",
+        "Yongji Wu",
+        "Danyang Zhuo",
+        "Luis Ceze",
+        "Arvind Krishnamurthy University of Washington",
+        "Duke University"
+      ]
+    },
+    "code": "https://github.com/punica-ai/punica",
+    "tags": [
+      "Punica",
+      "LoRA"
+    ]
+  },
+  "9bb8c4325c609caeade9c3ed7036d2b9953e278c": {
+    "title": "S-LoRA: Serving Thousands of Concurrent LoRA Adapters",
+    "paper": {
+      "arxiv_id": "2311.03285",
+      "semantic_scholar_id": "9bb8c4325c609caeade9c3ed7036d2b9953e278c",
+      "paperId": "9bb8c4325c609caeade9c3ed7036d2b9953e278c",
+      "url": "https://www.semanticscholar.org/paper/9bb8c4325c609caeade9c3ed7036d2b9953e278c",
+      "title": "S-LoRA: Serving Thousands of Concurrent LoRA Adapters",
+      "abstract": "The\"pretrain-then-finetune\"paradigm is commonly adopted in the deployment of large language models. Low-Rank Adaptation (LoRA), a parameter-efficient fine-tuning method, is often employed to adapt a base model to a multitude of tasks, resulting in a substantial collection of LoRA adapters derived from one base model. We observe that this paradigm presents significant opportunities for batched inference during serving. To capitalize on these opportunities, we present S-LoRA, a system designed for the scalable serving of many LoRA adapters. S-LoRA stores all adapters in the main memory and fetches the adapters used by the currently running queries to the GPU memory. To efficiently use the GPU memory and reduce fragmentation, S-LoRA proposes Unified Paging. Unified Paging uses a unified memory pool to manage dynamic adapter weights with different ranks and KV cache tensors with varying sequence lengths. Additionally, S-LoRA employs a novel tensor parallelism strategy and highly optimized custom CUDA kernels for heterogeneous batching of LoRA computation. Collectively, these features enable S-LoRA to serve thousands of LoRA adapters on a single GPU or across multiple GPUs with a small overhead. Compared to state-of-the-art libraries such as HuggingFace PEFT and vLLM (with naive support of LoRA serving), S-LoRA can improve the throughput by up to 4 times and increase the number of served adapters by several orders of magnitude. As a result, S-LoRA enables scalable serving of many task-specific fine-tuned models and offers the potential for large-scale customized fine-tuning services. The code is available at https://github.com/S-LoRA/S-LoRA",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 12,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "S-LoRA enables scalable serving of many task-specific fine-tuned models and offers the potential for large-scale customized fine- Tuning services."
+      },
+      "authors": [
+        "Ying Sheng",
+        "Shiyi Cao",
+        "Dacheng Li",
+        "Coleman Hooper",
+        "Nicholas Lee",
+        "Shuo Yang",
+        "Christopher Chou",
+        "Banghua Zhu",
+        "Lianmin Zheng",
+        "Kurt Keutzer",
+        "Joseph E. Gonzalez",
+        "Ion Stoica"
+      ]
+    },
+    "code": "https://github.com/S-LoRA/S-LoRA",
+    "tags": [
+      "S-LoRA",
+      "LoRA"
+    ]
+  },
+  "ACL:2021.acl-short.103": {
+    "title": "Lightweight Adapter Tuning for Multilingual Speech Translation",
+    "paper": {
+      "acl_id": "2021.acl-short.103",
+      "paperId": "eacb5dc57a167aeda3b23c28abfc2b51095f1b7c",
+      "url": "https://www.semanticscholar.org/paper/eacb5dc57a167aeda3b23c28abfc2b51095f1b7c",
+      "title": "Lightweight Adapter Tuning for Multilingual Speech Translation",
+      "abstract": "Adapter modules were recently introduced as an efficient alternative to fine-tuning in NLP. Adapter tuning consists in freezing pre-trained parameters of a model and injecting lightweight modules between layers, resulting in the addition of only a small number of task-specific trainable parameters. While adapter tuning was investigated for multilingual neural machine translation, this paper proposes a comprehensive analysis of adapters for multilingual speech translation (ST). Starting from different pre-trained models (a multilingual ST trained on parallel data or a multilingual BART (mBART) trained on non parallel multilingual data), we show that adapters can be used to: (a) efficiently specialize ST to specific language pairs with a low extra cost in terms of parameters, and (b) transfer from an automatic speech recognition (ASR) task and an mBART pre-trained model to a multilingual ST task. Experiments show that adapter tuning offer competitive results to full fine-tuning, while being much more parameter-efficient.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper proposes a comprehensive analysis of adapters for multilingual speech translation (ST) and shows that adapters can be used to efficiently specialize ST to specific language pairs with a low extra cost in terms of parameters."
+      },
+      "authors": [
+        "Hang Le",
+        "J. Pino",
+        "Changhan Wang",
+        "Jiatao Gu",
+        "D. Schwab",
+        "L. Besacier"
+      ]
+    },
+    "code": "https://github.com/formiel/fairseq/blob/master/examples/speech_to_text/docs/adapters.md",
+    "tags": [
+      "Speech translation"
+    ]
+  },
+  "f6919b54a4f06367947f0cf58cda54cdd08cd5f2": {
+    "title": "Efficient Adapter Transfer of Self-Supervised Speech Models for Automatic Speech Recognition",
+    "paper": {
+      "arxiv_id": "2202.03218",
+      "doi": "10.1109/icassp43922.2022.9746223",
+      "semantic_scholar_id": "f6919b54a4f06367947f0cf58cda54cdd08cd5f2",
+      "paperId": "f6919b54a4f06367947f0cf58cda54cdd08cd5f2",
+      "url": "https://www.semanticscholar.org/paper/f6919b54a4f06367947f0cf58cda54cdd08cd5f2",
+      "title": "Efficient Adapter Transfer of Self-Supervised Speech Models for Automatic Speech Recognition",
+      "abstract": "Self-supervised learning (SSL) is a powerful tool that allows learning of underlying representations from unlabeled data. Transformer based models such as wav2vec 2.0 and HuBERT are leading the field in the speech domain. Generally these models are fine-tuned on a small amount of labeled data for a downstream task such as Automatic Speech Recognition (ASR). This involves re-training the majority of the model for each task. Adapters are small lightweight modules which are commonly used in Natural Language Processing (NLP) to adapt pre-trained models to new tasks. In this paper we propose applying adapters to wav2vec 2.0 to reduce the number of parameters required for downstream ASR tasks, and increase scalability of the model to multiple tasks or languages. Using adapters we can perform ASR while training fewer than 10% of parameters per task compared to full fine-tuning with little degradation of performance. Ablations show that applying adapters into just the top few layers of the pre-trained network gives similar performance to full transfer, supporting the theory that higher pre-trained layers encode more phonemic information, and further optimizing efficiency.",
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2022,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Adapters are applied to wav2vec 2.0 to reduce the number of parameters required for downstream ASR tasks, and increase scalability of the model to multiple tasks or languages, and support the theory that higher pre-trained layers encode more phonemic information."
+      },
+      "authors": [
+        "Bethan Thomas",
+        "Samuel Kessler",
+        "S. Karout"
+      ]
+    },
+    "tags": [
+      "ASR"
+    ]
+  },
+  "ARXIV:2303.10512": {
+    "title": "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+    "paper": {
+      "arxiv_id": "2303.10512",
+      "paperId": "b612fc6af23cccf2133c2ea40597453ab40dc2c3",
+      "url": "https://www.semanticscholar.org/paper/b612fc6af23cccf2133c2ea40597453ab40dc2c3",
+      "title": "AdaLoRA: Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+      "abstract": "Fine-tuning large pre-trained language models on downstream tasks has become an important paradigm in NLP. However, common practice fine-tunes all of the parameters in a pre-trained model, which becomes prohibitive when a large number of downstream tasks are present. Therefore, many fine-tuning methods are proposed to learn incremental updates of pre-trained weights in a parameter efficient way, e.g., low-rank increments. These methods often evenly distribute the budget of incremental updates across all pre-trained weight matrices, and overlook the varying importance of different weight parameters. As a consequence, the fine-tuning performance is suboptimal. To bridge this gap, we propose AdaLoRA, which adaptively allocates the parameter budget among weight matrices according to their importance score. In particular, AdaLoRA parameterizes the incremental updates in the form of singular value decomposition. Such a novel approach allows us to effectively prune the singular values of unimportant updates, which is essentially to reduce their parameter budget but circumvent intensive exact SVD computations. We conduct extensive experiments with several pre-trained models on natural language processing, question answering, and natural language generation to validate the effectiveness of AdaLoRA. Results demonstrate that AdaLoRA manifests notable improvement over baselines, especially in the low budget settings. Our code is publicly available at https://github.com/QingruZhang/AdaLoRA .",
+      "venue": "",
+      "year": 2023,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "The proposed AdaLoRA adaptively allocates the parameter budget among weight matrices according to their importance score, which allows us to effectively prune the singular values of unimportant updates, which is essentially to reduce their parameter budget but circumvent intensive exact SVD computations."
+      },
+      "authors": [
+        "Qingru Zhang",
+        "Minshuo Chen",
+        "Alexander W. Bukharin",
+        "Nikos Karampatziakis",
+        "Pengcheng He",
+        "Yu Cheng",
+        "Weizhu Chen",
+        "Tuo Zhao"
+      ]
+    },
+    "code": "https://github.com/QingruZhang/AdaLoRA",
+    "tags": [
+      "AdaLoRA"
+    ]
+  },
+  "29ddc1f43f28af7c846515e32cc167bc66886d0c": {
+    "title": "Parameter-Efficient Transfer Learning for NLP",
+    "paper": {
+      "arxiv_id": "1902.00751",
+      "semantic_scholar_id": "29ddc1f43f28af7c846515e32cc167bc66886d0c",
+      "pdf": "https://arxiv.org/pdf/1902.00751.pdf",
+      "paperId": "29ddc1f43f28af7c846515e32cc167bc66886d0c",
+      "url": "https://www.semanticscholar.org/paper/29ddc1f43f28af7c846515e32cc167bc66886d0c",
+      "title": "Parameter-Efficient Transfer Learning for NLP",
+      "abstract": "Fine-tuning large pre-trained models is an effective transfer mechanism in NLP. However, in the presence of many downstream tasks, fine-tuning is parameter inefficient: an entire new model is required for every task. As an alternative, we propose transfer with adapter modules. Adapter modules yield a compact and extensible model; they add only a few trainable parameters per task, and new tasks can be added without revisiting previous ones. The parameters of the original network remain fixed, yielding a high degree of parameter sharing. To demonstrate adapter's effectiveness, we transfer the recently proposed BERT Transformer model to 26 diverse text classification tasks, including the GLUE benchmark. Adapters attain near state-of-the-art performance, whilst adding only a few parameters per task. On GLUE, we attain within 0.4% of the performance of full fine-tuning, adding only 3.6% parameters per task. By contrast, fine-tuning trains 100% of the parameters per task.",
+      "venue": "International Conference on Machine Learning",
+      "year": 2019,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "To demonstrate adapter's effectiveness, the recently proposed BERT Transformer model is transferred to 26 diverse text classification tasks, including the GLUE benchmark, and adapter attain near state-of-the-art performance, whilst adding only a few parameters per task."
+      },
+      "authors": [
+        "N. Houlsby",
+        "A. Giurgiu",
+        "Stanislaw Jastrzebski",
+        "Bruna Morrone",
+        "Quentin de Laroussilhe",
+        "Andrea Gesmundo",
+        "Mona Attariyan",
+        "S. Gelly"
+      ]
+    },
+    "code": "https://github.com/google-research/adapter-bert",
+    "tags": [
+      "Bottleneck adapter"
+    ]
+  }
+}

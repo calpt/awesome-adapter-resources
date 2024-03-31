@@ -10,8 +10,9 @@ import slugify
 from ruamel.yaml import YAML
 
 
-CACHE_FILE = ".cache.json"
-TEMPLATE = os.path.join(os.path.dirname(__file__), "TEMPLATE.md")
+FILE_DIR = os.path.dirname(__file__)
+CACHE_FILE = os.path.join(FILE_DIR, "build.cache.json")
+TEMPLATE = os.path.join(FILE_DIR, "TEMPLATE.md")
 
 
 yaml = YAML()
