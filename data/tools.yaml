@@ -6,8 +6,13 @@ items:
       acl_id: "2020.emnlp-demos.7"
       arxiv_id: "2007.07779"
       pdf: https://arxiv.org/pdf/2007.07779
-    code: https://github.com/adapter-hub/adapter-transformers
     website: https://adapterhub.ml
+  - title: "Adapters: A Unified Library for Parameter-Efficient and Modular Transfer Learning"
+    paper:
+      acl_id: "2023.emnlp-demo.13"
+      semantic_scholar_id: e1f4b94479bfcb735a1a0add178a2337def07c9b
+      pdf: https://arxiv.org/pdf/2311.11077.pdf
+    code: https://github.com/adapter-hub/adapters
   - title: "OpenDelta"
     code: https://github.com/thunlp/OpenDelta
     website: https://opendelta.readthedocs.io/

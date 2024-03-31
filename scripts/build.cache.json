@@ -1736,5 +1736,36 @@
       "MoV",
       "MoLoRA"
     ]
+  },
+  "e1f4b94479bfcb735a1a0add178a2337def07c9b": {
+    "title": "Adapters: A Unified Library for Parameter-Efficient and Modular Transfer Learning",
+    "paper": {
+      "acl_id": "2023.emnlp-demo.13",
+      "semantic_scholar_id": "e1f4b94479bfcb735a1a0add178a2337def07c9b",
+      "pdf": "https://arxiv.org/pdf/2311.11077.pdf",
+      "paperId": "e1f4b94479bfcb735a1a0add178a2337def07c9b",
+      "url": "https://www.semanticscholar.org/paper/e1f4b94479bfcb735a1a0add178a2337def07c9b",
+      "title": "Adapters: A Unified Library for Parameter-Efficient and Modular Transfer Learning",
+      "abstract": "We introduce Adapters, an open-source library that unifies parameter-efficient and modular transfer learning in large language models. By integrating 10 diverse adapter methods into a unified interface, Adapters offers ease of use and flexible configuration. Our library allows researchers and practitioners to leverage adapter modularity through composition blocks, enabling the design of complex adapter setups. We demonstrate the library's efficacy by evaluating its performance against full fine-tuning on various NLP tasks. Adapters provides a powerful tool for addressing the challenges of conventional fine-tuning paradigms and promoting more efficient and modular transfer learning. The library is available via https://adapterhub.ml/adapters.",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2023,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Adapters, an open-source library that unifies parameter-efficient and modular transfer learning in large language models and allows researchers and practitioners to leverage adapter modularity through composition blocks, enabling the design of complex adapter setups, is introduced."
+      },
+      "authors": [
+        "Clifton A. Poth",
+        "Hannah Sterz",
+        "Indraneil Paul",
+        "Sukannya Purkayastha",
+        "Leon Arne Engl\u00e4nder",
+        "Timo Imhof",
+        "Ivan Vuli'c",
+        "Sebastian Ruder",
+        "Iryna Gurevych",
+        "Jonas Pfeiffer"
+      ]
+    },
+    "code": "https://github.com/adapter-hub/adapters"
   }
 }

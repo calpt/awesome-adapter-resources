@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-63-blue)
+![](https://img.shields.io/badge/Resources-64-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -51,6 +51,19 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2007.07779)&nbsp; [[Code]](https://github.com/adapter-hub/adapter-transformers)&nbsp; [[Website]](https://adapterhub.ml)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/063f8b1ecf2394ca776ac61869734de9c1953808)
+
+- **Adapters: A Unified Library for Parameter-Efficient and Modular Transfer Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/adapter-hub/adapters?color=yellow&logo=github) 
+
+  Conference on Empirical Methods in Natural Language Processing
+
+  _Clifton A. Poth, Hannah Sterz, Indraneil Paul, Sukannya Purkayastha, Leon Arne Engländer, Timo Imhof, Ivan Vuli'c, Sebastian Ruder, Iryna Gurevych, Jonas Pfeiffer_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    Adapters, an open-source library that unifies parameter-efficient and modular transfer learning in large language models and allows researchers and practitioners to leverage adapter modularity through composition blocks, enabling the design of complex adapter setups, is introduced.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2311.11077.pdf)&nbsp; [[Code]](https://github.com/adapter-hub/adapters)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/e1f4b94479bfcb735a1a0add178a2337def07c9b)
 
 - **OpenDelta**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/thunlp/OpenDelta?color=yellow&logo=github) 
 
