@@ -1597,5 +1597,144 @@
     "tags": [
       "Bottleneck adapter"
     ]
+  },
+  "ACL:2022.acl-long.125": {
+    "title": "Composable Sparse Fine-Tuning for Cross-Lingual Transfer",
+    "paper": {
+      "acl_id": "2022.acl-long.125",
+      "paperId": "fc58779940abb92166b73f47867763a07368c739",
+      "url": "https://www.semanticscholar.org/paper/fc58779940abb92166b73f47867763a07368c739",
+      "title": "Composable Sparse Fine-Tuning for Cross-Lingual Transfer",
+      "abstract": "Fine-tuning the entire set of parameters of a large pretrained model has become the mainstream approach for transfer learning. To increase its efficiency and prevent catastrophic forgetting and interference, techniques like adapters and sparse fine-tuning have been developed. Adapters are modular, as they can be combined to adapt a model towards different facets of knowledge (e.g., dedicated language and/or task adapters). Sparse fine-tuning is expressive, as it controls the behavior of all model components. In this work, we introduce a new fine-tuning method with both these desirable properties. In particular, we learn sparse, real-valued masks based on a simple variant of the Lottery Ticket Hypothesis. Task-specific masks are obtained from annotated data in a source language, and language-specific masks from masked language modeling in a target language. Both these masks can then be composed with the pretrained model. Unlike adapter-based fine-tuning, this method neither increases the number of parameters at inference time nor alters the original model architecture. Most importantly, it outperforms adapters in zero-shot cross-lingual transfer by a large margin in a series of multilingual benchmarks, including Universal Dependencies, MasakhaNER, and AmericasNLI. Based on an in-depth analysis, we additionally find that sparsity is crucial to prevent both 1) interference between the fine-tunings to be composed and 2) overfitting. We release the code and models at https://github.com/cambridgeltl/composable-sft.",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This work introduces a new fine-tuning method that outperforms adapters in zero-shot cross-lingual transfer by a large margin in a series of multilingual benchmarks, including Universal Dependencies, MasakhaNER, and AmericasNLI."
+      },
+      "authors": [
+        "Alan Ansell",
+        "E. Ponti",
+        "A. Korhonen",
+        "Ivan Vulic"
+      ]
+    },
+    "code": "https://github.com/cambridgeltl/composable-sft",
+    "tags": [
+      "LT-SFT"
+    ]
+  },
+  "0d7f24578340aae6df610ed95aaa276b9c3ddcd3": {
+    "title": "VeRA: Vector-based Random Matrix Adaptation",
+    "paper": {
+      "arxiv_id": "2310.11454",
+      "semantic_scholar_id": "0d7f24578340aae6df610ed95aaa276b9c3ddcd3",
+      "pdf": "https://arxiv.org/pdf/2310.11454.pdf",
+      "paperId": "0d7f24578340aae6df610ed95aaa276b9c3ddcd3",
+      "url": "https://www.semanticscholar.org/paper/0d7f24578340aae6df610ed95aaa276b9c3ddcd3",
+      "title": "VeRA: Vector-based Random Matrix Adaptation",
+      "abstract": "Low-rank adapation (LoRA) is a popular method that reduces the number of trainable parameters when finetuning large language models, but still faces acute storage challenges when scaling to even larger models or deploying numerous per-user or per-task adapted models. In this work, we present Vector-based Random Matrix Adaptation (VeRA), which significantly reduces the number of trainable parameters compared to LoRA, yet maintains the same performance. It achieves this by using a single pair of low-rank matrices shared across all layers and learning small scaling vectors instead. We demonstrate its effectiveness on the GLUE and E2E benchmarks, image classification tasks, and show its application in instruction-tuning of 7B and 13B language models.",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Vector-based Random Matrix Adaptation (VeRA) is presented, which significantly reduces the number of trainable parameters compared to LoRA, yet maintains the same performance by using a single pair of low-rank matrices shared across all layers and learning small scaling vectors instead."
+      },
+      "authors": [
+        "Dawid Jan Kopiczko",
+        "Tijmen Blankevoort",
+        "Yuki Markus Asano"
+      ]
+    },
+    "tags": [
+      "VeRA"
+    ]
+  },
+  "0d56e3d69c9b3112d77187f96fabcfbdf5303971": {
+    "title": "Combining Modular Skills in Multitask Learning",
+    "paper": {
+      "semantic_scholar_id": "0d56e3d69c9b3112d77187f96fabcfbdf5303971",
+      "pdf": "https://arxiv.org/pdf/2202.13914.pdf",
+      "paperId": "0d56e3d69c9b3112d77187f96fabcfbdf5303971",
+      "url": "https://www.semanticscholar.org/paper/0d56e3d69c9b3112d77187f96fabcfbdf5303971",
+      "title": "Combining Modular Skills in Multitask Learning",
+      "abstract": "A modular design encourages neural models to disentangle and recombine different facets of knowledge to generalise more systematically to new tasks. In this work, we assume that each task is associated with a subset of latent discrete skills from a (potentially small) inventory. In turn, skills correspond to parameter-efficient (sparse / low-rank) model parameterisations. By jointly learning these and a task-skill allocation matrix, the network for each task is instantiated as the average of the parameters of active skills. To favour non-trivial soft partitions of skills across tasks, we experiment with a series of inductive biases, such as an Indian Buffet Process prior and a two-speed learning rate. We evaluate our latent-skill model on two main settings: 1) multitask reinforcement learning for grounded instruction following on 8 levels of the BabyAI platform; and 2) few-shot adaptation of pre-trained text-to-text generative models on CrossFit, a benchmark comprising 160 NLP tasks. We find that the modular design of a network significantly increases sample efficiency in reinforcement learning and few-shot generalisation in supervised learning, compared to baselines with fully shared, task-specific, or conditionally generated parameters where knowledge is entangled across tasks. In addition, we show how discrete skills help interpretability, as they yield an explicit hierarchy of tasks.",
+      "venue": "arXiv.org",
+      "year": 2022,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "It is found that the modular design of a network significantly increases sample efficiency in reinforcement learning and few-shot generalisation in supervised learning, compared to baselines with fully shared, task-specific, or conditionally generated parameters where knowledge is entangled across tasks."
+      },
+      "authors": [
+        "E. Ponti",
+        "Alessandro Sordoni",
+        "Siva Reddy"
+      ]
+    },
+    "code": "https://github.com/McGill-NLP/polytropon",
+    "tags": [
+      "Polytropon"
+    ]
+  },
+  "9201e46b2fe90c636d57b076020051953456473c": {
+    "title": "Multi-Head Adapter Routing for Data-Efficient Fine-Tuning",
+    "paper": {
+      "semantic_scholar_id": "9201e46b2fe90c636d57b076020051953456473c",
+      "pdf": "https://arxiv.org/pdf/2211.03831.pdf",
+      "paperId": "9201e46b2fe90c636d57b076020051953456473c",
+      "url": "https://www.semanticscholar.org/paper/9201e46b2fe90c636d57b076020051953456473c",
+      "title": "Multi-Head Adapter Routing for Data-Efficient Fine-Tuning",
+      "abstract": "Parameter-ef\ufb01cient \ufb01ne-tuning (PEFT) methods can adapt large language models to downstream tasks by training a small amount of newly added parameters. In multi-task settings, PEFT adapters typically train on each task independently, inhibiting transfer across tasks, or on the concatenation of all tasks, which can lead to negative interference. To address this, Polytropon [Ponti et al., 2022] jointly learns an inventory of PEFT adapters and a routing function to share variable-size sets of adapters across tasks. Subsequently, adapters can be re-combined and \ufb01ne-tuned on novel tasks even with limited data. In this paper, we investigate to what extent the ability to control which adapters are active for each task leads to sample-ef\ufb01cient generalization. Thus, we propose less expressive variants where we perform weighted averaging of the adapters before few-shot adaptation ( Poly - \u00b5 ) instead of learning a routing function. Moreover, we introduce more expressive variants where \ufb01ner-grained task\u2013adapter allocation is learned through a multi-head routing function ( Poly - S ). We test these variants on three separate benchmarks for multi-task learning. We \ufb01nd that Poly - S achieves gains on all three (up to 5.3 points on average) over strong baselines, while incurring a negligible additional cost in parameter count. In particular, we \ufb01nd that instruction tuning, where models are fully \ufb01ne-tuned on natural language instructions for each task, is inferior to modular methods such as Polytropon and our proposed variants.",
+      "venue": "arXiv.org",
+      "year": 2022,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper investigates to what extent the ability to control which adapters are active for each task leads to sample-ef\ufb01cient generalization and proposes less expressive variants where the authors perform weighted averaging of the adapters before few-shot adaptation (Poly - \u00b5 ) instead of learning a routing function."
+      },
+      "authors": [
+        "Lucas Caccia",
+        "E. Ponti",
+        "Lu Liu",
+        "Matheus Pereira",
+        "Nicolas Le Roux",
+        "Alessandro Sordoni"
+      ]
+    },
+    "code": "https://github.com/microsoft/mttl",
+    "tags": [
+      "Multi-Head routing"
+    ]
+  },
+  "5aae7d84f8eaa55f3386cee41d94769e7ab01e9d": {
+    "title": "Pushing Mixture of Experts to the Limit: Extremely Parameter Efficient MoE for Instruction Tuning",
+    "paper": {
+      "semantic_scholar_id": "5aae7d84f8eaa55f3386cee41d94769e7ab01e9d",
+      "pdf": "https://arxiv.org/pdf/2309.05444.pdf",
+      "paperId": "5aae7d84f8eaa55f3386cee41d94769e7ab01e9d",
+      "url": "https://www.semanticscholar.org/paper/5aae7d84f8eaa55f3386cee41d94769e7ab01e9d",
+      "title": "Pushing Mixture of Experts to the Limit: Extremely Parameter Efficient MoE for Instruction Tuning",
+      "abstract": "The Mixture of Experts (MoE) is a widely known neural architecture where an ensemble of specialized sub-models optimizes overall performance with a constant computational cost. However, conventional MoEs pose challenges at scale due to the need to store all experts in memory. In this paper, we push MoE to the limit. We propose extremely parameter-efficient MoE by uniquely combining MoE architecture with lightweight experts.Our MoE architecture outperforms standard parameter-efficient fine-tuning (PEFT) methods and is on par with full fine-tuning by only updating the lightweight experts -- less than 1% of an 11B parameters model. Furthermore, our method generalizes to unseen tasks as it does not depend on any prior task knowledge. Our research underscores the versatility of the mixture of experts architecture, showcasing its ability to deliver robust performance even when subjected to rigorous parameter constraints. Our code used in all the experiments is publicly available here: https://github.com/for-ai/parameter-efficient-moe.",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This paper proposes extremely parameter-efficient MoE by uniquely combining MoE architecture with lightweight experts and is on par with full fine-tuning by only updating the lightweight experts -- less than 1% of an 11B parameters model."
+      },
+      "authors": [
+        "Ted Zadouri",
+        "A. Ustun",
+        "Arash Ahmadian",
+        "Beyza Ermics",
+        "Acyr Locatelli",
+        "Sara Hooker"
+      ]
+    },
+    "code": "https://github.com/for-ai/parameter-efficient-moe",
+    "tags": [
+      "MoE",
+      "Instruction tuning",
+      "MoV",
+      "MoLoRA"
+    ]
   }
 }

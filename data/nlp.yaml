@@ -81,6 +81,17 @@ sections:
           semantic_scholar_id: 32ac52069e562d4f900afee70bdca63f53461481
         code: https://github.com/artidoro/qlora
         tags: ["QLoRA"]
+      - title: "Composable Sparse Fine-Tuning for Cross-Lingual Transfer"
+        paper:
+          acl_id: "2022.acl-long.125"
+        code: https://github.com/cambridgeltl/composable-sft
+        tags: ["LT-SFT"]
+      - title: "VeRA: Vector-based Random Matrix Adaptation"
+        paper:
+          arxiv_id: "2310.11454"
+          semantic_scholar_id: 0d7f24578340aae6df610ed95aaa276b9c3ddcd3
+          pdf: https://arxiv.org/pdf/2310.11454.pdf
+        tags: ["VeRA"]
 
   - title: "Composition Methods"
     items:
@@ -115,6 +126,24 @@ sections:
         paper:
           acl_id: "2023.findings-eacl.153"
         tags: ["Model merging"]
+      - title: "Combining Modular Skills in Multitask Learning"
+        paper:
+          semantic_scholar_id: 0d56e3d69c9b3112d77187f96fabcfbdf5303971
+          pdf: https://arxiv.org/pdf/2202.13914.pdf
+        code: https://github.com/McGill-NLP/polytropon
+        tags: ["Polytropon"]
+      - title: "Multi-Head Adapter Routing for Data-Efficient Fine-Tuning"
+        paper:
+          semantic_scholar_id: 9201e46b2fe90c636d57b076020051953456473c
+          pdf: https://arxiv.org/pdf/2211.03831.pdf
+        code: https://github.com/microsoft/mttl
+        tags: ["Multi-Head routing"]
+      - title: "Pushing Mixture of Experts to the Limit: Extremely Parameter Efficient MoE for Instruction Tuning"
+        paper:
+          semantic_scholar_id: 5aae7d84f8eaa55f3386cee41d94769e7ab01e9d
+          pdf: https://arxiv.org/pdf/2309.05444.pdf
+        code: https://github.com/for-ai/parameter-efficient-moe
+        tags: ["MoE", "Instruction tuning", "MoV", "MoLoRA"]
 
 
   - title: "Analysis and Evaluation"

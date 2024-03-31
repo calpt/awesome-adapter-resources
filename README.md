@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-58-blue)
+![](https://img.shields.io/badge/Resources-63-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -316,6 +316,32 @@ Using adapters provides multiple benefits. They are ...
 
   [[Paper PDF]](https://arxiv.org/pdf/2305.14314.pdf)&nbsp; [[Code]](https://github.com/artidoro/qlora)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/32ac52069e562d4f900afee70bdca63f53461481)
 
+- **Composable Sparse Fine-Tuning for Cross-Lingual Transfer**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/cambridgeltl/composable-sft?color=yellow&logo=github) ![](https://img.shields.io/badge/-LT--SFT-blue)
+
+  Annual Meeting of the Association for Computational Linguistics
+
+  _Alan Ansell, E. Ponti, A. Korhonen, Ivan Vulic_ (2021)
+
+  <details>
+    <summary>TLDR</summary>
+    This work introduces a new fine-tuning method that outperforms adapters in zero-shot cross-lingual transfer by a large margin in a series of multilingual benchmarks, including Universal Dependencies, MasakhaNER, and AmericasNLI.
+  </details>
+
+  [[Paper PDF]](https://aclanthology.org/2022.acl-long.125.pdf)&nbsp; [[Code]](https://github.com/cambridgeltl/composable-sft)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/fc58779940abb92166b73f47867763a07368c739)
+
+- **VeRA: Vector-based Random Matrix Adaptation**&nbsp; ![](https://img.shields.io/badge/-VeRA-blue)
+
+  arXiv.org
+
+  _Dawid Jan Kopiczko, Tijmen Blankevoort, Yuki Markus Asano_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    Vector-based Random Matrix Adaptation (VeRA) is presented, which significantly reduces the number of trainable parameters compared to LoRA, yet maintains the same performance by using a single pair of low-rank matrices shared across all layers and learning small scaling vectors instead.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2310.11454.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/0d7f24578340aae6df610ed95aaa276b9c3ddcd3)
+
 ### Composition Methods
 
 - **MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers?color=yellow&logo=github) ![](https://img.shields.io/badge/-MAD--X-blue) ![](https://img.shields.io/badge/-Invertible%20adapter-blue)
@@ -395,6 +421,45 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://aclanthology.org/2023.findings-eacl.153.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/629bc57782bb4326a3eb5f89314e350729c5f417)
+
+- **Combining Modular Skills in Multitask Learning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/McGill-NLP/polytropon?color=yellow&logo=github) ![](https://img.shields.io/badge/-Polytropon-blue)
+
+  arXiv.org
+
+  _E. Ponti, Alessandro Sordoni, Siva Reddy_ (2022)
+
+  <details>
+    <summary>TLDR</summary>
+    It is found that the modular design of a network significantly increases sample efficiency in reinforcement learning and few-shot generalisation in supervised learning, compared to baselines with fully shared, task-specific, or conditionally generated parameters where knowledge is entangled across tasks.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2202.13914.pdf)&nbsp; [[Code]](https://github.com/McGill-NLP/polytropon)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/0d56e3d69c9b3112d77187f96fabcfbdf5303971)
+
+- **Multi-Head Adapter Routing for Data-Efficient Fine-Tuning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/mttl?color=yellow&logo=github) ![](https://img.shields.io/badge/-Multi--Head%20routing-blue)
+
+  arXiv.org
+
+  _Lucas Caccia, E. Ponti, Lu Liu, Matheus Pereira, Nicolas Le Roux, Alessandro Sordoni_ (2022)
+
+  <details>
+    <summary>TLDR</summary>
+    This paper investigates to what extent the ability to control which adapters are active for each task leads to sample-efﬁcient generalization and proposes less expressive variants where the authors perform weighted averaging of the adapters before few-shot adaptation (Poly - µ ) instead of learning a routing function.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2211.03831.pdf)&nbsp; [[Code]](https://github.com/microsoft/mttl)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/9201e46b2fe90c636d57b076020051953456473c)
+
+- **Pushing Mixture of Experts to the Limit: Extremely Parameter Efficient MoE for Instruction Tuning**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/for-ai/parameter-efficient-moe?color=yellow&logo=github) ![](https://img.shields.io/badge/-MoE-blue) ![](https://img.shields.io/badge/-Instruction%20tuning-blue) ![](https://img.shields.io/badge/-MoV-blue) ![](https://img.shields.io/badge/-MoLoRA-blue)
+
+  arXiv.org
+
+  _Ted Zadouri, A. Ustun, Arash Ahmadian, Beyza Ermics, Acyr Locatelli, Sara Hooker_ (2023)
+
+  <details>
+    <summary>TLDR</summary>
+    This paper proposes extremely parameter-efficient MoE by uniquely combining MoE architecture with lightweight experts and is on par with full fine-tuning by only updating the lightweight experts -- less than 1% of an 11B parameters model.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2309.05444.pdf)&nbsp; [[Code]](https://github.com/for-ai/parameter-efficient-moe)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/5aae7d84f8eaa55f3386cee41d94769e7ab01e9d)
 
 ### Analysis and Evaluation
 
