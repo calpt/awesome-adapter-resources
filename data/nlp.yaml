@@ -92,6 +92,20 @@ sections:
           semantic_scholar_id: 0d7f24578340aae6df610ed95aaa276b9c3ddcd3
           pdf: https://arxiv.org/pdf/2310.11454.pdf
         tags: ["VeRA"]
+      - title: "DoRA: Weight-Decomposed Low-Rank Adaptation"
+        paper:
+          arxiv_id: "2402.09353"
+          semantic_scholar_id: da053e2a4ba1b244940c8f2cad5dcdf0d730f85f
+          pdf: https://arxiv.org/pdf/2402.09353.pdf
+        code: https://github.com/NVlabs/DoRA
+        tags: ["DoRA", "LoRA"]
+      - title: "ReFT: Representation Finetuning for Language Models"
+        paper:
+          arxiv_id: "2404.03592"
+          semantic_scholar_id: 1bda8efbbf4abae6c8c1da97d6137396807b1e09
+          pdf: https://arxiv.org/pdf/2404.03592.pdf
+        code: https://github.com/stanfordnlp/pyreft
+        tags: ["ReFT", "LoReFT", "interventions"]
 
   - title: "Composition Methods"
     items:

@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-64-blue)
+![](https://img.shields.io/badge/Resources-67-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -143,6 +143,19 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2304.12410.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/2afd51e83e87acf02c0044b34c6d4984e814900e)
+
+- **Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey**&nbsp; 
+
+  arXiv.org
+
+  _Zeyu Han, Chao Gao, Jinyang Liu, Jeff Zhang, Sai Qian Zhang_ (2024)
+
+  <details>
+    <summary>TLDR</summary>
+    This survey presents comprehensive studies of various PEFT algorithms, examining their performance and computational overhead, and overview of applications developed using different PEFT algorithms and discusses common techniques employed to mitigate computation costs for PEFT.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2403.14608.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/916b4926cda574dc3f9486bb9994b6f2788dd800)
 
 
 ## Natural Language Processing
@@ -354,6 +367,30 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2310.11454.pdf)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/0d7f24578340aae6df610ed95aaa276b9c3ddcd3)
+
+- **DoRA: Weight-Decomposed Low-Rank Adaptation**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/NVlabs/DoRA?color=yellow&logo=github) ![](https://img.shields.io/badge/-DoRA-blue) ![](https://img.shields.io/badge/-LoRA-blue)
+
+  arXiv.org
+
+  _Shih-yang Liu, Chien-Yi Wang, Hongxu Yin, Pavlo Molchanov, Yu-Chiang Frank Wang, Kwang-Ting Cheng, Min-Hung Chen_ (2024)
+
+  <details>
+    <summary>TLDR</summary>
+    Weight-Decomposed LowRank Adaptation (DoRA) is proposed, which decomposes the pre-trained weight into two components, magnitude and direction, for fine-tuning, specifically employing LoRA for directional updates to efficiently minimize the number of trainable parameters.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2402.09353.pdf)&nbsp; [[Code]](https://github.com/NVlabs/DoRA)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/da053e2a4ba1b244940c8f2cad5dcdf0d730f85f)
+
+- **ReFT: Representation Finetuning for Language Models**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/stanfordnlp/pyreft?color=yellow&logo=github) ![](https://img.shields.io/badge/-ReFT-blue) ![](https://img.shields.io/badge/-LoReFT-blue) ![](https://img.shields.io/badge/-interventions-blue)
+
+  _Zhengxuan Wu, Aryaman Arora, Zheng Wang, Atticus Geiger, Daniel Jurafsky, Christopher D. Manning, Christopher Potts_ (2024)
+
+  <details>
+    <summary>TLDR</summary>
+    A strong instance of the ReFT family is defined, Low-rank Linear Subspace ReFT (LoReFT), which is a drop-in replacement for existing PEFTs and learns interventions that are 10x-50x more parameter-efficient than prior state-of-the-art PEFTs.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2404.03592.pdf)&nbsp; [[Code]](https://github.com/stanfordnlp/pyreft)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/1bda8efbbf4abae6c8c1da97d6137396807b1e09)
 
 ### Composition Methods
 

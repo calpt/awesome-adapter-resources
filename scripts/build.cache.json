@@ -1767,5 +1767,93 @@
       ]
     },
     "code": "https://github.com/adapter-hub/adapters"
+  },
+  "ARXIV:2403.14608": {
+    "title": "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey",
+    "paper": {
+      "arxiv_id": "2403.14608",
+      "paperId": "916b4926cda574dc3f9486bb9994b6f2788dd800",
+      "url": "https://www.semanticscholar.org/paper/916b4926cda574dc3f9486bb9994b6f2788dd800",
+      "title": "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey",
+      "abstract": "Large models represent a groundbreaking advancement in multiple application fields, enabling remarkable achievements across various tasks. However, their unprecedented scale comes with significant computational costs. These models, often consisting of billions of parameters, require vast amounts of computational resources for execution. Especially, the expansive scale and computational demands pose considerable challenges when customizing them for particular downstream tasks, particularly over the hardware platforms constrained by computational capabilities. Parameter Efficient Fine-Tuning (PEFT) provides a practical solution by efficiently adapt the large models over the various downstream tasks. In particular, PEFT refers to the process of adjusting the parameters of a pre-trained large models to adapt it to a specific task while minimizing the number of additional parameters introduced or computational resources required. This approach is particularly important when dealing with large language models with high parameter counts, as fine-tuning these models from scratch can be computationally expensive and resource-intensive, posing considerable challenges in the supporting system platform design. In this survey, we present comprehensive studies of various PEFT algorithms, examining their performance and computational overhead. Moreover, we provide an overview of applications developed using different PEFT algorithms and discuss common techniques employed to mitigate computation costs for PEFT. In addition to the algorithmic perspective, we overview various real-world system designs to investigate the implementation costs associated with different PEFT algorithms. This survey serves as an indispensable resource for researchers aiming to understand both the PEFT algorithm and its system implementation, offering detailed insights into recent advancements and practical applications.",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "This survey presents comprehensive studies of various PEFT algorithms, examining their performance and computational overhead, and overview of applications developed using different PEFT algorithms and discusses common techniques employed to mitigate computation costs for PEFT."
+      },
+      "authors": [
+        "Zeyu Han",
+        "Chao Gao",
+        "Jinyang Liu",
+        "Jeff Zhang",
+        "Sai Qian Zhang"
+      ]
+    }
+  },
+  "da053e2a4ba1b244940c8f2cad5dcdf0d730f85f": {
+    "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+    "paper": {
+      "arxiv_id": "2402.09353",
+      "semantic_scholar_id": "da053e2a4ba1b244940c8f2cad5dcdf0d730f85f",
+      "pdf": "https://arxiv.org/pdf/2402.09353.pdf",
+      "paperId": "da053e2a4ba1b244940c8f2cad5dcdf0d730f85f",
+      "url": "https://www.semanticscholar.org/paper/da053e2a4ba1b244940c8f2cad5dcdf0d730f85f",
+      "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+      "abstract": "Among the widely used parameter-efficient finetuning (PEFT) methods, LoRA and its variants have gained considerable popularity because of avoiding additional inference costs. However, there still often exists an accuracy gap between these methods and full fine-tuning (FT). In this work, we first introduce a novel weight decomposition analysis to investigate the inherent differences between FT and LoRA. Aiming to resemble the learning capacity of FT from the findings, we propose Weight-Decomposed LowRank Adaptation (DoRA). DoRA decomposes the pre-trained weight into two components, magnitude and direction, for fine-tuning, specifically employing LoRA for directional updates to efficiently minimize the number of trainable parameters. By employing DoRA, we enhance both the learning capacity and training stability of LoRA while avoiding any additional inference overhead. DoRA consistently outperforms LoRA on fine-tuning LLaMA, LLaVA, and VL-BART on various downstream tasks, such as commonsense reasoning, visual instruction tuning, and image/video-text understanding. Code available at https://github.com/NVlabs/DoRA.",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "Weight-Decomposed LowRank Adaptation (DoRA) is proposed, which decomposes the pre-trained weight into two components, magnitude and direction, for fine-tuning, specifically employing LoRA for directional updates to efficiently minimize the number of trainable parameters."
+      },
+      "authors": [
+        "Shih-yang Liu",
+        "Chien-Yi Wang",
+        "Hongxu Yin",
+        "Pavlo Molchanov",
+        "Yu-Chiang Frank Wang",
+        "Kwang-Ting Cheng",
+        "Min-Hung Chen"
+      ]
+    },
+    "code": "https://github.com/NVlabs/DoRA",
+    "tags": [
+      "DoRA",
+      "LoRA"
+    ]
+  },
+  "1bda8efbbf4abae6c8c1da97d6137396807b1e09": {
+    "title": "ReFT: Representation Finetuning for Language Models",
+    "paper": {
+      "arxiv_id": "2404.03592",
+      "semantic_scholar_id": "1bda8efbbf4abae6c8c1da97d6137396807b1e09",
+      "pdf": "https://arxiv.org/pdf/2404.03592.pdf",
+      "paperId": "1bda8efbbf4abae6c8c1da97d6137396807b1e09",
+      "url": "https://www.semanticscholar.org/paper/1bda8efbbf4abae6c8c1da97d6137396807b1e09",
+      "title": "ReFT: Representation Finetuning for Language Models",
+      "abstract": "Parameter-efficient fine-tuning (PEFT) methods seek to adapt large models via updates to a small number of weights. However, much prior interpretability work has shown that representations encode rich semantic information, suggesting that editing representations might be a more powerful alternative. Here, we pursue this hypothesis by developing a family of $\\textbf{Representation Finetuning (ReFT)}$ methods. ReFT methods operate on a frozen base model and learn task-specific interventions on hidden representations. We define a strong instance of the ReFT family, Low-rank Linear Subspace ReFT (LoReFT). LoReFT is a drop-in replacement for existing PEFTs and learns interventions that are 10x-50x more parameter-efficient than prior state-of-the-art PEFTs. We showcase LoReFT on eight commonsense reasoning tasks, four arithmetic reasoning tasks, Alpaca-Eval v1.0, and GLUE. In all these evaluations, LoReFT delivers the best balance of efficiency and performance, and almost always outperforms state-of-the-art PEFTs. We release a generic ReFT training library publicly at https://github.com/stanfordnlp/pyreft.",
+      "venue": "",
+      "year": 2024,
+      "tldr": {
+        "model": "tldr@v2.0.0",
+        "text": "A strong instance of the ReFT family is defined, Low-rank Linear Subspace ReFT (LoReFT), which is a drop-in replacement for existing PEFTs and learns interventions that are 10x-50x more parameter-efficient than prior state-of-the-art PEFTs."
+      },
+      "authors": [
+        "Zhengxuan Wu",
+        "Aryaman Arora",
+        "Zheng Wang",
+        "Atticus Geiger",
+        "Daniel Jurafsky",
+        "Christopher D. Manning",
+        "Christopher Potts"
+      ]
+    },
+    "code": "https://github.com/stanfordnlp/pyreft",
+    "tags": [
+      "ReFT",
+      "LoReFT",
+      "interventions"
+    ]
   }
 }

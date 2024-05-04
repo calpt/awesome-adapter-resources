@@ -10,3 +10,6 @@ items:
   - title: "PEFT-Ref: A Modular Reference Architecture and Typology for Parameter-Efficient Finetuning Techniques"
     paper:
       arxiv_id: "2304.12410"
+  - title: "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey"
+    paper:
+      arxiv_id: "2403.14608"
