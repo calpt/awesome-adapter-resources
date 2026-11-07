@@ -1855,5 +1855,62 @@
       "LoReFT",
       "interventions"
     ]
+  },
+  "ARXIV:2408.05775": {
+    "title": "Efficient Test-Time Prompt Tuning for Vision-Language Models",
+    "paper": {
+      "arxiv_id": "2408.05775",
+      "doi": "10.1007/s11263-026-03019-3",
+      "authors": [
+        "Yuhan Zhu",
+        "Guozhen Zhang",
+        "Chen Xu",
+        "Haocheng Shen",
+        "Xiaoxin Chen",
+        "Gangshan Wu",
+        "Limin Wang"
+      ],
+      "venue": "International Journal of Computer Vision",
+      "year": 2026,
+      "metadata_source": "https://link.springer.com/article/10.1007/s11263-026-03019-3",
+      "tldr": {
+        "text": "Self-TPT adapts prompts to predefined class names through contrastive self-supervision and gradient matching, enabling direct image predictions with reduced test-time cost."
+      },
+      "metadata_note": "Publisher-verified citation metadata; TLDR supplied by the contributor from the paper abstract."
+    },
+    "website": "https://link.springer.com/article/10.1007/s11263-026-03019-3",
+    "tags": [
+      "Self-TPT",
+      "Prompt tuning",
+      "IJCV 2026"
+    ]
+  },
+  "ARXIV:2407.04603": {
+    "title": "AWT: Transferring Vision-Language Models via Augmentation, Weighting, and Transportation",
+    "paper": {
+      "arxiv_id": "2407.04603",
+      "doi": "10.52202/079017-0804",
+      "authors": [
+        "Yuhan Zhu",
+        "Yuyang Ji",
+        "Zhiyu Zhao",
+        "Gangshan Wu",
+        "Limin Wang"
+      ],
+      "venue": "NeurIPS",
+      "year": 2024,
+      "metadata_source": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/2d4eaf042567f1c03c086103cc154c1f-Abstract-Conference.html",
+      "tldr": {
+        "text": "AWT combines visual and language-description augmentation, entropy weighting, and optimal transport for training-free zero-shot transfer and few-shot learning with a multimodal adapter."
+      },
+      "metadata_note": "Publisher-verified citation metadata; TLDR supplied by the contributor from the paper abstract."
+    },
+    "code": "https://github.com/MCG-NJU/AWT",
+    "website": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/2d4eaf042567f1c03c086103cc154c1f-Abstract-Conference.html",
+    "tags": [
+      "AWT",
+      "Multimodal adapter",
+      "NeurIPS 2024"
+    ]
   }
 }

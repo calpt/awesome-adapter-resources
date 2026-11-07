@@ -1,6 +1,6 @@
 # Awesome Adapter Resources
 
-![](https://img.shields.io/badge/Resources-67-blue)
+![](https://img.shields.io/badge/Resources-69-blue)
 
 This repository collects important tools and papers related to adapter methods for recent large pre-trained neural networks.
 
@@ -921,6 +921,32 @@ Using adapters provides multiple benefits. They are ...
   </details>
 
   [[Paper PDF]](https://arxiv.org/pdf/2308.09804.pdf)&nbsp; [[Code]](https://github.com/HenryHZY/VL-PET)&nbsp; [[Website]](https://henryhzy.github.io/VL-PET)&nbsp; [[Semantic Scholar]](https://www.semanticscholar.org/paper/80a791f644defb54f4eb24f99df31e6f995be3aa)
+
+- **Efficient Test-Time Prompt Tuning for Vision-Language Models**&nbsp; ![](https://img.shields.io/badge/-Self--TPT-blue) ![](https://img.shields.io/badge/-Prompt%20tuning-blue) ![](https://img.shields.io/badge/-IJCV%202026-blue)
+
+  International Journal of Computer Vision
+
+  _Yuhan Zhu, Guozhen Zhang, Chen Xu, Haocheng Shen, Xiaoxin Chen, Gangshan Wu, Limin Wang_ (2026)
+
+  <details>
+    <summary>TLDR</summary>
+    Self-TPT adapts prompts to predefined class names through contrastive self-supervision and gradient matching, enabling direct image predictions with reduced test-time cost.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2408.05775.pdf)&nbsp; [[Website]](https://link.springer.com/article/10.1007/s11263-026-03019-3)
+
+- **AWT: Transferring Vision-Language Models via Augmentation, Weighting, and Transportation**&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/MCG-NJU/AWT?color=yellow&logo=github) ![](https://img.shields.io/badge/-AWT-blue) ![](https://img.shields.io/badge/-Multimodal%20adapter-blue) ![](https://img.shields.io/badge/-NeurIPS%202024-blue)
+
+  NeurIPS
+
+  _Yuhan Zhu, Yuyang Ji, Zhiyu Zhao, Gangshan Wu, Limin Wang_ (2024)
+
+  <details>
+    <summary>TLDR</summary>
+    AWT combines visual and language-description augmentation, entropy weighting, and optimal transport for training-free zero-shot transfer and few-shot learning with a multimodal adapter.
+  </details>
+
+  [[Paper PDF]](https://arxiv.org/pdf/2407.04603.pdf)&nbsp; [[Code]](https://github.com/MCG-NJU/AWT)&nbsp; [[Website]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/2d4eaf042567f1c03c086103cc154c1f-Abstract-Conference.html)
 
 
 

@@ -27,3 +27,16 @@ sections:
         code: https://github.com/HenryHZY/VL-PET
         website: https://henryhzy.github.io/VL-PET
         tags: ["VL-PET"]
+      - title: "Efficient Test-Time Prompt Tuning for Vision-Language Models"
+        paper:
+          arxiv_id: "2408.05775"
+          doi: "10.1007/s11263-026-03019-3"
+        website: https://link.springer.com/article/10.1007/s11263-026-03019-3
+        tags: ["Self-TPT", "Prompt tuning", "IJCV 2026"]
+      - title: "AWT: Transferring Vision-Language Models via Augmentation, Weighting, and Transportation"
+        paper:
+          arxiv_id: "2407.04603"
+          doi: "10.52202/079017-0804"
+        code: https://github.com/MCG-NJU/AWT
+        website: https://proceedings.neurips.cc/paper_files/paper/2024/hash/2d4eaf042567f1c03c086103cc154c1f-Abstract-Conference.html
+        tags: ["AWT", "Multimodal adapter", "NeurIPS 2024"]
